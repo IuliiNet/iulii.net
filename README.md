@@ -1,3 +1,3 @@
 # Readme
 
-iulii.net è una rete libera decentralizzata in friuli
+[iulii.net](http://iulii.net "rete mesh libera e decentralizzata") è una rete libera decentralizzata in friuli.
