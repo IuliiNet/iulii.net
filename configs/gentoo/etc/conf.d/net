@@ -1,0 +1,53 @@
+config_eth0="null"
+rc_need_br0="net.eth0"
+brctl_br0="setfd 0"
+bridge_br0="eth0"
+config_br0="192.168.1.20/24"
+routes_br0="default via 192.168.1.1
+ 	default via fe80::fad1:11ff:fe4b:2e50"
+dns_servers_br0="127.0.0.1"
+
+#####################################
+config_eth1="null"
+rc_need_bat0="net.eth1"
+config_bat0="null"
+rc_need_br1="net.bat0 net.eth1"
+brctl_br1="setfd 0"
+bridge_br1="bat0"
+mac_br1="22:7c:e8:59:a8:6c"
+config_br1="10.0.0.20/8
+	2001:470:7023:2:207c:e8ff:fe59:a86c/64"
+dns_servers_br1="127.0.0.1"
+
+preup (){
+	case $IFACE in 
+	bat0)
+		modprobe batman-adv
+		batctl if add eth1
+		batctl gw server
+	;;
+	esac
+}
+
+postup (){
+	case $IFACE in 
+	br0)
+		pkill rdnssd
+		sleep 1
+		rdnssd -H /etc/rdnssd/merge-hook
+	;;
+	*)
+	;;
+	esac
+}
+
+postdown (){
+	case $IFACE in 
+	bat0)
+		batctl if del eth1
+		rmmod batman-adv
+	;;
+	*)
+	;;
+	esac
+}

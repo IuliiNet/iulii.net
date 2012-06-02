@@ -1,0 +1,17 @@
+#!/bin/sh
+
+IPV6PREFIX="2001:470:7023:1"
+LAN="br-lan"
+
+IPV6=$IPV6PREFIX::$(cat /sys/class/net/eth0/address |awk -F: '{print $1$2":"$3$4":"$5$6}')
+echo $IPV6
+
+ip addr add $IPV6/64 dev $LAN
+ip addr add 192.168.254.1/24 dev $LAN
+
+batman-adv reload
+uci set network.lan.ifname="eth0.1 bat0"
+uci delete network.wan
+uci commit
+
+exit 0

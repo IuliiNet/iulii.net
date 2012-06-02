@@ -1,0 +1,31 @@
+config interface
+	option interface	'lan'
+	option AdvSendAdvert	1
+	option AdvManagedFlag	0
+	option AdvOtherConfigFlag 0
+	option MaxRtrAdvInterval 30
+
+config prefix
+	option interface	'lan'
+	option AdvOnLink	1
+	option AdvAutonomous	1
+	option AdvRouterAddr	0
+
+config rdnss
+	option interface	'lan'
+	
+config interface
+	option interface	'mesh'
+	option AdvSendAdvert	1
+	option AdvManagedFlag	0
+	option AdvOtherConfigFlag 0
+	option MaxRtrAdvInterval 30
+
+config prefix
+	option interface	'mesh'
+	option AdvOnLink	1
+	option AdvAutonomous	1
+        option AdvRouterAddr	0
+        					
+config rdnss
+        option interface	'mesh'
