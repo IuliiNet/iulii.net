@@ -4,7 +4,7 @@ Tutti possono partecipare indipendentemente, senza limiti di espandibilità e ce
 
 Si ispira al [manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux") alla wireless community network [ninux](http://wiki.ninux.org "ninux wiki").
 
-### come partecipare
+### collaborare
 
 Mettendo un nodo della rete a casa tua! I passaggi principali da seguire: 
 
@@ -14,7 +14,7 @@ Mettendo un nodo della rete a casa tua! I passaggi principali da seguire:
 
 Se le intenzioni sono quelle di chiedere delle informazioni è possibile inviare una email all'indirizzo [info@iulii.net](mailto:info@iulii.net "email contatti iulii.net").
 
-Per approfondimenti visitare la pagina [partecipare](./partecipare/ "come partecipare").
+Per approfondimenti visitare la pagina [collaborare](./collaborare/ "collaborare").
 
 ### la rete
 
