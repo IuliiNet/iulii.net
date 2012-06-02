@@ -73,11 +73,15 @@ def header(node):
 	</head>
 	<body>
 		<header class="container_12 clearfix">
-			<hgroup class="grid_8">
-				<h1><a href="''' + '../' * node.level + '''index.''' + dst_ext + '''">''' + site_name + '''</a></h1>
-				<h2>''' + desc + '''</a></h2>
-			</hgroup>
-			<div class="grid_4 logo">
+			<div class="grid_8">
+				<hgroup>
+					<h1><a href="''' + '../' * node.level + '''index.''' + dst_ext + '''">''' + site_name + '''</a></h1>
+					<h2>''' + desc + '''</a></h2>
+				</hgroup>
+			</div>
+			<div class="grid_4">
+				<div class="logo">
+				</div>
 			</div>
 			<div class="clear"></div>
 		</header>
@@ -101,10 +105,12 @@ def footer(node):
 			<div class="clear"></div>
 		</section>
 		<footer class="container_12 clearfix">
-			<p class="push_1 grid_10">
-				&copy; ''' + str(current_time.year) + ' ' + author + '''
-				| edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''
-				</p>
+			<div class="grid_12">
+				<div class="foot">
+					<p>&copy; ''' + str(current_time.year) + ' ' + author + ''' | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
+				</div>
+			</div>
+			<div class="clear"></div>
 		</footer>
 	  	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

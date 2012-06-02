@@ -13,32 +13,39 @@ html, body {
 }
 
 header {
-	padding-top: 20px;
+	padding: 20px 0 20px 0;
+	background-color: white;
 }
 
 hgroup {
-	height: 300px;
+	height: 298px;
+	border: 1px solid black;
+	text-align: center;
 }
 
 .logo {
-	height: 300px;
+	height: 298px;
 	background: url('/img/aquila.jpg') no-repeat top right; 
-	background-size:300px 300px;
+	background-size:298px 298px;
+	border: 1px solid black;
 }
 
 h1 {
-	margin-top: 20px;
 	font-size: 100px;
-	line-height: 140px;
+	line-height: 160px;
 	color: lightblue;
 }
 
 h2 {
-	margin-top: 20px;
 	font-size: 40px;
 	line-height: 40px;
-        text-align: left;
 }
+
+h3 {
+	font-size: 32px;
+	line-height: 40px;
+}
+
 
 a {
 	color: black;
@@ -56,10 +63,25 @@ h1 a {
 	text-decoration: none;
 }
 
+section {
+	background-color: white;
+}
+
 article {
 	margin: 20px 0 0 0;
 }
 
 .path {
 	margin: 20px 0 0 0;
+}
+
+footer {
+	background-color: white;
+}
+
+.foot {
+	border-top: 1px solid black;
+	height: 39px;
+	padding-top: 20px;
+	text-align: center;
 }
