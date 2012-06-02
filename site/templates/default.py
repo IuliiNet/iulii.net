@@ -9,7 +9,7 @@ desc = "rete mesh libera e decentralizzata in friuli"
 author = "lucapost"
 src_dir = "src"
 dst_dir = ""
-prefix = "/"
+prefix = "/site/"
 home = "~"
 path_separator = "/"
 src_ext = {"markdown": "md", "textile": "tt", "plain": "txt"}
@@ -64,23 +64,23 @@ def header(node):
   		<meta name="description" content="rete libera e decentralizzata in friuli">
   		<meta name="author" content="''' + author + '''" />
   		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/hashgrid.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
-  		<script src="/js/vendor/modernizr-2.5.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/style.css" />
+  		<script src="'''+ prefix +'''/js/vendor/modernizr-2.5.3.min.js"></script>
 	</head>
 	<body>
 		<header class="container_12 clearfix">
 			<div class="grid_8">
 				<hgroup>
-					<h1><a href="''' + '../' * node.level + '''index.''' + dst_ext + '''">''' + site_name + '''</a></h1>
+					<h1><a href="''' + prefix + '''">''' + site_name + '''</a></h1>
 					<h2>''' + desc + '''</a></h2>
 				</hgroup>
 			</div>
 			<div class="grid_4">
-				<a href="''' + '../' * node.level + '''index.''' + dst_ext + '''">
+				<a href="''' + prefix + '''">
 					<div class="logo"></div>
 				</a>
 			</div>
@@ -115,10 +115,10 @@ def footer(node):
 		</footer>
 	  	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  		<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-  		<script src="/js/plugins.js"></script>
-  		<script src="/js/main.js"></script>
-  		<script src="/js/hashgrid.js"></script>
+  		<script>window.jQuery || document.write('<script src="'''+ prefix +'''/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+  		<script src="'''+ prefix +'''/js/plugins.js"></script>
+  		<script src="'''+ prefix +'''/js/main.js"></script>
+  		<script src="'''+ prefix +'''/js/hashgrid.js"></script>
   		<script>
     			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

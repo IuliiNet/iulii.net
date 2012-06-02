@@ -1,6 +1,6 @@
 ### routing mesh con batman-adv 
 
-![batmand-adv logo](/img/batman-adv.png "il logo di batman-adv") 
+![batmand-adv logo](../img/batman-adv.png "il logo di batman-adv") 
 
 [http://www.open-mesh.org/wiki/batman-adv/](http://www.open-mesh.org/wiki/batman-adv/ "homepage di batman-adv")
 

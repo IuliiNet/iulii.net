@@ -25,7 +25,7 @@ hgroup {
 
 .logo {
 	height: 298px;
-	background: url('/img/aquila.jpg') no-repeat top right; 
+	background: url('/site/img/aquila.jpg') no-repeat top right; 
 	background-size:298px 298px;
 	border: 1px solid black;
 }
