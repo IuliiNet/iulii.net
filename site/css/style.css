@@ -60,6 +60,10 @@ a:visited {
 	color: black;
 }
 
+a.current {
+	color: blue;
+}
+
 h1 a {
 	text-decoration: none;
 }
