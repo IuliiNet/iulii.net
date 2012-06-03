@@ -1,12 +1,12 @@
 ### contatti
 
-Per qualsiasi informazione è possibile contattare [info@iulii.net](mailto:info@iulii.net "contatti email").
+* [info@iulii.net](mailto:info@iulii.net "contatti email") per qualsiasi informazione;
 
-Ma la via che si **predilige** per entrare in contatto con iulii.net è iscriversi alla mailinglist di ninux.org alla pagina [wiki.ninux.org/MailingLists](http://wiki.ninux.org/MailingLists "ninux mailinglist").
+* [wiki.ninux.org/MailingLists](http://wiki.ninux.org/MailingLists "ninux mailinglist") mailinglist di ninux.org (preferito);
 
-Al momento attuale iulii.net non dispone di un riferimento geografico.
+* [irc.freenode.com#iuliinet](irc://irc.freenonde.net#iuliinet) canale irc ufficiale;
 
-E' possibile lasciare un opinione anche utilizzando il sistema di commenti di seguito:
+* commenti:
 
 <script type='text/javascript' src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
 <script type='text/javascript'>
