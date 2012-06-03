@@ -51,6 +51,11 @@ h4 {
 	color: #55a1d5;
 }
 
+h5 {
+	text-decoration: underline;
+	text-size: 12px;
+}
+
 a {
 	color: black;
 }
