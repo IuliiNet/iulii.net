@@ -56,8 +56,8 @@ In particolare i sorgenti di questo sito internet sono disponibili su github all
 
 Utilizzando strumenti gratuiti come:
 
-* sistemi operativi basati su software opensource;
-* il software di controllo di revisione git;
-* script basati sul linguaggio di programmazione python2;
+* [markdown](http://daringfireball.net/projects/markdown/syntax) linguaggio di markup utile a trasformare dei semplici files di testo in pagine html;
+* [minimalsite](https://github.com/lavish/minimalsite) script in python per la generazione del sito internet;
+* [git](http://git-scm.com) per la gestione della cronologia delle modifiche.
 
 è possibile contribuire attivamente allo sviluppo di questo sito internet e di tutta la documentazione.
