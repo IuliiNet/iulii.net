@@ -2,7 +2,7 @@ iulii.net è un progetto per lo sviluppo di una [rete comunitaria](http://it.wik
 
 Tutti possono partecipare indipendentemente, senza limiti di espandibilità e censura.
 
-Si ispira al [manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux") alla wireless community network [ninux](http://wiki.ninux.org "ninux wiki").
+Si ispira al [manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux") della wireless community network [ninux](http://wiki.ninux.org "ninux wiki").
 
 ### collaborare
 
