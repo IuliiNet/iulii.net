@@ -1,63 +1,15 @@
 ### collaborare a iulii.net
 
-Per collaborare al progetto tra le possibilità si ricorda:
+Tutti possono decidere se far parte o meno della comminity iulii.net, Non è necessario alcun atto per essere ammessi, ma i seguenti comportamenti sono incolarriati.
 
-* [diffusione ed informazione](#diff);
-* [nuovi nodi](#nodi);
-* [sviluppo della documentazione](#docs).
+#### diffusione ed informazione
 
-#### <a id="diff"></a>diffusione ed informazione
+Una community è fatta di persone. Questo è l'aspetto più importante. Il maggior numero di cittadini deve avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi. Ci sono molti modi per preseguire questo obiettivo che possono essere [approfonditi](diffusione.html).
 
-Una community è fatta di persone. Questo è l'aspetto più importante. 
-Il maggior numero di cittadini deve avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi.
+#### nuovi nodi
 
-Per ottenere questo ed aumentare la diffusione delle informazioni, si invita alla condivisione del link di questo sito anche utilizzando i seguenti canali:
+L'installazione di [nuovi nodi](nuovi_nodi.html) è probabilmente l'obiettivo che ogni membro della community intende perseguire. 
 
-* **passaparola!**
-* [twitter.com/iuliinet](https://twitter.com/#!/iuliinet "account twitter di iulii.net");
-* [facebook.com/Iuliinet](https://www.facebook.com/Iuliinet "pagina facebook di iulii.net");
-* [plus.google.com/iulii.net](https://plus.google.com/b/110840868072539432354/ "pagina google+ di iulii.net").
+#### sviluppo della documentazione
 
-#### <a id="nodi"></a> nuovi nodi
-
-L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. 
-
-##### descrizione
-
-Le frequenze liberamente utilizzabili sono tipicamente quella da 2.4GHz e 5GHz. Generalmente un nodo è composto da:
-
-* uno o più moduli radio (router compatibili con il firmware linux openwrt come [fonera](http://wiki.openwrt.org/toh/fon/fonera "fonera su openwrt"), molti prodotti [ubiquiti](http://www.ubnt.com/airmax "sito internet prodotti ubiquit"), mikrotik, ecc), 
-* antenne direzionali o omnidirezionali;
-* strutture di supporto (pali, tiranti, cavistica, ecc).
-
-##### costi
-
-L'installazione di uno nodo della rete richiedere una spesa che parte da poche decine di euro per un nodo hotspot, a circa 100-150 euro per un nodo foglia. A seconda della complessità di un nodo backbone, il suo costo può salire.
-
-I membri più scaltri possono perfino cimentarsi nell'autocostruzione di qualche antenna, ottenendo con pochi euro ed un po' di piazienza degli ottimi risultati.
-
-##### tipi di nodi
-
-Una suddivisione dei tipi di nodi che è possibile installare e configurare è la seguente:
-
-* **hotspot** è questo il tipo di nodo probabilmente più semplice da installare. Prevede la configurazione di un accesspoint aperto con il nome della rete iulii.net, dove ognuno ha la possibilità di accedere ai servizi della rete iulii.net e che il propietario del nodo decide di rendere disponibili.
-* **foglia** questo è un tipo di nodo normalmente connesso direttamente ad un solo altro nodo di tipo foglia, o più comunemente ad un nodo di backbone. Generalmente questo è anche un nodo hotspot.
-* **backbone** questo genere di nodi è fondamentale per l'infrastruttura della rete in quanto generalmente mette in comunicazione diretta, oltre che diversi nodi foglia, almeno un altro nodo backbone; molto spesso questo tipo di nodi è fondamentale per il collegamento di segmenti della rete.
-
-##### installlazione
-
-Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondire nella sezione [rete/installazione](./rete/installazione.html "installazione nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!
-
-#### <a id="docs"></a> sviluppo della documentazione
-
-Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
-
-In particolare i sorgenti di questo sito internet sono disponibili su github all'indirizzo [https://github.com/lucapost/iulii.net](https://github.com/lucapost/iulii.net "iulii.net su github"). 
-
-Utilizzando strumenti gratuiti come:
-
-* [markdown](http://daringfireball.net/projects/markdown/syntax) linguaggio di markup utile a trasformare dei semplici files di testo in pagine html;
-* [minimalsite](https://github.com/lavish/minimalsite) script in python per la generazione del sito internet;
-* [git](http://git-scm.com) per la gestione della cronologia delle modifiche.
-
-è possibile contribuire attivamente allo sviluppo di questo sito internet e di tutta la documentazione.
+Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete. Ogni membro intenzionato ad approfondire lo sviluppo della documentazione può seguire le indicazioni della pagina [documentazione](documentazione.html).
