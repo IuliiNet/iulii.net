@@ -1,6 +1,4 @@
-### collaborare a iulii.net
-
-#### <a id="docs"></a> sviluppo della documentazione
+### sviluppo della documentazione
 
 Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
 
