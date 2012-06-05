@@ -9,7 +9,7 @@ desc = "rete mesh libera e decentralizzata in friuli"
 author = "lucapost"
 src_dir = "src"
 dst_dir = ""
-prefix = "/site/"
+prefix = "/site"
 home = "home"
 path_separator = "/"
 src_ext = {"markdown": "md", "textile": "tt", "plain": "txt"}
@@ -102,8 +102,8 @@ def footer(node):
 				<nav>
 					''' + menu(node) + '''
 				</nav>
-				<a href="wiki.ninux.org" title="wiki ninux">
-					<img src="''' + prefix + '''/img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="logo"/>
+				<a href="http://wiki.ninux.org" title="wiki ninux">
+					<img src="''' + prefix + '''/img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="banner"/>
 				</a>
 				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 				<script>
@@ -139,7 +139,7 @@ def footer(node):
 		<footer class="container_12 clearfix">
 			<div class="grid_12">
 				<div class="foot">
-					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://luca.postregna.name" title="il sito di luca postregna">''' + author + '''</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
+					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://luca.postregna.name" title="il sito di luca postregna">''' + author + '''</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
 				</div>
 			</div>
 			<div class="clear"></div>
