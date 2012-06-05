@@ -10,7 +10,7 @@ author = "lucapost"
 src_dir = "src"
 dst_dir = ""
 prefix = "/site/"
-home = "~"
+home = "home"
 path_separator = "/"
 src_ext = {"markdown": "md", "textile": "tt", "plain": "txt"}
 dst_ext = "html"
@@ -95,13 +95,44 @@ def footer(node):
 
 	return '''
 			</article>
-			<div class="grid_4">
+			<div class="grid_4 column">
 				<div class="path">
-					path: %%%PATH%%%
+					<b>path</b>: %%%PATH%%%
 				</div>
 				<nav>
 					''' + menu(node) + '''
 				</nav>
+				<a href="wiki.ninux.org" title="wiki ninux">
+					<img src="''' + prefix + '''/img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="logo"/>
+				</a>
+				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+					new TWTR.Widget({
+					  version: 2,
+					  type: 'profile',
+					  rpp: 5,
+					  interval: 30000,
+					  width: 'auto',
+					  height: 300,
+					  theme: {
+					    shell: {
+					      background: '#55a2d5',
+					      color: '#ffffff'
+					    },
+					    tweets: {
+					      background: '#ffffff',
+					      color: '#000000',
+					      links: '#55a2d5'
+					    }
+					  },
+					  features: {
+					    scrollbar: false,
+					    loop: false,
+					    live: false,
+					    behavior: 'all'
+					  }
+					}).render().setUser('iuliinet').start();
+				</script>
 			</div>
 			<div class="clear"></div>
 		</section>
