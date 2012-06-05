@@ -64,6 +64,7 @@ def header(node):
   		<meta name="description" content="rete libera e decentralizzata in friuli">
   		<meta name="author" content="''' + author + '''" />
   		<meta name="viewport" content="width=device-width">
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/text.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/960.css" />
