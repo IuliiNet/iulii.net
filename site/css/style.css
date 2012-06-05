@@ -31,6 +31,10 @@ hgroup {
 	border: 1px solid #55a1d5;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #55a1d5;
+}
+
 h1 {
 	font-size: 100px;
 	line-height: 160px;
@@ -44,16 +48,6 @@ h2 {
 h3 {
 	font-size: 32px;
 	line-height: 40px;
-	color: #55a1d5;
-}
-
-h4 {
-	color: #55a1d5;
-}
-
-h5 {
-	text-decoration: underline;
-	text-size: 12px;
 }
 
 a {
@@ -71,6 +65,7 @@ a.current {
 
 h1 a {
 	text-decoration: none;
+	color: black;
 }
 
 h1 a:visited {

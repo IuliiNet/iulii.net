@@ -1,0 +1,3 @@
+### configurazione di openwrt
+
+...

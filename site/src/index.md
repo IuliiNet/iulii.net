@@ -1,3 +1,5 @@
+## work in progress!
+
 iulii.net è un progetto per lo sviluppo di una [rete comunitaria](http://it.wikipedia.org/wiki/Wireless_community_network "wireless community network su wikipedia") formata da nodi (comunemente dispositivi router) messi in comunicazione tra loro. 
 
 Tutti possono partecipare indipendentemente, senza limiti di espandibilità e censura.
