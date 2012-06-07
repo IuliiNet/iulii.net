@@ -9,7 +9,7 @@ desc = "rete mesh libera e decentralizzata in friuli"
 author = "lucapost"
 src_dir = "src"
 dst_dir = ""
-prefix = "/site/"
+prefix = "site/"
 home = "home"
 path_separator = "/"
 src_ext = {"markdown": "md", "textile": "tt", "plain": "txt"}
@@ -65,12 +65,12 @@ def header(node):
   		<meta name="author" content="''' + author + '''" />
   		<meta name="viewport" content="width=device-width">
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/hashgrid.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/style.css" />
-  		<script src="'''+ prefix +'''/js/vendor/modernizr-2.5.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="/'''+ prefix +'''css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/'''+ prefix +'''css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/'''+ prefix +'''css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/'''+ prefix +'''css/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/'''+ prefix +'''css/style.css" />
+  		<script src="/'''+ prefix +'''js/vendor/modernizr-2.5.3.min.js"></script>
 	</head>
 	<body>
 		<header class="container_12 clearfix">
