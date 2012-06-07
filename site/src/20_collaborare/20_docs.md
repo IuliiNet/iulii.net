@@ -18,11 +18,6 @@ Le directory del repository del progetto sono così organizzate:
 	* **src** sorgenti [markdown](http://daringfireball.net/projects/markdown/syntax "homepage markdown");
 	* **css** fogli di stile;
 	* **img** immagini;
-	* [**minimalsite.py**](https://github.com/lavish/minimalsite "homepage minimalsite") site genetation script ;
-
-Il linguaggio di markup markdown semplifica la scrittura di documenti in formato testo, permettendo di evidenziare titoli, sottotitoli, links, elenchi, ecc.
-
-Lo script python minimalsite.py permette di generare, a partire da una struttura a directories e files markodwn, un sito internet statico.
 
 #### editing 
 
@@ -49,7 +44,11 @@ Gli utenti che hanno ottenuto l'autorizzazione alla modifica del repository nell
 
 #### editing del sito internet
 
-Come indicato sopra, nella directory *site* è presente questo sito internet. In particolare nella directory *site/src* sono presenti i sorgenti markdown. 
+Come indicato sopra, nella directory *site* è presente questo sito internet. In particolare nella directory *site/src* sono presenti i sorgenti [markdown](http://daringfireball.net/projects/markdown/ "makdown syntax"). 
+
+Il linguaggio di markup markdown semplifica la scrittura di documenti in formato testo, permettendo di evidenziare titoli, sottotitoli, links, elenchi, ecc.
+
+Lo script python [minimalsite.py](https://github.com/lavish/minimalsite "minimalsite by lavish") permette di generare, a partire da una struttura a directories e files markodwn, un sito internet statico.
 
 Una volta apportate le opportune modifiche a questi sorgenti, per generare le pagine html aggiornate è sufficiente eseguire il comando *make* all'interno della directory *site*. 
 
