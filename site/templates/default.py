@@ -65,12 +65,12 @@ def header(node):
   		<meta name="author" content="''' + author + '''" />
   		<meta name="viewport" content="width=device-width">
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/hashgrid.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''/css/style.css" />
-  		<script src="'''+ prefix +'''/js/vendor/modernizr-2.5.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/style.css" />
+  		<script src="'''+ prefix +'''js/vendor/modernizr-2.5.3.min.js"></script>
 	</head>
 	<body>
 		<header class="container_12 clearfix">
@@ -104,7 +104,7 @@ def footer(node):
 					''' + menu(node) + '''
 				</nav>
 				<a href="http://wiki.ninux.org" title="wiki ninux">
-					<img src="''' + prefix + '''/img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="banner"/>
+					<img src="''' + prefix + '''img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="banner"/>
 				</a>
 				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 				<script>
@@ -147,10 +147,10 @@ def footer(node):
 		</footer>
 	  	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  		<script>window.jQuery || document.write('<script src="'''+ prefix +'''/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
-  		<script src="'''+ prefix +'''/js/plugins.js"></script>
-  		<script src="'''+ prefix +'''/js/main.js"></script>
-  		<script src="'''+ prefix +'''/js/hashgrid.js"></script>
+  		<script>window.jQuery || document.write('<script src="'''+ prefix +'''js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+  		<script src="'''+ prefix +'''js/plugins.js"></script>
+  		<script src="'''+ prefix +'''js/main.js"></script>
+  		<script src="'''+ prefix +'''js/hashgrid.js"></script>
   		<script>
     			var _gaq=[['_setAccount','UA-6164762-12'],['_trackPageview']];
     			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
