@@ -4,7 +4,7 @@ Lo sviluppo di una buona documentazione, non solo questo sito internet, è un pa
 
 In particolare i sorgenti del progetto iulii.net, ed in particolare del sito internet, sono disponibili via repositories git agli indirizzi:
 
-* [https://github.com/lucapost/iulii.net](https://github.com/lucapost/iulii.net "iulii.net su github");
+* [https://github.com/iuliinet/iulii.net](https://github.com/iuliinet/iulii.net "iulii.net su github");
 * [git://git.iulii.net/iulii.net.git](git://git.iulii.net/iulii.net.git ""iulii.net su redo.iulii.net"").
 
 La scelta di git per mantenere i sorgenti del progetto è dettata dal fatto che è un ottimo servizio, permette inoltre sia l'editing online (su github) che offline, oltre ad un backup decentralizzato.
@@ -13,8 +13,8 @@ La scelta di git per mantenere i sorgenti del progetto è dettata dal fatto che 
 
 Le directory del repository del progetto sono così organizzate:
 
-* [**configs**](https://github.com/lucapost/iulii.net/tree/master/configs "iulii.net configs backup") backup delle configurazioni dei nodi;
-* [**site**](https://github.com/lucapost/iulii.net/tree/master/site "iulii.net sources site") questo sito internet;
+* [**configs**](https://github.com/iuliinet/iulii.net/tree/master/configs "iulii.net configs backup") backup delle configurazioni dei nodi;
+* [**site**](https://github.com/iuliinet/iulii.net/tree/master/site "iulii.net sources site") questo sito internet;
 	* **src** sorgenti [markdown](http://daringfireball.net/projects/markdown/syntax "homepage markdown");
 	* **css** fogli di stile;
 	* **img** immagini;
@@ -32,7 +32,7 @@ Per contribuire allo sviluppo della documentazione e dei firmware è consigliabi
 
 Per chi ha dimestichezza con git su ambiente unix questi sono i passi da seguire:
 
-* git clone git://github.com/lucapost/iulii.net.git;
+* git clone git://github.com/iuliinet/iulii.net.git;
 * cd iulii.net;
 * (editing);
 * git add . ; git commit -a;
