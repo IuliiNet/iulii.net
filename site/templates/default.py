@@ -140,7 +140,7 @@ def footer(node):
 		<footer class="container_12 clearfix">
 			<div class="grid_12">
 				<div class="foot">
-					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://luca.postregna.name" title="il sito di luca postregna">''' + author + '''</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
+					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
 				</div>
 			</div>
 			<div class="clear"></div>
