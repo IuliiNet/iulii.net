@@ -104,7 +104,7 @@ def footer(node):
 					''' + menu(node) + '''
 				</nav>
 				<a href="http://wiki.ninux.org" title="wiki ninux">
-					<img src="''' + prefix + '''/img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="banner"/>
+					<img src="/''' + prefix + '''img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="banner"/>
 				</a>
 				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 				<script>
