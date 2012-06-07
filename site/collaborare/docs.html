@@ -37,14 +37,55 @@
 			<article class="grid_8">
 <h3>sviluppo della documentazione</h3>
 <p>Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.</p>
-<p>In particolare i sorgenti di questo sito internet sono disponibili su github all'indirizzo <a href="https://github.com/lucapost/iulii.net" title="iulii.net su github">https://github.com/lucapost/iulii.net</a>. </p>
-<p>Utilizzando strumenti gratuiti come:</p>
+<p>In particolare i sorgenti del progetto iulii.net, ed in particolare del sito internet, sono disponibili via repositories git agli indirizzi:</p>
 <ul>
-<li><a href="http://daringfireball.net/projects/markdown/syntax">markdown</a> linguaggio di markup utile a trasformare dei semplici files di testo in pagine html;</li>
-<li><a href="https://github.com/lavish/minimalsite">minimalsite</a> script in python per la generazione del sito internet;</li>
-<li><a href="http://git-scm.com">git</a> per la gestione della cronologia delle modifiche.</li>
+<li><a href="https://github.com/lucapost/iulii.net" title="iulii.net su github">https://github.com/lucapost/iulii.net</a>;</li>
+<li><a href="git://git.iulii.net/iulii.net.git" title="&quot;iulii.net su redo.iulii.net&quot;">git://git.iulii.net/iulii.net.git</a>.</li>
 </ul>
-<p>è possibile contribuire attivamente allo sviluppo di questo sito internet e di tutta la documentazione.</p>
+<p>La scelta di git per mantenere i sorgenti del progetto è dettata dal fatto che è un ottimo servizio, permette inoltre sia l'editing online (su github) che offline, oltre ad un backup decentralizzato.</p>
+<h4>organizzazione del repository</h4>
+<p>Le directory del repository del progetto sono così organizzate:</p>
+<ul>
+<li><strong>configs</strong> backup delle configurazioni dei nodi;<ul>
+<li><strong>fonera 2202</strong></li>
+<li><strong>tplink wr1043nd</strong></li>
+<li><strong>server gentoo</strong></li>
+</ul>
+</li>
+<li><strong>site</strong> questo sito internet;<ul>
+<li><strong>src</strong> sorgenti <a href="http://daringfireball.net/projects/markdown/syntax" title="homepage markdown">markdown</a>;</li>
+<li><strong>css</strong> fogli di stile;</li>
+<li><strong>img</strong> immagini;</li>
+<li><a href="https://github.com/lavish/minimalsite" title="homepage minimalsite"><strong>minimalsite.py</strong></a> site genetation script ;</li>
+</ul>
+</li>
+</ul>
+<p>Il linguaggio di markup markdown semplifica la scrittura di documenti in formato testo, permettendo di evidenziare titoli, sottotitoli, links, elenchi, ecc.</p>
+<p>Lo script python minimalsite.py permette di generare, a partire da una struttura a directories e files markodwn, un sito internet statico.</p>
+<h4>editing</h4>
+<p>Per contribuire allo sviluppo della documentazione e dei firmware è consigliabile:</p>
+<ul>
+<li>installazione del client <a href="http://git-scm.com" title="git client">git</a>.</li>
+<li>iscrizione al sito <a href="http://github.com" title="github">http://github.com</a>;</li>
+<li>comunicazione all'indirizzo email <a href="mailto:info.iulii.net" title="info">info@iulii.net</a> dell'intenzione, avendo cura di specificare il la chiave pubblica ssh ed il nickname registrato su github;</li>
+<li>attendere conferma da un amministratore;</li>
+</ul>
+<h5>offline</h5>
+<p>Per chi ha dimestichezza con git su ambiente unix questi sono i passi da seguire:</p>
+<ul>
+<li>git clone git://github.com/lucapost/iulii.net.git;</li>
+<li>cd iulii.net;</li>
+<li>(editing);</li>
+<li>git add . ; git commit -a;</li>
+<li>git push</li>
+</ul>
+<h5>online</h5>
+<p>Gli utenti che hanno ottenuto l'autorizzazione alla modifica del repository nella versione online, dopo essersi loggati su github con le loro credenziali, possono semplicemente procedere all'editing direttamente dall'interfaccia di github.</p>
+<h4>editing del sito internet</h4>
+<p>Come indicato sopra, nella directory <em>site</em> è presente questo sito internet. In particolare nella directory <em>site/src</em> sono presenti i sorgenti markdown. </p>
+<p>Una volta apportate le opportune modifiche a questi sorgenti, per generare le pagine html aggiornate è sufficiente eseguire il comando <em>make</em> all'interno della directory <em>site</em>. </p>
+<p>Per poter visualizzare le modifiche effettuate in formato html è necessario configurare localmente un server http che come cartella radice punti a <em>/path/to/iulii.net</em>.</p>
+<p>Successivamente per caricare le modifiche online è possibile aggiornare il repository e caricare il tutto online (git commit -am "update" ; git push).</p>
 			</article>
 			<div class="grid_4 column">
 				<div class="path">
@@ -114,7 +155,7 @@
 		<footer class="container_12 clearfix">
 			<div class="grid_12">
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://luca.postregna.name" title="il sito di luca postregna">lucapost</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/05/2012 10:09:05 PM</p>
+					<p>&copy; 2012 <a href="http://luca.postregna.name" title="il sito di luca postregna">lucapost</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/07/2012 02:13:02 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
