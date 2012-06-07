@@ -1,6 +1,6 @@
 ## work in progress!
 
-iulii.net è un progetto per lo sviluppo di una [rete comunitaria](http://it.wikipedia.org/wiki/Wireless_community_network "wireless community network su wikipedia") formata da nodi (comunemente dispositivi router) messi in comunicazione tra loro. 
+iulii.net è un progetto per lo sviluppo di una [rete comunitaria](http://it.wikipedia.org/wiki/Wireless_community_network "wireless community network su wikipedia") formata da nodi messi in comunicazione tra loro. 
 
 Tutti possono partecipare indipendentemente, senza limiti di espandibilità e censura.
 
@@ -23,6 +23,8 @@ Per approfondimenti visitare la pagina [collaborare](./collaborare/ "collaborare
 I nodi della rete contribuiscono in modo paritario al suo sviluppo, generalmente sono collegati tra loro via cavo, wireless o tunnel vpn.
 
 Ciascun nodo è in comunicazione diretta con i suoi vicini, e quindi con tutti gli altri nodi della rete, e può quindi accedere ai servizi che tutti gli altri nodi rendono disponibili. 
+
+In linea teorica la distanza tra due nodi *vicini* può arrivare anche a diverse decine di km, il limite è dettato solamente dai confini tecnolocigi, di spesa e dalla curvatura terrestre.
 
 Il propietario di ciascun nodo è il responsabile dei servizi che mette a disposizione di chi desidera. Abbattere il digital divide è solo uno degli obiettivi di questa rete. I servizi che usualmente i nodi possono mettere disponibili sono:
 
