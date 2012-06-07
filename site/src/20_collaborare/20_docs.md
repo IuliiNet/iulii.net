@@ -13,11 +13,8 @@ La scelta di git per mantenere i sorgenti del progetto è dettata dal fatto che 
 
 Le directory del repository del progetto sono così organizzate:
 
-* **configs** backup delle configurazioni dei nodi;
-	* **fonera 2202**
-	* **tplink wr1043nd**
-	* **server gentoo**
-* **site** questo sito internet;
+* [**configs**](https://github.com/lucapost/iulii.net/tree/master/configs "iulii.net configs backup") backup delle configurazioni dei nodi;
+* [**site**](https://github.com/lucapost/iulii.net/tree/master/site "iulii.net sources site") questo sito internet;
 	* **src** sorgenti [markdown](http://daringfireball.net/projects/markdown/syntax "homepage markdown");
 	* **css** fogli di stile;
 	* **img** immagini;
