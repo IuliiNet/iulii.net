@@ -72,7 +72,7 @@ def header(node):
   		<script src="'''+ prefix +'''js/vendor/modernizr-2.5.3.min.js"></script>
 		<link rel="icon" type="image/png" href="'''+ prefix +'''img/iuliinetlogo.png">
 	</head>
-	<body>
+	<body id="top">
 		<div class="social">	
 			<div class="tt-share">
 				<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://iulii.net" data-via="iuliinet" data-hashtags="iuliinet">Tweet</a>
@@ -115,8 +115,9 @@ def footer(node):
 				<a href="http://wiki.ninux.org" title="wiki ninux">
 					<img src="''' + prefix + '''img/ninuxlogo.png" alt="logo ninux" title="logo ninux" class="banner"/>
 				</a>
-				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-				<script>
+				<div class="tt-widget">
+					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
 					new TWTR.Widget({
 					  version: 2,
 					  type: 'profile',
@@ -142,12 +143,14 @@ def footer(node):
 					    behavior: 'all'
 					  }
 					}).render().setUser('iuliinet').start();
-				</script>
+					</script>
+				</div>
 			</div>
 			<div class="clear"></div>
 		</section>
 		<footer class="container_12 clearfix">
 			<div class="grid_12">
+				<a href="#top" title="back to top" class="backtotop">back to top<a>
 				<div class="foot">
 					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
 				</div>
