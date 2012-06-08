@@ -75,7 +75,7 @@ def header(node):
 	<body id="top">
 		<div class="social">	
 			<div class="tt-share">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://iulii.net" data-via="iuliinet" data-hashtags="iuliinet ninux">Tweet</a>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
 			</div>
 			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
 			</div><br/>
