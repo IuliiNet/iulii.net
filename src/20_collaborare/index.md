@@ -6,5 +6,5 @@ Il maggior numero di cittadini deve avere la possibilità di conoscere l'esisten
 
 Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni [social network](../contatti.html), si può provvedere a:
 
-* l'installazione di [**nuovi nodi**](nuovi_nodi.html),questo è probabilmente l'obiettivo che ogni membro della community intende perseguire;
+* l'installazione di un nuovo [**nodo**](nuovo.html), questo è probabilmente l'obiettivo che ogni membro della community intende perseguire;
 * lo sviluppo della [**documentazione**](docs.html), non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
