@@ -25,7 +25,9 @@ Ciascun nodo è in comunicazione diretta con i suoi vicini, e quindi con tutti g
 
 In linea teorica la distanza tra due nodi *vicini* può arrivare anche a diverse decine di km, il limite è dettato solamente dai confini tecnolocigi, di spesa e dalla curvatura terrestre.
 
-Il propietario di ciascun nodo è il responsabile dei servizi che mette a disposizione di chi desidera. Abbattere il digital divide è solo uno degli obiettivi di questa rete. I servizi che usualmente i nodi possono mettere disponibili sono:
+Il propietario di ciascun nodo è il responsabile dei servizi che mette a disposizione di chi desidera. Abbattere il digital divide è solo uno degli obiettivi di questa rete. 
+
+I **[servizi](rete/servizi.html "servizi del progetto iulii.net")** che usualmente i nodi possono mettere disponibili sono:
 
 * gateway internet;
 * server voip;

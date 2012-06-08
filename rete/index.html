@@ -46,11 +46,24 @@
 			<article class="grid_8">
 <h3>La rete</h3>
 <p>Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle <a href="http://it.wikipedia.org/wiki/Wireless_mesh_network" title="wireless mesh network su wikipedia">reti mesh</a> basate su <a href="http://www.open-mesh.org/wiki/batman-adv/" title="batman-adv homepage">batmnad-adv</a> in generale.</p>
-<p>Sono presenti approfondimenti su:</p>
+<p>Per accedere ai <a href="servizi.html" title="servizi del progetto iulii.net">servizi</a> è necessario collegarsi ad un nodo della rete. E' possibile ottenere questo utilizando un collegamento ethernet o molto più comunemente accedendo alla rete wireless con essid <strong>www.ninux.org-www.iulii.net-ap</strong>. Normalmente questa rete in modalità ap è accessibile da chiunque sensa bisogno di alcuna autenticazione. E' altresì possibile collegarsi alla rete utilizzando un <a href="http://wiki.ninux.org/TincVPN" title="collegarsi a ninux con una vpn">tunnel vpn</a>.</p>
+<h4>batmand-adv</h4>
+<p>La rete mesh del progetto iulii.net è basata sul protocollo su layer2 <a href="http://www.open-mesh.org/wiki/batman-adv/" title="homepage del progetto batmnad-adv">batman-adv</a>. E' disponibile un'<a href="batman-adv.html" title="introduzione a batman-adv">introduzione a batman-adv</a>. </p>
+<h4>wifi</h4>
+<p>Generalmente un nodo della progetto iulii.net mette a disposizione due essid:</p>
 <ul>
-<li>configurazione dei <a href="nodi/" title="configurazione dei nodi">nodi</a>;</li>
-<li>accenni al protocollo di routing <a href="batman-adv.html" title="introduzione a batman-adv">batman-adv</a></li>
+<li><strong>www.ninux.org-www.iulii.net-mesh</strong>: in modalità adhoc, è l'interfaccia gestita da batman-adv e permette il routing tra i nodi di tutta la rete;</li>
+<li><strong>www.ninux.org-www.iulii.net-ap</strong>: in modalità ap, è adatto per accettare connessione dai client.</li>
 </ul>
+<h4>routing</h4>
+<p>Ai nodi della rete può essere assegnata la sottorete ipv6 2001:470:7023:1::/64.</p>
+<p>Su alcuni nodi della rete è presente un router advertisement daemon (come ad esempio <a href="http://www.litech.org/radvd/" title="homepage di radvd">radvd</a> o <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" title="homepage di dnsmasq">dnsmasq</a>) per gestire in maniera automatica l'assegnazione degli indirizzi e del routing ipv6 nella sottorete dei client, come ad esempio 2001:470:7023:2::/64.</p>
+<p>I client devono quindi supportare il protocollo ipv6, ed allo stesso tempo poter inviare le richieste di router advertisement. Sui client unix sono disponibilie ad esempio <a href="http://www.remlab.net/ndisc6/" title="Recursive DNS Servers discovery Daemon for IPv6">ndisc6</a> o <a href="http://www.gnome.org/projects/NetworkManager/" title="homepage del progetto networkmanager">networkmanager</a>, tools analoghi sono disponibili su sistemi operativi microsoft windows vista+.</p>
+<p>Non è escluso che su alcuni nodi sia presente un server dhcp per la gestione degli indirizzi ipv4.</p>
+<h4>configurazione dei nodi</h4>
+<p>Sono presenti approfondimenti sulla <a href="nodi/" title="configurazione dei nodi">configurazione dei nodi</a>.</p>
+<h4>servizi</h4>
+<p>E' disponibile un elenco (incompleto) dei <a href="servizi.html" title="servizi">servizi accessibili</a> dalla rete del progetto.</p>
 			</article>
 			<div class="grid_4 column">
 				<div class="path">
@@ -123,7 +136,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top<a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/08/2012 12:14:17 PM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/08/2012 02:32:14 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
