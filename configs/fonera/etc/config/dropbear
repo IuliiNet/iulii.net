@@ -1,3 +1,0 @@
-config dropbear
-        option PasswordAuth 'off'
-        option RootPasswordAuth 'off'
