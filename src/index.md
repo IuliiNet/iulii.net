@@ -8,11 +8,10 @@ Si ispira al [manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux") dell
 
 ### collaborare
 
-Mettendo un nodo della rete a casa tua! I passaggi principali da seguire: 
+Se si è **interessati a partecipare** allo sviluppo del progetto, si consiglia: 
 
-* aggiunta del proprio nodo alla mappa [map.ninux.org](http://map.ninux.org/ "map server ninux");
-* iscrizione alla mailinglist [wiki.ninux.org/MailingLists](http://wiki.ninux.org/MailingLists "ninux mailinglist");
-* installando gli apparati necessari da solo o [facendoti aiutare](./contatti.html "contatti").
+* **l'aggiunta della posizione del proprio nodo su [map.ninux.org](http://map.ninux.org/ "map server ninux")**, se non altro per sperare che qualcuno vi contatti;
+* l'iscrizione alla mailinglist [wiki.ninux.org/MailingLists](http://wiki.ninux.org/MailingLists "ninux mailinglist");
 
 Se le intenzioni sono quelle di chiedere delle informazioni è possibile inviare una email all'indirizzo [info@iulii.net](mailto:info@iulii.net "email contatti iulii.net").
 
