@@ -4,7 +4,7 @@ iulii.net è un progetto per lo sviluppo di una [rete comunitaria](http://it.wik
 
 Tutti possono partecipare indipendentemente, senza limiti di espandibilità e censura.
 
-Il progetto prende anche ispirazione alle wireless community network [ninux](http://wiki.ninux.org "ninux wiki") ed [eigennet](http://wiki.eigenlab.org/index.php/EigenNet "eigennet wiki"), ed in particolare a:
+Il progetto prende anche ispirazione alle wireless community network [ninux](http://wiki.ninux.org "ninux wiki") ed [eigennet](http://wiki.eigenlab.org/index.php/EigenNet "eigennet wiki"), ed in particolare da:
 
 * [manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux") del ninux;
 * [la nuova frontiera delle reti](https://eigenlab.org/articoli-e-comunicati/approfondimenti/102-eigennet-la-nuova-frontiera-delle-reti "motivazioni che hanno spinto alla creazione di eigennet") di eigennet.
