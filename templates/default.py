@@ -79,7 +79,7 @@ def header(node):
 			</div>
 			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
 			</div><br/>
-			<div class="fb-like" data-href="http://iulii.net" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
+			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
 			</div>
 		</div>
 		<header class="container_12 clearfix">
