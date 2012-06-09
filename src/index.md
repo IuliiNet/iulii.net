@@ -9,6 +9,21 @@ Il progetto prende anche ispirazione alle wireless community network [ninux](htt
 * [manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux") del ninux;
 * [la nuova frontiera delle reti](https://eigenlab.org/articoli-e-comunicati/approfondimenti/102-eigennet-la-nuova-frontiera-delle-reti "motivazioni che hanno spinto alla creazione di eigennet") di eigennet.
 
+### perchè una rete libera?
+
+iulii.net è un progetto alternativo di rete aperta, decentralizzata e di proprietà del cittadino. 
+
+E' un progetto partecipativo, ha come obiettivi la diffusione della conoscenza del contributo che ognuno può dare alla community. 
+
+#### i principi ispiratori (tratti da ninux.org)
+
+* obiettivo e' quello di creare una rete allo scopo di sperimentare nuove soluzioni e tecnologie, diffondere conoscenza, produrre consapevolezza, divertirsi;
+* si fa parte di un processo di interconnessione globale, cosi' come espresso nel [Wireless Commons Manifesto](http://wiki.ninux.org/WirelessCommonsManifesto "Wireless Common Manifesto");
+* si ritiene che le frequenze libere debbano essere gratuite ed aperte a tutti in ogni parte del mondo;
+* si combatte il digital divide;
+* si reclama il nostro diritto ad interconnettersi e sperimentare in modo totalmente libero da strumentalizzazioni politiche e commerciali.
+* si prende internet come modello, si ritiene che la struttura decentralizzata sia la piu' adatta a realizzare quanto espresso nei punti precedenti.
+
 ### collaborare
 
 Se si è **interessati a partecipare** allo sviluppo del progetto, si consiglia: 
@@ -28,31 +43,9 @@ Ciascun nodo è in comunicazione diretta con i suoi vicini, e quindi con tutti g
 
 In linea teorica la distanza tra due nodi *vicini* può arrivare anche a diverse decine di km, il limite è dettato solamente dai confini tecnolocigi, di spesa e dalla curvatura terrestre.
 
-Il propietario di ciascun nodo è il responsabile dei servizi che mette a disposizione di chi desidera. Abbattere il digital divide è solo uno degli obiettivi di questa rete. 
-
-I **[servizi](rete/servizi.html "servizi del progetto iulii.net")** che usualmente i nodi possono mettere disponibili sono:
-
-* gateway internet;
-* server voip;
-* p2p;
-* ...
+Il propietario di ciascun nodo è il responsabile dei **[servizi](rete/servizi.html "servizi del progetto iulii.net")** servizi che mette a disposizione di chi desidera. Abbattere il digital divide è solo uno degli obiettivi di questa rete. 
 
 Per approfondimenti visitare la pagina [rete](./rete "apparati").
-
-### perchè una rete libera?
-
-iulii.net è un progetto alternativo di rete aperta, decentralizzata e di proprietà del cittadino. 
-
-E' un progetto partecipativo, ha come obiettivi la diffusione della conoscenza del contributo che ognuno può dare alla community. 
-
-#### i principi ispiratori (tratti da ninux.org)
-
-* obiettivo e' quello di creare una rete allo scopo di sperimentare nuove soluzioni e tecnologie, diffondere conoscenza, produrre consapevolezza, divertirsi;
-* si fa parte di un processo di interconnessione globale, cosi' come espresso nel [Wireless Commons Manifesto](http://wiki.ninux.org/WirelessCommonsManifesto "Wireless Common Manifesto");
-* si ritiene che le frequenze libere debbano essere gratuite ed aperte a tutti in ogni parte del mondo;
-* si combatte il digital divide;
-* si reclama il nostro diritto ad interconnettersi e sperimentare in modo totalmente libero da strumentalizzazioni politiche e commerciali.
-* si prende internet come modello, si ritiene che la struttura decentralizzata sia la piu' adatta a realizzare quanto espresso nei punti precedenti.
 
 ### legalmente?
 
