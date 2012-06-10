@@ -1,8 +1,1 @@
-### nodi
-
-* software
-	* openwrt
-	* gentoo
-* hardware
-	+ radio
-	* antenne
+### esempi di nodi della rete

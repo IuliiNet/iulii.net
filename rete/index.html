@@ -19,15 +19,6 @@
 		<link rel="icon" type="image/png" href="/img/iuliinetlogo.png">
 	</head>
 	<body id="top">
-		<div class="social">	
-			<div class="tt-share">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
-			</div>
-			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
-			</div><br/>
-			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
-			</div>
-		</div>
 		<header class="container_12 clearfix">
 			<div class="grid_8">
 				<hgroup>
@@ -45,23 +36,30 @@
 		<section class="container_12 clearfix">
 			<article class="grid_8">
 <h3>La rete</h3>
-<p>Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle <a href="http://it.wikipedia.org/wiki/Wireless_mesh_network" title="wireless mesh network su wikipedia">reti mesh</a> basate su <a href="http://www.open-mesh.org/wiki/batman-adv/" title="batman-adv homepage">batmnad-adv</a> in generale.</p>
-<p>Per accedere ai <a href="servizi.html" title="servizi del progetto iulii.net">servizi</a> è necessario collegarsi ad un nodo della rete. E' possibile ottenere questo utilizando un collegamento ethernet o molto più comunemente accedendo alla rete wireless con essid <strong>www.ninux.org-www.iulii.net-ap</strong>. Normalmente questa rete in modalità ap è accessibile da chiunque sensa bisogno di alcuna autenticazione. E' altresì possibile collegarsi alla rete utilizzando un <a href="http://wiki.ninux.org/TincVPN" title="collegarsi a ninux con una vpn">tunnel vpn</a>.</p>
-<h4>batmand-adv</h4>
-<p>La rete mesh del progetto iulii.net è basata sul protocollo su layer2 <a href="http://www.open-mesh.org/wiki/batman-adv/" title="homepage del progetto batmnad-adv">batman-adv</a>. E' disponibile un'<a href="batman-adv.html" title="introduzione a batman-adv">introduzione a batman-adv</a>. </p>
-<h4>wifi</h4>
-<p>Generalmente un nodo della progetto iulii.net mette a disposizione due essid:</p>
+<p>Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle <a href="http://it.wikipedia.org/wiki/Wireless_mesh_network" title="wireless mesh network su wikipedia">reti mesh</a> basate su <a href="http://www.open-mesh.org/wiki/batman-adv/" title="batman-adv homepage">batman-adv</a> in generale. </p>
+<p>Sono presenti inoltre esempi di condifurazioni di nodi con distribuzione <a href="http://openwrt.org" title="openwrt">openwrt</a>.</p>
+<p>Sono disponibili degli approfondimenti su  <a href="batman-adv.html" title="approfondimento a batman-adv">batman-adv</a>.</p>
+<h4>introduzione ai nodi</h4>
+<p>I nodi delle rete sono dei dispositivi (comumemente router wireless radio con installata la distribuzione openwrt) che comunicano tra loro e <em>sorreggono la comunicazioni all'interno della rete</em>.</p>
+<p>Il progetto iulii.net basa il collegamento dei nodi sul layer2 sul protocollo batman-adv. Sul layer3 si utilizza il protocollo ipv6, scelto per la semplicità di assegnazione degli indirizzi e la facilitazione nell'evitare conflitti ip. </p>
+<p>Normalmente gli indirizzi ipv6 dei nodi sono assegnati staticamente in base al macaddress. Ai <strong>nodi della rete può essere assegnata la sottorete ipv6 2001:470:7023:1::/64</strong>.</p>
+<p>I nodi della rete possono comunicare tra loro su una rete wireless configurata in adhoc mode sull'essid <strong>www.ninux.org-www.iulii.net-mesh</strong>, oltre che via ethernet e tunnel vpn.</p>
+<p>Su alcuni nodi della rete è presente un router advertisement (ra) daemon (come ad esempio <a href="http://www.litech.org/radvd/" title="homepage di radvd">radvd</a> o <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" title="homepage di dnsmasq">dnsmasq</a>) per gestire in maniera automatica l'assegnazione degli indirizzi e del routing ipv6 nella sottorete dei clients.</p>
+<p>Sono disponibili degli esempi sulla <a href="nodi/" title="configurazione dei nodi">configurazione dei nodi</a>.</p>
+<h4>introduzione ai clients</h4>
+<p>Per i clients, cioè i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), gli accessi possibili per entrare nella rete del progetto iulii.net sono:</p>
 <ul>
-<li><strong>www.ninux.org-www.iulii.net-mesh</strong>: in modalità adhoc, è l'interfaccia gestita da batman-adv e permette il routing tra i nodi di tutta la rete;</li>
-<li><strong>www.ninux.org-www.iulii.net-ap</strong>: in modalità ap, è adatto per accettare connessione dai client.</li>
+<li><strong>wireless</strong>, essid: <strong>www.ninux.org-www.iulii.net-ap</strong> in modalità ap;</li>
+<li><strong>ethernet</strong>, collegamento via cavo;</li>
+<li><strong>vpn</strong>, connessione via <a href="http://wiki.ninux.org/TincVPN" title="collegarsi a ninux con una vpn">tunnel vpn</a>, questo metodo è anche utilizzato per collegare tra loro delle isole della rete.</li>
 </ul>
-<h4>routing</h4>
-<p>Ai nodi della rete può essere assegnata la sottorete ipv6 2001:470:7023:1::/64.</p>
-<p>Su alcuni nodi della rete è presente un router advertisement daemon (come ad esempio <a href="http://www.litech.org/radvd/" title="homepage di radvd">radvd</a> o <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" title="homepage di dnsmasq">dnsmasq</a>) per gestire in maniera automatica l'assegnazione degli indirizzi e del routing ipv6 nella sottorete dei client, come ad esempio 2001:470:7023:2::/64.</p>
-<p>I client devono quindi supportare il protocollo ipv6, ed allo stesso tempo poter inviare le richieste di router advertisement. Sui client unix sono disponibilie ad esempio <a href="http://www.remlab.net/ndisc6/" title="Recursive DNS Servers discovery Daemon for IPv6">ndisc6</a> o <a href="http://www.gnome.org/projects/NetworkManager/" title="homepage del progetto networkmanager">networkmanager</a>, tools analoghi sono disponibili su sistemi operativi microsoft windows vista+.</p>
+<p>Sui clients deve essere attivo il supporto ipv6. Per la gestione automatica degli indirizzi ipv6 si consiglia:</p>
+<ul>
+<li><a href="http://www.remlab.net/ndisc6/" title="ndisc">ndisc</a> per SO unix like;</li>
+<li>Microsoft Windows Vista+;</li>
+</ul>
+<p>Ad esempio, <strong>la sottorete ipv6 2001:470:7023:2::/64 può essere assegnata ai clients</strong>.</p>
 <p>Non è escluso che su alcuni nodi sia presente un server dhcp per la gestione degli indirizzi ipv4.</p>
-<h4>configurazione dei nodi</h4>
-<p>Sono presenti approfondimenti sulla <a href="nodi/" title="configurazione dei nodi">configurazione dei nodi</a>.</p>
 <h4>servizi</h4>
 <p>E' disponibile un elenco (incompleto) dei <a href="servizi.html" title="servizi">servizi accessibili</a> dalla rete del progetto.</p>
 			</article>
@@ -86,7 +84,6 @@
 		<ul>
 		<li class="level-3"><a href="/rete/nodi/openwrt.html">openwrt</a></li>
 		<li class="level-3"><a href="/rete/nodi/gentoo.html">gentoo</a></li>
-		<li class="level-3"><a href="/rete/nodi/esempi.html">esempi</a></li>
 		</ul>
 	</li>
 	<li class="level-2"><a href="/rete/servizi.html">servizi</a></li>
@@ -136,11 +133,20 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top<a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/09/2012 08:26:54 PM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/10/2012 03:12:05 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</footer>
+		<div class="social">	
+			<div class="tt-share">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
+			</div>
+			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
+			</div><br/>
+			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
+			</div>
+		</div>
 	  	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   		<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>

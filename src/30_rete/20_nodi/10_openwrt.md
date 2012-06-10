@@ -1,3 +1,3 @@
-### configurazione di openwrt
+### configurazione base di openwrt
 
 ...
