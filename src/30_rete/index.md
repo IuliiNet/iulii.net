@@ -8,7 +8,7 @@ Sono presenti inoltre esempi di configurazioni di nodi con [openwrt](http://open
 
 Batman-adv è un protocollo di routing per reti mesh, ottimizzato per l’utilizzo su reti  wireless. Il tipico scenario in cui questo protocollo viene utilizzato è una rete wireless adhoc multi-hop.
 
-E' un protocollo su layer2, cioè instaura comunicazione con gli altri nodi della rete senza utilizzare i comuni indirizzi ip (che sono sul layer3). Per gestire il protocollo si utilizza l’eseguibile batctl (che può fornire utili informazioni sullo stato della mesh)
+E' un protocollo su layer2, cioè instaura comunicazione con gli altri nodi della rete senza utilizzare i comuni indirizzi ip (che sono sul layer3).
 
 Quello che sarà necessario indicare a batman-adv sono i device da utilizzare per la mesh, e se il nodo in questione deve funzionare da nodo gateway per internet o da nodo clients. Fatto questo, batman-adv creerà una nuova interfaccia (nel caso bat0) sulla quale si potrà lavorare sul layer3.
 
