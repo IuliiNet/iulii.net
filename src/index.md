@@ -1,5 +1,3 @@
-## work in progress!
-
 iulii.net è un progetto per lo sviluppo di una [rete comunitaria](http://it.wikipedia.org/wiki/Wireless_community_network "wireless community network su wikipedia") formata da nodi messi in comunicazione tra loro. 
 
 Tutti possono partecipare indipendentemente, senza limiti di espandibilità e censura.
@@ -11,7 +9,7 @@ Il progetto prende anche ispirazione alle wireless community network [ninux](htt
 
 ### perchè una rete libera?
 
-iulii.net è un progetto alternativo di rete aperta, decentralizzata e di proprietà del cittadino. 
+iulii.net è un progetto alternativo di rete aperta, decentralizzata e di proprietà del cittadino. E' [un pezzo di internet](http://wiki.ninux.org/LaRete "LaRete ninux").
 
 E' un progetto partecipativo, ha come obiettivi la diffusione della conoscenza del contributo che ognuno può dare alla community. 
 
