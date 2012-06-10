@@ -6,7 +6,7 @@
 	<head>
   		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>iulii.net | gentoo</title>
+		<title>iulii.net | index</title>
   		<meta name="description" content="rete libera e decentralizzata in friuli">
   		<meta name="author" content="lucapost" />
   		<meta name="viewport" content="width=device-width">
@@ -44,12 +44,42 @@
 		</header>
 		<section class="container_12 clearfix">
 			<article class="grid_8">
-<h3>configurazione gentoo linux</h3>
-<p>...</p>
+<h3>elementi della rete</h3>
+<p>Di seguito un'introduzione agli elementi della rete.</p>
+<h4>i nodi</h4>
+<p>Sono dei dispositivi (comunemente router wireless radio con installata la distribuzione openwrt) che comunicano tra loro e <em>sorreggono la comunicazioni all'interno della rete</em>.</p>
+<p>I nodi della rete possono comunicare tra loro via:</p>
+<ul>
+<li><strong>wireless</strong>, essid: <strong>www.ninux.org-www.iulii.net-mesh</strong> in modalità adhoc;</li>
+<li><strong>ethernet</strong>, via cavo;</li>
+<li><strong>vpn</strong>, connessione via <a href="http://wiki.ninux.org/TincVPN" title="collegarsi a ninux con una vpn">tunnel vpn</a>. Questo metodo è utilizzato anche per collegare diverse isole della rete.</li>
+</ul>
+<p>La configurazione del layer3 è gestita dal protocollo ipv6. </p>
+<p>Ai <strong>nodi può essere assegnata la sottorete ipv6 2001:470:7023:1::/64</strong>. Normalmente gli indirizzi ipv6 dei nodi sono assegnati staticamente in base al macaddress. </p>
+<p>Su alcuni nodi della rete è presente un router advertisement (ra) daemon (come ad esempio <a href="http://www.litech.org/radvd/" title="homepage di radvd">radvd</a> o <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" title="homepage di dnsmasq">dnsmasq</a>) per gestire in maniera automatica l'assegnazione degli indirizzi e del routing ipv6 nella sottorete dei clients.</p>
+<p>Non è escluso che su alcuni nodi sia presente un server dhcp per la gestione degli indirizzi sia ipv6 che ipv4.</p>
+<p>Sono disponibili degli esempi generici della configurazioni dei nodi:</p>
+<ul>
+<li><a href="openwrt.html">openwrt</a></li>
+<li><a href="gentoo.html">gentoo</a></li>
+</ul>
+<h4>i clients</h4>
+<p>Sono i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), per questi gli accessi possibili per entrare nella rete del progetto iulii.net sono:</p>
+<ul>
+<li><strong>wireless</strong>, essid: <strong>www.ninux.org-www.iulii.net-ap</strong> in modalità ap;</li>
+<li><strong>ethernet</strong>, collegamento via cavo;</li>
+<li><strong>vpn</strong>, connessione via <a href="http://wiki.ninux.org/TincVPN" title="collegarsi a ninux con una vpn">tunnel vpn</a>.</li>
+</ul>
+<p>Per la gestione automatica degli indirizzi ipv6 si consiglia:</p>
+<ul>
+<li><a href="http://www.remlab.net/ndisc6/" title="ndisc">ndisc</a> per SO unix like;</li>
+<li>Microsoft Windows Vista+;</li>
+</ul>
+<p>Ad esempio, <strong>la sottorete ipv6 2001:470:7023:2::/64 può essere assegnata ai clients</strong>, diversa da quella dei nodi.</p>
 			</article>
 			<div class="grid_4 column">
 				<div class="path">
-					<b>path</b>: <a href="../../index.html">home</a> / <a href="../index.html">rete</a> / <a href="index.html">nodi</a> / gentoo
+					<b>path</b>: <a href="../../index.html">home</a> / <a href="../index.html">rete</a> / elementi
 				</div>
 				<nav>
 					
@@ -63,10 +93,10 @@
 </li>
 <li class="level-1"><a href="/rete/index.html">rete</a>
 	<ul>
-	<li class="level-2"><a href="/rete/nodi/index.html">nodi</a>
+	<li class="level-2"><a class="current" href="/rete/elementi/index.html">elementi</a>
 		<ul>
-		<li class="level-3"><a href="/rete/nodi/openwrt.html">openwrt</a></li>
-		<li class="level-3"><a class="current" href="/rete/nodi/gentoo.html">gentoo</a></li>
+		<li class="level-3"><a href="/rete/elementi/openwrt.html">openwrt</a></li>
+		<li class="level-3"><a href="/rete/elementi/gentoo.html">gentoo</a></li>
 		</ul>
 	</li>
 	<li class="level-2"><a href="/rete/servizi.html">servizi</a></li>
@@ -116,7 +146,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top<a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/10/2012 03:10:14 PM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/10/2012 05:38:10 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>

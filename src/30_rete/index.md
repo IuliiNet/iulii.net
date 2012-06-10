@@ -2,9 +2,7 @@
 
 Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle [reti mesh](http://it.wikipedia.org/wiki/Wireless_mesh_network "wireless mesh network su wikipedia") basate su [batman-adv](http://www.open-mesh.org/wiki/batman-adv/ "batman-adv homepage") in generale. 
 
-Sono presenti inoltre esempi di configurazioni di nodi con [openwrt](http://openwrt.org "openwrt") e [gentoo](http://gentoo.org "gentoo homepage");
-
-#### introduzione a batman-adv
+#### batman-adv
 
 Batman-adv è un protocollo di routing per reti mesh, ottimizzato per l’utilizzo su reti  wireless. Il tipico scenario in cui questo protocollo viene utilizzato è una rete wireless adhoc multi-hop.
 
@@ -18,37 +16,19 @@ Un primo aspetto molto interessante di questo approccio alla rete (che tra l'alt
 
 In maniera complementare, l'aggiunta di un altro nodo alla rete mesh sarà automaticamente riconosciuta da tutti i suoi vicini, e quindi da tutti i nodi della rete mesh, contribuendo in questo modo alla crescita della rete.
 
-#### introduzione ai nodi
+#### gli elementi della rete
 
-I nodi delle rete sono dei dispositivi (comumemente router wireless radio con installata la distribuzione openwrt) che comunicano tra loro e *sorreggono la comunicazioni all'interno della rete*.
+Gli elementi della rete si possono suddividere in:
 
-Il progetto iulii.net basa il collegamento dei nodi sul layer2 sul protocollo batman-adv. Sul layer3 si utilizza il protocollo ipv6, scelto per la semplicità di assegnazione degli indirizzi e la facilitazione nell'evitare conflitti ip. 
+* **nodi**, formano la struttura della rete dove circolano tutte le informazioni.
+   	* **gateway**, sui quali sono in ascolto i demoni per l'assegnazioni degli indirizzi ipv6 (eventaulmente ipv4);
+   	* **client**, tutti gli altri;
+* **clients** sono i dispositivi connessi ai nodi quali pc, notebook, smartphone, tablet, ecc.
 
-Normalmente gli indirizzi ipv6 dei nodi sono assegnati staticamente in base al macaddress. Ai **nodi della rete può essere assegnata la sottorete ipv6 2001:470:7023:1::/64**.
+I nodi della rete sono collegati tra loro utilizzando il protocollo batman-adv. Normalmente sono questi gli elementi che forniscono servizi alla rete.
 
-I nodi della rete possono comunicare tra loro su una rete wireless configurata in adhoc mode sull'essid **www.ninux.org-www.iulii.net-mesh**, oltre che via ethernet e tunnel vpn.
-
-Su alcuni nodi della rete è presente un router advertisement (ra) daemon (come ad esempio [radvd](http://www.litech.org/radvd/ "homepage di radvd") o [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html "homepage di dnsmasq")) per gestire in maniera automatica l'assegnazione degli indirizzi e del routing ipv6 nella sottorete dei clients.
-
-Sono disponibili degli esempi sulla [configurazione dei nodi](nodi/ "configurazione dei nodi").
-
-#### introduzione ai clients
-
-Per i clients, cioè i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), gli accessi possibili per entrare nella rete del progetto iulii.net sono:
-
-* **wireless**, essid: **www.ninux.org-www.iulii.net-ap** in modalità ap;
-* **ethernet**, collegamento via cavo;
-* **vpn**, connessione via [tunnel vpn](http://wiki.ninux.org/TincVPN "collegarsi a ninux con una vpn"), questo metodo è anche utilizzato per collegare tra loro delle isole della rete.
-
-Sui clients deve essere attivo il supporto ipv6. Per la gestione automatica degli indirizzi ipv6 si consiglia:
-
-* [ndisc](http://www.remlab.net/ndisc6/ "ndisc") per SO unix like;
-* Microsoft Windows Vista+;
-
-Ad esempio, **la sottorete ipv6 2001:470:7023:2::/64 può essere assegnata ai clients**.
-
-Non è escluso che su alcuni nodi sia presente un server dhcp per la gestione degli indirizzi ipv4.
+E' disponibile un ulteriore approfondimento a proposito degli [elementi della rete](elementi/ "approfondimento sugli elementi della rete").
 
 #### servizi 
 
-E' disponibile un elenco (incompleto) dei [servizi accessibili](servizi.html "servizi") dalla rete del progetto.
+E' disponibile un elenco di parte dei [servizi accessibili](servizi.html "servizi") dalla rete del progetto.

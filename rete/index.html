@@ -46,37 +46,27 @@
 			<article class="grid_8">
 <h3>La rete</h3>
 <p>Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle <a href="http://it.wikipedia.org/wiki/Wireless_mesh_network" title="wireless mesh network su wikipedia">reti mesh</a> basate su <a href="http://www.open-mesh.org/wiki/batman-adv/" title="batman-adv homepage">batman-adv</a> in generale. </p>
-<p>Sono presenti inoltre esempi di configurazioni di nodi con <a href="http://openwrt.org" title="openwrt">openwrt</a> e <a href="http://gentoo.org" title="gentoo homepage">gentoo</a>;</p>
-<h4>introduzione a batman-adv</h4>
+<h4>batman-adv</h4>
 <p>Batman-adv è un protocollo di routing per reti mesh, ottimizzato per l’utilizzo su reti  wireless. Il tipico scenario in cui questo protocollo viene utilizzato è una rete wireless adhoc multi-hop.</p>
 <p>E' un protocollo su layer2, cioè instaura comunicazione con gli altri nodi della rete senza utilizzare i comuni indirizzi ip (che sono sul layer3).</p>
 <p>Quello che sarà necessario indicare a batman-adv sono i device da utilizzare per la mesh, e se il nodo in questione deve funzionare da nodo gateway per internet o da nodo clients. Fatto questo, batman-adv creerà una nuova interfaccia (nel caso bat0) sulla quale si potrà lavorare sul layer3.</p>
 <p>Grazie a tutte le bat0 di ogni device viene quindi a crearsi una struttura di nodi simile ad "un grande switch". Quindi ad ogni bat0 (o al bridge al quale appartiene)sarà possibile assegnare i suoi ip. Quindi ogni device batman-adv riuscirà a vedere, attraverso i suoi vicini, tutti gli altri nodi della rete.</p>
 <p>Un primo aspetto molto interessante di questo approccio alla rete (che tra l'altro forniscono anche altri protocolli di routing come oslr, ed è quindi una caratteristica intrinseca delle reti mesh) è la creazione di una struttura a maglia, nella quale ogni nodo riesce a comunicare direttamente (single-hop) con un alto numero di nodi vicini. Si capisce che in questo modo, la caduta di un singolo nodo non pregiudica il collegamento di altri nodi, che infatti saranno in grado di trovare la strada per le loro comunicazioni attraverso gli altri vicini attivi.</p>
 <p>In maniera complementare, l'aggiunta di un altro nodo alla rete mesh sarà automaticamente riconosciuta da tutti i suoi vicini, e quindi da tutti i nodi della rete mesh, contribuendo in questo modo alla crescita della rete.</p>
-<h4>introduzione ai nodi</h4>
-<p>I nodi delle rete sono dei dispositivi (comumemente router wireless radio con installata la distribuzione openwrt) che comunicano tra loro e <em>sorreggono la comunicazioni all'interno della rete</em>.</p>
-<p>Il progetto iulii.net basa il collegamento dei nodi sul layer2 sul protocollo batman-adv. Sul layer3 si utilizza il protocollo ipv6, scelto per la semplicità di assegnazione degli indirizzi e la facilitazione nell'evitare conflitti ip. </p>
-<p>Normalmente gli indirizzi ipv6 dei nodi sono assegnati staticamente in base al macaddress. Ai <strong>nodi della rete può essere assegnata la sottorete ipv6 2001:470:7023:1::/64</strong>.</p>
-<p>I nodi della rete possono comunicare tra loro su una rete wireless configurata in adhoc mode sull'essid <strong>www.ninux.org-www.iulii.net-mesh</strong>, oltre che via ethernet e tunnel vpn.</p>
-<p>Su alcuni nodi della rete è presente un router advertisement (ra) daemon (come ad esempio <a href="http://www.litech.org/radvd/" title="homepage di radvd">radvd</a> o <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" title="homepage di dnsmasq">dnsmasq</a>) per gestire in maniera automatica l'assegnazione degli indirizzi e del routing ipv6 nella sottorete dei clients.</p>
-<p>Sono disponibili degli esempi sulla <a href="nodi/" title="configurazione dei nodi">configurazione dei nodi</a>.</p>
-<h4>introduzione ai clients</h4>
-<p>Per i clients, cioè i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), gli accessi possibili per entrare nella rete del progetto iulii.net sono:</p>
+<h4>gli elementi della rete</h4>
+<p>Gli elementi della rete si possono suddividere in:</p>
 <ul>
-<li><strong>wireless</strong>, essid: <strong>www.ninux.org-www.iulii.net-ap</strong> in modalità ap;</li>
-<li><strong>ethernet</strong>, collegamento via cavo;</li>
-<li><strong>vpn</strong>, connessione via <a href="http://wiki.ninux.org/TincVPN" title="collegarsi a ninux con una vpn">tunnel vpn</a>, questo metodo è anche utilizzato per collegare tra loro delle isole della rete.</li>
+<li><strong>nodi</strong>, formano la struttura della rete dove circolano tutte le informazioni.<ul>
+<li><strong>gateway</strong>, sui quali sono in ascolto i demoni per l'assegnazioni degli indirizzi ipv6 (eventaulmente ipv4);</li>
+<li><strong>client</strong>, tutti gli altri;</li>
 </ul>
-<p>Sui clients deve essere attivo il supporto ipv6. Per la gestione automatica degli indirizzi ipv6 si consiglia:</p>
-<ul>
-<li><a href="http://www.remlab.net/ndisc6/" title="ndisc">ndisc</a> per SO unix like;</li>
-<li>Microsoft Windows Vista+;</li>
+</li>
+<li><strong>clients</strong> sono i dispositivi connessi ai nodi quali pc, notebook, smartphone, tablet, ecc.</li>
 </ul>
-<p>Ad esempio, <strong>la sottorete ipv6 2001:470:7023:2::/64 può essere assegnata ai clients</strong>.</p>
-<p>Non è escluso che su alcuni nodi sia presente un server dhcp per la gestione degli indirizzi ipv4.</p>
+<p>I nodi della rete sono collegati tra loro utilizzando il protocollo batman-adv. Normalmente sono questi gli elementi che forniscono servizi alla rete.</p>
+<p>E' disponibile un ulteriore approfondimento a proposito degli <a href="elementi/" title="approfondimento sugli elementi della rete">elementi della rete</a>.</p>
 <h4>servizi</h4>
-<p>E' disponibile un elenco (incompleto) dei <a href="servizi.html" title="servizi">servizi accessibili</a> dalla rete del progetto.</p>
+<p>E' disponibile un elenco di parte dei <a href="servizi.html" title="servizi">servizi accessibili</a> dalla rete del progetto.</p>
 			</article>
 			<div class="grid_4 column">
 				<div class="path">
@@ -94,10 +84,10 @@
 </li>
 <li class="level-1"><a class="current" href="/rete/index.html">rete</a>
 	<ul>
-	<li class="level-2"><a href="/rete/nodi/index.html">nodi</a>
+	<li class="level-2"><a href="/rete/elementi/index.html">elementi</a>
 		<ul>
-		<li class="level-3"><a href="/rete/nodi/openwrt.html">openwrt</a></li>
-		<li class="level-3"><a href="/rete/nodi/gentoo.html">gentoo</a></li>
+		<li class="level-3"><a href="/rete/elementi/openwrt.html">openwrt</a></li>
+		<li class="level-3"><a href="/rete/elementi/gentoo.html">gentoo</a></li>
 		</ul>
 	</li>
 	<li class="level-2"><a href="/rete/servizi.html">servizi</a></li>
@@ -147,7 +137,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top<a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/10/2012 04:51:21 PM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 06/10/2012 05:37:43 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
