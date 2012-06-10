@@ -17,6 +17,7 @@ dst_ext = "html"
 hidden = set(["404.md", "500.md", "search.md"])
 
 current_time = datetime.datetime.now()
+
 menu_code = ''
 
 def menu(node):
@@ -152,7 +153,7 @@ def footer(node):
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top<a>
 				<div class="foot">
-					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
+					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%Y/%m/%d %I:%M %p",time.localtime(os.path.getmtime(node.src_pathname))) + '''</p>
 				</div>
 			</div>
 			<div class="clear"></div>
