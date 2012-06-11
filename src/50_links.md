@@ -13,6 +13,6 @@ Parte del materiale presente in questo sito non è originale, ma è scopiazzato 
 
 * [openwrt](http://openwrt.org "il sito di openwrt.org") distribuzione linux per router;
 * [batmand-adv](http://www.open-mesh.org/ "il sito di batman-adv") protocollo di routing su layer2;
-* [gentoo](http://gentoo.org "gentoo linux distribuition") sito uffficiale della distribuzione linux gentoo;
+* [gentoo](http://gentoo.org "gentoo linux distribuition") sito ufficiale della distribuzione linux gentoo;
 
 #### hardware
