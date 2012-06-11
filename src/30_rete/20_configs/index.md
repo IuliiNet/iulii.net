@@ -4,9 +4,9 @@ Di seguito un'introduzione agli elementi della rete.
 
 #### i nodi
 
-Sono dei dispositivi (comunemente router wireless radio con installata la distribuzione openwrt) che comunicano tra loro e *sorreggono la comunicazioni all'interno della rete*.
+I nodi sono dei dispositivi (comunemente router wireless radio con openwrt) che comunicano tra loro e *sorreggono la comunicazioni all'interno della rete*.
 
-I nodi della rete possono comunicare tra loro via:
+I nodi della rete si possono interfacciare via:
 
 * **wireless**, essid: **www.ninux.org-www.iulii.net-mesh** in modalità adhoc;
 * **ethernet**, via cavo;
