@@ -27,7 +27,7 @@ Gli elementi della rete si possono suddividere in:
 
 I nodi della rete sono collegati tra loro utilizzando il protocollo batman-adv. Normalmente sono questi gli elementi che forniscono servizi alla rete.
 
-E' disponibile un ulteriore approfondimento a proposito degli [elementi della rete](elementi/ "approfondimento sugli elementi della rete").
+E' disponibile un ulteriore approfondimento a proposito delle [configurazioni degli elementi della rete](configs/ "configurazioni degli elementi della rete").
 
 #### servizi 
 
