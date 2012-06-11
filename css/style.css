@@ -22,13 +22,18 @@ hgroup {
 	height: 298px;
 	border: 1px solid #55a1d5;
 	text-align: center;
+        position: relative;
+        z-index:1;
+        overflow:hidden;
 }
 
-.logo {
-	height: 298px;
-	background: url('/site/img/aquila.jpg') no-repeat top right; 
-	background-size:298px 298px;
-	border: 1px solid #55a1d5;
+hgroup:before{
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    content: url('/img/NinuxPinsMesh2.1.png');
+    opacity:0.06;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,6 +77,9 @@ h1 a:visited {
 	color: black;
 }
 
+.flattr {
+	text-align: right;
+}
 img.iuliinetlogo {
 	width: 298px;
 	height: 298px;
