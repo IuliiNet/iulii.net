@@ -23,21 +23,12 @@ hgroup {
 	border: 1px solid #55a1d5;
 	text-align: center;
         position: relative;
-        z-index:1;
-        overflow:hidden;
-}
-
-hgroup:before{
-    z-index:-1;
-    position:absolute;
-    left:0;
-    top:0;
-    content: url('/img/NinuxPinsMesh2.1.png');
-    opacity:0.06;
+    	background: url('/img/NinuxPinsMesh2.1.png');
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #55a1d5;
+	z-index:1;
 }
 
 h1 {
@@ -107,7 +98,32 @@ section {
 }
 
 .tt-widget {
+	padding-top:20px;
 	margin-bottom: 20px;
+}
+
+.navigation {
+	border: 1px solid #55a1d5;
+        position: relative;
+    	background: url('/img/NinuxPinsMesh2.1.png');
+}
+
+.path {
+	height: 39px;
+	padding: 20px 0 0 10px;
+	border-bottom: 1px solid #55a1d5;
+}
+
+nav {
+	height: 279px;
+	padding: 20px 0 0 0;
+	border-bottom: 1px solid #55a1d5;
+}
+
+.flattr {
+	text-align: center;
+	margin-top: 20px;
+	height: 39px;
 }
 
 footer {

@@ -107,17 +107,19 @@ def footer(node):
 	return '''
 			</article>
 			<div class="grid_4 column">
-<!--				<div class="flattr">
-					<a href="http://flattr.com/thing/715037/iulii-net" target="_blank">
-						<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this"/>
-					</a>
-				</div>-->
-				<div class="path">
-					<b>path</b>: %%%PATH%%%
+				<div class="navigation">
+					<div class="path">
+						<b>path</b>: %%%PATH%%%
+					</div>
+					<nav>
+						''' + menu(node) + '''
+					</nav>
+					<div class="flattr">
+						<a href="http://flattr.com/thing/715037/iulii-net" target="_blank">
+							<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this"/>
+						</a>
+					</div>
 				</div>
-				<nav>
-					''' + menu(node) + '''
-				</nav>
 <!--				<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?q=http:%2F%2Fmap.ninux.org%2Fnodes.kml&amp;t=h&amp;ie=UTF8&amp;ll=46.067514,13.348389&amp;spn=1.112876,2.469177&amp;output=embed"></iframe> -->
 				<div class="tt-widget">
 					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
