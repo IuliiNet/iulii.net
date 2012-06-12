@@ -5,4 +5,3 @@ generate:
 clean:
 	find . -type f -name "*.html" -exec rm -f {} \;
 	find . -type d -empty -exec rmdir {} \;
-
