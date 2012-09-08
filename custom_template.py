@@ -169,7 +169,7 @@ def footer(node):
 		</section>
 		<footer class="container_12 clearfix">
 			<div class="grid_12">
-				<a href="#top" title="back to top" class="backtotop">back to top<a>
+				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
 					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%m/%d/%Y %I:%M:%S %p", node.page.last_edit) + '''</p>
 				</div>

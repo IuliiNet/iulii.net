@@ -1,6 +1,9 @@
 generate: 
-	python2 ./minimalsite.py
-	python2 ./gensitemap-xsl.py > sitemap.xml
+	python2 ./minimalsite.py -t custom_template.py
+
+update:
+	git commit -am fix
+	git push
 
 clean:
 	find . -type f -name "*.html" -exec rm -f {} \;
