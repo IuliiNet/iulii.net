@@ -75,7 +75,7 @@ def header(node):
 	<!--[if gt IE 8]><!--> <html class="no-js" lang="it"> <!--<![endif]-->
 	<head>
         	<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         	<meta name="author" content="''' + author + '''" />
 	        <meta name="description" content="''' + description + '''" />
         	<title>''' + title + '''</title>
@@ -102,7 +102,7 @@ def header(node):
 			<div class="grid_8">
 				<hgroup>
 					<h1><a href="''' + prefix + '''">''' + site_name + '''</a></h1>
-					<h2>''' + desc + '''</a></h2>
+					<h2><a href="''' + prefix + '''">''' + desc + '''</a></h2>
 				</hgroup>
 			</div>
 			<div class="grid_4">
@@ -133,7 +133,7 @@ def footer(node):
 						</a>
 					</div>
 				</div>
-				<iframe class="mappa" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?q=http:%2F%2Fmap.ninux.org%2Fnodes.kml&amp;t=h&amp;ie=UTF8&amp;ll=46.067514,13.348389&amp;spn=1.112876,2.469177&amp;output=embed"></iframe> 
+				<iframe class="mappa" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?q=http:%2F%2Fmap.ninux.org%2Fnodes.kml&amp;t=h&amp;ie=UTF8&amp;ll=46.067514,13.348389&amp;spn=1.112876,2.469177&amp;output=embed" /> 
 				<div class="tt-widget">
 					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 					<script>
