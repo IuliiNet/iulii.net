@@ -68,9 +68,19 @@ h1 a:visited {
 	color: black;
 }
 
+h2 a {
+	text-decoration: none;
+	color: black;
+}
+
+h2 a:visited {
+	color: black;
+}
+
 .flattr {
 	text-align: right;
 }
+
 img.iuliinetlogo {
 	width: 298px;
 	height: 298px;

@@ -1,23 +1,24 @@
 import time
 import datetime
 
-site_name = "iulii.net"
-desc = "rete mesh libera e decentralizzata in friuli"
-author = "lucapost"
-src = "src"
-dst = ""
-sitemap = "sitemap.xml"
-url = "http://iulii.net"
-prefix = "/"
-home = "home"
-path_separator = '<span class="separator">/</span>'
-src_ext = {"markdown": "md", "textile": "tt", "plain": "txt"}
-dst_ext = "html"
-hidden = set(["404.md", "500.md", "search.md"])
-current_time = datetime.datetime.now()
-menu_code = ''
-pages = {"index.md": ("wireless comunity network in friuli venezia giulia", "rete mesh libera e decentralizzata"),
+SITE_NAME = "iulii.net"
+DESC = "rete mesh libera e decentralizzata in friuli"
+AUTHOR = "lucapost"
+SRC = "src"
+DST = ""
+SITEMAP = "sitemap.xml"
+URL = "http://iulii.net"
+PREFIX = "/"
+HOME = "home"
+PATH_SEPARATOR = '/'
+SRC_EXT = {"markdown": "md", "textile": "tt", "plain": "txt"}
+DST_EXT = "html"
+HIDDEN = set(["404.md", "500.md", "search.md"])
+MENU_CODE = ''
+PAGES = {"index.md": ("wireless comunity network in friuli venezia giulia", "rete mesh libera e decentralizzata"),
          "bar.md": ("All about Bar", "It's a sad story, but worth reading...")}
+
+current_time = datetime.datetime.now()
 
 def get_page_contents(node):
     """Return page title and description from the global variable pages if a
@@ -25,8 +26,8 @@ def get_page_contents(node):
     """ 
 
     try:
-        return (site_name + ' - ' + pages[node.page.src_file][0], \
-            pages[node.page.src_file][1])
+        return (SITE_NAME + ' - ' + PAGES[node.page.src_file][0], \
+            PAGES[node.page.src_file][1])
     except KeyError:
         return ('%%%TITLE%%%', '')
 
@@ -42,14 +43,14 @@ def menu(node):
     menu_(root, node)
     return menu_code
 
-def menu_(node, cur_node, node_prefix = prefix, indent = ''):
+def menu_(node, cur_node, node_prefix = PREFIX, indent = ''):
     """Auxiliary recursive function for menu generation."""
 
     global menu_code
 
     menu_code += indent + '<ul>\n'
     for child in sorted(node.children, key=lambda n: n.page.src_pathname):
-        if child.page.dst_file.startswith("index.") or child.page.src_file in hidden:
+        if child.page.dst_file.startswith("index.") or child.page.src_file in HIDDEN:
             continue
         menu_code += indent + '<li class="level-' + str(child.page.level) + '"><a '
         if(child == cur_node
@@ -57,7 +58,7 @@ def menu_(node, cur_node, node_prefix = prefix, indent = ''):
             menu_code += 'class="current" '
         menu_code += 'href="' + node_prefix + child.page.dst_file
         if child.children:
-            menu_code += "/index." + dst_ext + '">'    + child.page.name + '</a>\n'
+            menu_code += "/index." + DST_EXT + '">'    + child.page.name + '</a>\n'
             menu_(child, cur_node, node_prefix + child.page.dst_file + '/', indent + '\t')
             menu_code += indent + '</li>\n'
         else:
@@ -76,17 +77,17 @@ def header(node):
 	<head>
         	<meta charset="utf-8" />
 <!--		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> -->
-        	<meta name="author" content="''' + author + '''" />
+        	<meta name="author" content="''' + AUTHOR + '''" />
 	        <meta name="description" content="''' + description + '''" />
         	<title>''' + title + '''</title>
   		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/hashgrid.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ prefix +'''css/style.css" />
-  		<script src="'''+ prefix +'''js/modernizr.js"></script>
-		<link rel="icon" type="image/png" href="'''+ prefix +'''img/iuliinetlogo.png">
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
+  		<script src="'''+ PREFIX +'''js/modernizr.js"></script>
+		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
 	</head>
 	<body id="top">
 		<div class="social">	
@@ -101,13 +102,13 @@ def header(node):
 		<header class="container_12 clearfix">
 			<div class="grid_8">
 				<hgroup>
-					<h1><a href="''' + prefix + '''">''' + site_name + '''</a></h1>
-					<h2><a href="''' + prefix + '''">''' + desc + '''</a></h2>
+					<h1><a href="''' + PREFIX + '''">''' + SITE_NAME + '''</a></h1>
+					<h2><a href="''' + PREFIX + '''">''' + DESC + '''</a></h2>
 				</hgroup>
 			</div>
 			<div class="grid_4">
-				<a href="''' + prefix + '''">
-					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="'''+ prefix +'''img/iuliinetlogo.png">
+				<a href="''' + PREFIX + '''">
+					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
 				</a>
 			</div>
 			<div class="clear"></div>
@@ -177,10 +178,10 @@ def footer(node):
 			<div class="clear"></div>
 		</footer>	
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-	  	<script src="'''+ prefix +'''js/jquery.js"></script>
-  		<script src="'''+ prefix +'''js/plugins.js"></script>
-  		<script src="'''+ prefix +'''js/main.js"></script>
-  		<script src="'''+ prefix +'''js/hashgrid.js"></script>
+	  	<script src="'''+ PREFIX +'''js/jquery.js"></script>
+  		<script src="'''+ PREFIX +'''js/plugins.js"></script>
+  		<script src="'''+ PREFIX +'''js/main.js"></script>
+  		<script src="'''+ PREFIX +'''js/hashgrid.js"></script>
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
