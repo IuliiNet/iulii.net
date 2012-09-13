@@ -4,8 +4,8 @@ import datetime
 SITE_NAME = "iulii.net"
 DESC = "rete mesh libera e decentralizzata in friuli"
 AUTHOR = "lucapost"
-SRC = "/home/lucapost/Documents/repo/iulii.net/src/"
-DST = "/home/lucapost/Documents/repo/iulii.net/"
+SRC = "/home/lucapost/Documents/repo/iulii.net/src"
+DST = "/home/lucapost/Documents/repo/iulii.net"
 SITEMAP = "sitemap.xml"
 URL = "http://iulii.net"
 PREFIX = "/"
@@ -15,7 +15,17 @@ SRC_EXT = {"markdown": "md", "textile": "tt", "plain": "txt"}
 DST_EXT = "html"
 HIDDEN = set(["404.md", "500.md", "search.md"])
 MENU_CODE = ''
-PAGES = { SRC + "index.md": ("home page", "description") }
+PAGES = {SRC + "/index.md": ("home page", "wireless mesh network libera e decentralizzata in friuli venezia giulia"),
+	 SRC + "/20_collaborare/index.md": ("collaborare", "contribuire allo sviluppo della comunity"),
+	 SRC + "/20_collaborare/10_nodo.md": ("creare un nuovo nodo", "istruzioni generali per creare un nuovo nodo della rete"),
+	 SRC + "/20_collaborare/20_docs.md": ("documentazione", "istruzione generali per contribuire alla documentazione"),
+	 SRC + "/30_rete/index.md": ("rete", "esempi di configurazione dei nodi della rete"),
+	 SRC + "/30_rete/20_configs/index.md": ("configurazioni", "esempi di configurazione dei nodi della rete"),
+	 SRC + "/30_rete/20_configs/10_openwrt.md": ("configurazione di openwrt", "esempio di configurazione di nodi openwrt based"),
+	 SRC + "/30_rete/20_configs/20_gentoo.md": ("configurazioni", "esempio di configurazione di nodi gentoo based"),
+	 SRC + "/30_rete/30_servizi.md": ("rete", "elenco dei servizi disponibili nelle rete"),
+	 SRC + "/45_contatti.md": ("contatti", "contattare via email twitter facebook googleplus irc commenti"),
+	 SRC + "/50_links.md": ("links", "collegamenti a siti amici")}
 
 current_time = datetime.datetime.now()
 
@@ -25,7 +35,7 @@ def get_page_contents(node):
     """ 
 
     try:
-        return (SITE_NAME + ' - ' + PAGES[node.page.src_pathname][0], \
+        return (SITE_NAME + ' | ' + PAGES[node.page.src_pathname][0], \
             PAGES[node.page.src_pathname][1])
     except KeyError:
         return ('%%%TITLE%%%', '')
