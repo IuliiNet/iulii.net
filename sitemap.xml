@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iulii.net/rete/elementi.html</loc>
+    <lastmod>2012-10-15</lastmod>
+  </url>
+  <url>
     <loc>http://iulii.net/rete/servizi.html</loc>
-    <lastmod>2012-06-11</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/rete/configs/gentoo.html</loc>
-    <lastmod>2012-06-11</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/rete/configs/openwrt.html</loc>
-    <lastmod>2012-06-11</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/rete/configs/index.html</loc>
-    <lastmod>2012-06-11</lastmod>
+    <lastmod>2012-10-15</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/rete/index.html</loc>
@@ -30,11 +22,11 @@
   </url>
   <url>
     <loc>http://iulii.net/collaborare/nodo.html</loc>
-    <lastmod>2012-06-11</lastmod>
+    <lastmod>2012-10-15</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/collaborare/docs.html</loc>
-    <lastmod>2012-06-08</lastmod>
+    <lastmod>2012-10-15</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/collaborare/index.html</loc>

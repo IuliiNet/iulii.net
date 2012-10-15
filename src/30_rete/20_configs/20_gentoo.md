@@ -1,3 +1,0 @@
-### configurazione gentoo linux
-
-...

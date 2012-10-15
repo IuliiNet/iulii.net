@@ -4,7 +4,7 @@ E' disponibile una lista di alcuni servizi attualmente disponibili all'interno d
 
 * [iulii.net](http://iulii.net "sito internet del progetto iulii.net") questo sito!
 * accesso alla rete internet ICANN per tutti i servizi ipv6;
-* dns nameserver: 2001:470:7023:2:0:f8d1:114b:2e50/64 e 10.0.0.1/8;
+* dns nameserver: 2001:470:7023:2:0:f8d1:114b:2e50/64 e 192.168.1.1/24;
 * ...
 
 All'interno della rete del protetto iulii.net è possibile configurare qualsiasi tipo di servizio che è possibile immaginare, come:

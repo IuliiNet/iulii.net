@@ -24,6 +24,6 @@ Una suddivisione dei tipi di nodi che è possibile installare e configurare è l
 * **foglia** questo è un tipo di nodo normalmente connesso direttamente ad un solo altro nodo di tipo foglia, o più comunemente ad un nodo di backbone. Generalmente questo è anche un nodo hotspot.
 * **backbone** questo genere di nodi è fondamentale per l'infrastruttura della rete in quanto generalmente mette in comunicazione diretta, oltre che diversi nodi foglia, almeno un altro nodo backbone; molto spesso questo tipo di nodi è fondamentale per il collegamento di segmenti della rete.
  
-#### installlazione
+#### installazione
 
 Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondire nella sezione [rete/nodi](/rete/nodi "installazione nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!
