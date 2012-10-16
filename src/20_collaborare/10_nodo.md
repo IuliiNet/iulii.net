@@ -16,14 +16,6 @@ L'installazione di uno nodo della rete richiedere una spesa che parte da poche d
 
 I membri più scaltri possono perfino cimentarsi nell'autocostruzione di qualche antenna, ottenendo con pochi euro ed un po' di piazienza degli ottimi risultati.
 
-#### tipi di nodi
-
-Una suddivisione dei tipi di nodi che è possibile installare e configurare è la seguente:
-
-* **hotspot** è questo il tipo di nodo probabilmente più semplice da installare. Prevede la configurazione di un accesspoint aperto con il nome della rete iulii.net, dove ognuno ha la possibilità di accedere ai servizi della rete iulii.net e che il propietario del nodo decide di rendere disponibili.
-* **foglia** questo è un tipo di nodo normalmente connesso direttamente ad un solo altro nodo di tipo foglia, o più comunemente ad un nodo di backbone. Generalmente questo è anche un nodo hotspot.
-* **backbone** questo genere di nodi è fondamentale per l'infrastruttura della rete in quanto generalmente mette in comunicazione diretta, oltre che diversi nodi foglia, almeno un altro nodo backbone; molto spesso questo tipo di nodi è fondamentale per il collegamento di segmenti della rete.
- 
 #### installazione
 
-Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondire nella sezione [rete/nodi](/rete/nodi "installazione nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!
+Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondire nella sezione [rete/elementi](/rete/elementi.html "indicazioni sull'installazione di nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!

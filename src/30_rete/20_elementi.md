@@ -20,8 +20,16 @@ Su alcuni nodi della rete è presente un router advertisement (ra) daemon (come 
 
 Non è escluso che su alcuni nodi sia presente un server dhcp per la gestione degli indirizzi sia ipv6 che ipv4.
 
-Esempi di configurazione di nodi sono disponibili all'indirizzo [https://github.com/iuliinet/configs](https://github.com/iuliinet/configs "esempi di configurazione")
+Esempi di configurazione di nodi sono disponibili all'indirizzo [https://github.com/iuliinet/configs](https://github.com/iuliinet/configs "esempi di configurazione").
 
+##### tipi di nodi
+
+Una suddivisione dei tipi di nodi che è possibile installare e configurare è la seguente:
+
+* **hotspot** è questo il tipo di nodo probabilmente più semplice da installare. Prevede la configurazione di un accesspoint aperto con il nome della rete iulii.net, dove ognuno ha la possibilità di accedere ai servizi della rete iulii.net e che il propietario del nodo decide di rendere disponibili.
+* **foglia** questo è un tipo di nodo normalmente connesso direttamente ad un solo altro nodo di tipo foglia, o più comunemente ad un nodo di backbone. Generalmente questo è anche un nodo hotspot.
+* **backbone** questo genere di nodi è fondamentale per l'infrastruttura della rete in quanto generalmente mette in comunicazione diretta, oltre che diversi nodi foglia, almeno un altro nodo backbone; molto spesso questo tipo di nodi è fondamentale per il collegamento di segmenti della rete.
+ 
 #### i clients
 
 Sono i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), per questi gli accessi possibili per entrare nella rete del progetto iulii.net sono:

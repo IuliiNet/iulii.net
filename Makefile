@@ -1,5 +1,5 @@
 generate: 
-	minimalsite.py -t custom_template.py
+	minimalsite.py -t templates/default_template.py
 
 update:
 	git commit -am fix
