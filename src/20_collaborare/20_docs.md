@@ -7,7 +7,7 @@ La scelta di git per mantenere i sorgenti del progetto è dettata dal fatto che 
 I repositories git del progetto sono disponibili su [github](http://githib.com/iuliinet "iuliinet su github"):
 
 * [https://github.com/iuliinet/iulii.net](https://github.com/iuliinet/iulii.net "iulii.net su github") questo sito internet;
-* [https://github.com/iuliinet/configs](https://github.com/iuliinet/configs "backup configurazioni device") esempi di configurazioni di device ;
+* [https://github.com/iuliinet/configs](https://github.com/iuliinet/configs "backup configurazioni device") esempi di configurazioni di device;
 * ...
 
 #### editing 
