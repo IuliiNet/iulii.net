@@ -18,4 +18,4 @@ I membri più scaltri possono perfino cimentarsi nell'autocostruzione di qualche
 
 #### installazione
 
-Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondire nella sezione [rete/elementi](/rete/elementi.html "indicazioni sull'installazione di nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!
+Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondite nella sezione [rete/elementi](/rete/elementi.html "indicazioni sull'installazione di nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!
