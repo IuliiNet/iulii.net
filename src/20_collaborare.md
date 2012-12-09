@@ -1,8 +1,29 @@
-### nuovo nodo
+### collaborare
+
+Tutti possono decidere se far parte o meno della comminity iulii.net. Una community è fatta di persone. Questo è l'aspetto più importante. 
+
+Il maggior numero di cittadini deve avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi. 
+
+Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni [social network](../contatti.html), si può provvedere a:
+
+* lo sviluppo della [**documentazione**](#docs), non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
+* l'installazione di un nuovo [**nodo**](#nodo), questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.
+
+#### sviluppo della documentazione
+
+Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
+
+La scelta di git per mantenere i sorgenti del progetto è dettata dal fatto che è un ottimo servizio, permette inoltre sia l'editing online (su github) che offline, oltre ad un backup decentralizzato.
+
+I repositories git del progetto sono disponibili su [github](http://githib.com/iuliinet "iuliinet su github").
+
+...
+
+#### nuovo nodo
 
 L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. 
 
-#### descrizione
+##### descrizione
 
 Le frequenze liberamente utilizzabili sono tipicamente quella da 2.4GHz e 5GHz. Generalmente un nodo è composto da:
 
@@ -10,12 +31,12 @@ Le frequenze liberamente utilizzabili sono tipicamente quella da 2.4GHz e 5GHz. 
 * antenne direzionali o omnidirezionali;
 * strutture di supporto (pali, tiranti, cavistica, ecc).
  
-#### costi
+##### costi
 
 L'installazione di uno nodo della rete richiedere una spesa che parte da poche decine di euro per un nodo hotspot, a circa 100-150 euro per un nodo foglia. A seconda della complessità di un nodo backbone, il suo costo può salire.
 
 I membri più scaltri possono perfino cimentarsi nell'autocostruzione di qualche antenna, ottenendo con pochi euro ed un po' di piazienza degli ottimi risultati.
 
-#### installazione
+##### installazione
 
 Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondite nella sezione [rete/elementi](/rete/elementi.html "indicazioni sull'installazione di nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!

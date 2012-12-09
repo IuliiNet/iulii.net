@@ -26,7 +26,7 @@ Se si è **interessati a partecipare** allo sviluppo del progetto, si consiglia:
 
 Per informazioni è possibile inviare una email all'indirizzo [info@iulii.net](mailto:info@iulii.net "email contatti iulii.net").
 
-Per approfondimenti visitare la pagina [collaborare](./collaborare/ "collaborare").
+Per approfondimenti visitare la pagina [collaborare](./collaborare.html "collaborare").
 
 ### la rete
 
@@ -40,6 +40,6 @@ Per approfondimenti visitare la pagina [rete](./rete "approfondimenti").
 
 ### legalmente?
 
-Si può fare e c'è gente che lo fa da molto tempo in [tutto il mondo](http://wiki.ninux.org/Links#Wireless_Community_nel_Mondo "wireless community nel mondo"). Maggiori approfondimenti su [wiki.ninux.org/LeggiWireless](http://wiki.ninux.org/LeggiWireless "ninux leggi wireless").
+Da giungo 2012 è tutto legale anche in Italia: [wiki.ninux.org/LeggiWireless](http://wiki.ninux.org/LeggiWireless "ninux leggi wireless").
 
-Dall'ultimo link si capisce che dal giugno 2012 è tutto legale!
+
