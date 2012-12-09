@@ -8,11 +8,14 @@ Parte del materiale presente in questo sito non è originale, ma è scopiazzato 
 
 * [ninux](http://ninux.org "il sito internet della più grande community network italiana"): community network di Roma;
 * [eigennet](http://wiki.eigenlab.org/index.php/EigenNet "eigennet community network"): community network di Pisa;
+* [verona wireless community](http://veronawirelesscommunity.github.com/ "verona community network"): community network di Verona;
 
 #### opensource
-
+ 
 * [openwrt](http://openwrt.org "il sito di openwrt.org") distribuzione linux per router;
 * [batmand-adv](http://www.open-mesh.org/ "il sito di batman-adv") protocollo di routing su layer2;
 * [gentoo](http://gentoo.org "gentoo linux distribuition") sito ufficiale della distribuzione linux gentoo;
 
 #### hardware
+
+* ...
