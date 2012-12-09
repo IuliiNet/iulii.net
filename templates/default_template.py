@@ -4,11 +4,11 @@ import datetime
 SITE_NAME = "iulii.net"
 DESC = "rete mesh libera e decentralizzata in friuli"
 AUTHOR = "lucapost"
-SRC = "/home/lucapost/repo/iulii.net/src"
-DST = "/home/lucapost/repo/iulii.net"
+SRC = "./src"
+DST = "./site/"
 SITEMAP = "sitemap.xml"
 URL = "http://iulii.net"
-PREFIX = "/"
+PREFIX = "/site/"
 HOME = "home"
 PATH_SEPARATOR = '/'
 SRC_EXT = {"markdown": "md", "textile": "tt", "plain": "txt"}
