@@ -4,8 +4,8 @@ import datetime
 SITE_NAME = "iulii.net"
 DESC = "rete mesh libera e decentralizzata in friuli"
 AUTHOR = "lucapost"
-SRC = "src"
-DST = "site"
+SRC = "/home/lucapost/repo/iulii.net/src"
+DST = "/home/lucapost/repo/iulii.net/site"
 SITEMAP = "sitemap.xml"
 URL = "http://iulii.net"
 PREFIX = "/site/"
@@ -14,7 +14,7 @@ PATH_SEPARATOR = '/'
 SRC_EXT = {"markdown": "md", "textile": "tt", "plain": "txt"}
 DST_EXT = "html"
 HIDDEN = set(["404.md", "500.md", "search.md"])
-MENU_CODE = ''
+menu_code = ''
 PAGES = {SRC + "/index.md": ("home page", "wireless mesh network libera e decentralizzata in friuli venezia giulia"),
 	 SRC + "/20_intro.md": ("introduzione", "contenuti introduttivi al progetto iulii.net"),
 	 SRC + "/30_rete/index.md": ("rete", "esempi di configurazione dei nodi della rete"),
