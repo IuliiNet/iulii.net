@@ -16,9 +16,7 @@ DST_EXT = "html"
 HIDDEN = set(["404.md", "500.md", "search.md"])
 MENU_CODE = ''
 PAGES = {SRC + "/index.md": ("home page", "wireless mesh network libera e decentralizzata in friuli venezia giulia"),
-	 SRC + "/20_collaborare/index.md": ("collaborare", "contribuire allo sviluppo della comunity"),
-	 SRC + "/20_collaborare/10_nodo.md": ("creare un nuovo nodo", "istruzioni generali per creare un nuovo nodo della rete"),
-	 SRC + "/20_collaborare/20_docs.md": ("documentazione", "istruzione generali per contribuire alla documentazione"),
+	 SRC + "/20_intro.md": ("introduzione", "contenuti introduttivi al progetto iulii.net"),
 	 SRC + "/30_rete/index.md": ("rete", "esempi di configurazione dei nodi della rete"),
 	 SRC + "/30_rete/20_configs/index.md": ("configurazioni", "esempi di configurazione dei nodi della rete"),
 	 SRC + "/30_rete/20_configs/10_openwrt.md": ("configurazione di openwrt", "esempio di configurazione di nodi openwrt based"),
