@@ -26,8 +26,6 @@ Se si è **interessati a partecipare** allo sviluppo del progetto, si consiglia:
 
 Per informazioni è possibile inviare una email all'indirizzo [info@iulii.net](mailto:info@iulii.net "email contatti iulii.net").
 
-Per approfondimenti visitare la pagina [collaborare](./collaborare.html "collaborare").
-
 ### la rete
 
 I nodi della rete contribuiscono in **modo paritario** (banda simmetrica) al suo sviluppo. Ciascun nodo è in comunicazione diretta con i suoi vicini, e quindi con tutti gli altri nodi della rete, comunemente via wireless, cavo o tunnel vpn.
