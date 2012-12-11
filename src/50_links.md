@@ -7,7 +7,6 @@ Una raccolta di links che possono aiutare ad approfondire la comprensione, lo sv
 Parte del materiale presente in questo sito non è originale, ma è scopiazzato dai siti internet di altre wireless community network come:
 
 * [ninux](http://ninux.org "il sito internet della più grande community network italiana"): community network di Roma;
-* [eigennet](http://wiki.eigenlab.org/index.php/EigenNet "eigennet community network"): community network di Pisa;
 * [verona wireless community](http://veronawirelesscommunity.github.com/ "verona community network"): community network di Verona;
 
 #### siti amici 
