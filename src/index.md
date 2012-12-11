@@ -2,7 +2,7 @@ Il progetto [iulii.net](http://iulii.net "sito del progetoo iulii.net") è per l
 
 Tutti possono partecipare indipendentemente, **senza limiti di espansibilità geografica e censura**.
 
-Il progetto prende ispirazione dalle wireless community network italiane [**ninux**](http://wiki.ninux.org "ninux wiki") ed [**eigennet**](http://wiki.eigenlab.org/index.php/EigenNet "eigennet wiki"), aderisce inoltre al [Manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux").
+Il progetto prende ispirazione dalle wireless community network italiana [**ninux**](http://wiki.ninux.org "ninux wiki"), aderisce inoltre al [Manifesto](http://wiki.ninux.org/Manifesto "manifesto ninux").
 
 ### perchè una rete libera?
 
