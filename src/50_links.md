@@ -3,19 +3,25 @@
 Una raccolta di links che possono aiutare ad approfondire la comprensione, lo sviluppo e la crescita di iulii.net.
 
 #### community network italiane
-
+ 
 Parte del materiale presente in questo sito non è originale, ma è scopiazzato dai siti internet di altre wireless community network come:
 
 * [ninux](http://ninux.org "il sito internet della più grande community network italiana"): community network di Roma;
 * [eigennet](http://wiki.eigenlab.org/index.php/EigenNet "eigennet community network"): community network di Pisa;
 * [verona wireless community](http://veronawirelesscommunity.github.com/ "verona community network"): community network di Verona;
 
+#### siti amici 
+
+* [CASCAFICO](http://cascafico.altervista.org/ "...OpenStreetMapper") portale di cascafico;
+* [HaSGO](http://hasgo.org/ "HackerSpace Gorizia") riferimento online dell'hackerspace goriziano;
+* [luca.postregna.name](http://luca.postregna.name "Il blog di Luca Postregna") il blog personale di Luca Postregna.
+
 #### opensource
  
 * [openwrt](http://openwrt.org "il sito di openwrt.org") distribuzione linux per router;
 * [batmand-adv](http://www.open-mesh.org/ "il sito di batman-adv") protocollo di routing su layer2;
 * [gentoo](http://gentoo.org "gentoo linux distribuition") sito ufficiale della distribuzione linux gentoo;
-
+ 
 #### hardware
-
+ 
 * ...
