@@ -2,8 +2,8 @@
 
 * email: 
 	* [info@iulii.net](mailto:info@iulii.net "contatti email") per qualsiasi informazione;
-	* [ml.ninux.org/mailman/listinfo/iuliinet](http://ml.ninux.org/mailman/listinfo/iuliinet "mailinglist del gruppo ninux FVG") mailinglist del gruppo FVG;
-	* [wiki.ninux.org/MailingLists](http://wiki.ninux.org/MailingLists "ninux mailinglist") mailinglist principale di ninux.org;
+	* [ml.ninux.org/mailman/listinfo/wireless](http://ml.ninux.org/mailman/listinfo/wireless "ninux mailinglist") lista nazionale ninux.org;
+	* [ml.ninux.org/mailman/listinfo/iuliinet](http://ml.ninux.org/mailman/listinfo/iuliinet "mailinglist del gruppo ninux FVG") lista del gruppo fvg;
 * chat:
 	* [irc.freenode.com#iuliinet](irc://irc.freenonde.net#iuliinet) canale irc;
 * social:	
