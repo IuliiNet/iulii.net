@@ -98,6 +98,11 @@ img:hover.banner {
 	background-color: #55a1d5;
 }
 
+code {
+	font-size: 14px;
+	font-family: "Profont";
+}
+
 section {
 	background-color: white;
 }
@@ -124,7 +129,7 @@ section {
 }
 
 nav {
-	height: 158px;
+	height: 238px;
 	padding: 20px 0 0 0;
 	border-bottom: 1px solid #55a1d5;
 }

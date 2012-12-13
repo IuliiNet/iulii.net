@@ -1,6 +1,8 @@
 ### la rete
 
-Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle [reti mesh](http://it.wikipedia.org/wiki/Wireless_mesh_network "wireless mesh network su wikipedia") basate su [batman-adv](http://www.open-mesh.org/wiki/batman-adv/ "batman-adv homepage") in generale. 
+Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle [reti mesh](http://it.wikipedia.org/wiki/Wireless_mesh_network "wireless mesh network su wikipedia") basate su [batman-adv](http://www.open-mesh.org/wiki/batman-adv/ "batman-adv homepage") ed ipv6 in generale.
+
+Il firmware o software di riferimento è la distribuzione linux [openwrt](https://openwrt.org/ "wireless freedom").
 
 #### batman-adv
 
@@ -16,19 +18,12 @@ Un primo aspetto molto interessante di questo approccio alla rete (che tra l'alt
 
 In maniera complementare, l'aggiunta di un altro nodo alla rete mesh sarà automaticamente riconosciuta da tutti i suoi vicini, e quindi da tutti i nodi della rete mesh, contribuendo in questo modo alla crescita della rete.
 
-#### gli elementi della rete
+#### nodi
 
-Gli elementi della rete si possono suddividere in:
+È disponibile un approfondimento sui tipi di [elementi della rete](nodi.html "i nodi della rete"), abitualmente coloro che forniscono i servizi alla rete.
 
-* **nodi**, formano la struttura della rete dove circolano tutte le informazioni.
-   	* **gateway**, sui quali sono in ascolto i demoni per l'assegnazioni degli indirizzi ipv6 (eventaulmente ipv4);
-   	* **client**, tutti gli altri;
-* **clients** sono i dispositivi connessi ai nodi quali pc, notebook, smartphone, tablet, ecc.
-
-I nodi della rete sono collegati tra loro utilizzando il protocollo batman-adv. Normalmente sono questi gli elementi che forniscono servizi alla rete.
-
-E' disponibile un ulteriore approfondimento a proposito delle [configurazioni degli elementi della rete](configs/ "configurazioni degli elementi della rete").
+All'indirizzo [https://github.com/iuliinet/devices](https://github.com/iuliinet/devices "repo di backup configurazioni e binari") sono disponibili alcune configurazioni di esempio.
 
 #### servizi 
-
+ 
 E' disponibile un elenco di parte dei [servizi accessibili](servizi.html "servizi") dalla rete del progetto.
