@@ -2,7 +2,7 @@ Il progetto [iulii.net](http://iulii.net "sito del progetoo iulii.net") è per l
 
 Tutti possono partecipare indipendentemente, **senza limiti di espansibilità geografica e censura**.
 
-Il progetto prende ispirazione dalle wireless community network italiana [**ninux**](http://wiki.ninux.org "ninux wiki") ed aderisce alle indicazioni fornite dal [Pico Peering Agreement v1.0](http://www.picopeer.net/PPA-it.html "pico peering agreement").
+Il progetto prende ispirazione dalle wireless community network italiana [**ninux**](http://wiki.ninux.org "ninux wiki") ed aderisce alle indicazioni fornite dal [Pico Peering Agreement v1.0](http://www.picopeer.net "pico peering agreement").
 
 ### perchè una rete libera?
 
