@@ -1,10 +1,14 @@
+### last news
+
+20121213 - attivata [mailing list](http://ml.ninux.org/mailman/listinfo/iuliinet "lista mail di IuliiNet") iscrivetevi!
+
+### perchè una rete libera?
+
 Il progetto [iulii.net](http://iulii.net "sito del progetoo iulii.net") è per lo sviluppo di una [**rete comunitaria**](http://it.wikipedia.org/wiki/Wireless_community_network "wireless community network su wikipedia").
 
 Tutti possono partecipare indipendentemente, **senza limiti di espansibilità geografica e censura**.
 
 Il progetto prende ispirazione dalle wireless community network italiana [**ninux**](http://wiki.ninux.org "ninux wiki") ed aderisce alle indicazioni fornite dal [**Pico Peering Agreement v1.0**](http://www.picopeer.net "pico peering agreement").
-
-### perchè una rete libera?
 
 iulii.net è un progetto **rete aperta**, **decentralizzata** e di **proprietà del cittadino**. 
 
