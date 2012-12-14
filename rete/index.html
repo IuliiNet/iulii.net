@@ -44,19 +44,15 @@
 		</header>
 		<section class="container_12 clearfix">
 			<article class="grid_8"><h3>la rete</h3>
-<p>Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto IuliiNet e delle <a href="http://it.wikipedia.org/wiki/Wireless_mesh_network" title="wireless mesh network su wikipedia">reti mesh</a> basate su <a href="http://www.open-mesh.org/wiki/batman-adv/" title="batman-adv homepage">batman-adv</a>. </p>
+<p>Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto IuliiNet e delle <a href="http://it.wikipedia.org/wiki/Wireless_mesh_network" title="wireless mesh network su wikipedia">reti mesh</a>.</p>
 <p>Esempi esaustivi di configurazione dei devices sono disponibili nella sezione <a href="../howto.html" title="esempi di configurazione">howto</a>.</p>
 <p>Il firmware o software di riferimento è la distribuzione linux <a href="https://openwrt.org/" title="wireless freedom">openwrt</a>.</p>
-<h4>batman-adv</h4>
-<p>Batman-adv è un protocollo di routing per reti mesh, ottimizzato per l’utilizzo su reti  wireless. Il tipico scenario in cui questo protocollo viene utilizzato è una rete wireless adhoc multi-hop.</p>
-<p>E' un protocollo su layer2, cioè instaura comunicazione con gli altri nodi della rete senza utilizzare i comuni indirizzi ip (che sono sul layer3).</p>
-<p>Quello che sarà necessario indicare a batman-adv sono i device da utilizzare per la mesh, e se il nodo in questione deve funzionare da nodo gateway per internet o da nodo clients. Fatto questo, batman-adv creerà una nuova interfaccia (nel caso bat0) sulla quale si potrà lavorare sul layer3.</p>
-<p>Grazie a tutte le bat0 di ogni device viene quindi a crearsi una struttura di nodi simile ad "un grande switch". Quindi ad ogni bat0 (o al bridge al quale appartiene)sarà possibile assegnare i suoi ip. Quindi ogni device batman-adv riuscirà a vedere, attraverso i suoi vicini, tutti gli altri nodi della rete.</p>
-<p>Un primo aspetto molto interessante di questo approccio alla rete (che tra l'altro forniscono anche altri protocolli di routing come oslr, ed è quindi una caratteristica intrinseca delle reti mesh) è la creazione di una struttura a maglia, nella quale ogni nodo riesce a comunicare direttamente (single-hop) con un alto numero di nodi vicini. Si capisce che in questo modo, la caduta di un singolo nodo non pregiudica il collegamento di altri nodi, che infatti saranno in grado di trovare la strada per le loro comunicazioni attraverso gli altri vicini attivi.</p>
-<p>In maniera complementare, l'aggiunta di un altro nodo alla rete mesh sarà automaticamente riconosciuta da tutti i suoi vicini, e quindi da tutti i nodi della rete mesh, contribuendo in questo modo alla crescita della rete.</p>
 <h4>nodi</h4>
 <p>È disponibile un approfondimento sui tipi di <a href="nodi.html" title="i nodi della rete">elementi della rete</a>, abitualmente coloro che forniscono i servizi alla rete.</p>
-<p>All'indirizzo <a href="https://github.com/iuliinet/devices" title="repo di backup configurazioni e binari">https://github.com/iuliinet/devices</a> sono disponibili alcune configurazioni di esempio.</p>
+<h4>routing</h4>
+<p>Il protocollo <a href="http://www.open-mesh.org/wiki/batman-adv/" title="sito di batman.adv">batman-adv</a> è utilizzto per creare la rete mesh. È disponibile un <a href="routing.html" title="approfondimento su batman-adv">approfondimento</a> sul suo funzionamento.</p>
+<h4>ip</h4>
+<p>La gestione del layer3 è affidata al protocollo ipv6. Si è optato per questa scelta considerando l'altissmo numero di indirizzi disponibili anche al fine di evitare conflitti ip. È disponibile un approfondimento sulla gestione degli indirizzi <a href="ipv6.html" title="gestione degli indirizzi ipv6">ipv6</a>.</p>
 <h4>servizi</h4>
 <p>È disponibile un elenco di parte dei <a href="servizi.html" title="servizi">servizi accessibili</a> dalla rete del progetto.</p>
     			</article>
@@ -72,6 +68,7 @@
 <li class="level-1"><a class="current" href="/rete/index.html">rete</a>
 	<ul>
 	<li class="level-2"><a href="/rete/nodi.html">nodi</a></li>
+	<li class="level-2"><a href="/rete/routing.html">routing</a></li>
 	<li class="level-2"><a href="/rete/ipv6.html">ipv6</a></li>
 	<li class="level-2"><a href="/rete/servizi.html">servizi</a></li>
 	</ul>
@@ -130,7 +127,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20121214 10:04:02 AM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20121214 11:43:01 AM</p>
 				</div>
 			</div>
 			<div class="clear"></div>

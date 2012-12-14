@@ -7,8 +7,8 @@
         	<meta charset="utf-8" />
 <!--		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> -->
         	<meta name="author" content="lucapost" />
-	        <meta name="description" content="contattare via email twitter facebook googleplus irc commenti" />
-        	<title>IuliiNet | contatti</title>
+	        <meta name="description" content="" />
+        	<title>IuliiNet | routing</title>
   		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
@@ -43,31 +43,19 @@
 			<div class="clear"></div>
 		</header>
 		<section class="container_12 clearfix">
-			<article class="grid_8"><h3>contatti</h3>
-<ul>
-<li>email: <ul>
-<li><a href="mailto:info@iulii.net" title="contatti email">info@iulii.net</a> per qualsiasi informazione;</li>
-<li><a href="http://ml.ninux.org/mailman/listinfo/wireless" title="ninux mailinglist">ml.ninux.org/mailman/listinfo/wireless</a> lista nazionale ninux.org;</li>
-<li><a href="http://ml.ninux.org/mailman/listinfo/iuliinet" title="mailinglist del gruppo ninux FVG"><strong>ml.ninux.org/mailman/listinfo/iuliinet</strong></a> lista locale del gruppo FVG [<a href="http://www.mail-archive.com/iuliinet@ml.ninux.org/maillist.xml" title="feed rss della lista IuliiNet">rss</a>];</li>
-</ul>
-</li>
-<li>chat:<ul>
-<li><a href="irc://irc.freenonde.net#iuliinet">irc.freenode.com#iuliinet</a> canale irc;</li>
-</ul>
-</li>
-<li>social: <br />
-<ul>
-<li><a href="https://twitter.com/#!/iuliinet" title="account twitter di iulii.net">twitter.com/iuliinet</a>;</li>
-<li><a href="https://www.facebook.com/Iuliinet" title="pagina facebook di iulii.net">facebook.com/Iuliinet</a>;</li>
-<li><a href="https://plus.google.com/b/110840868072539432354/" title="pagina google+ di iulii.net">plus.google.com/iuliinet</a>.</li>
-</ul>
-</li>
-</ul>
+			<article class="grid_8"><h3>routing</h3>
+<p>Il routing mesh è affidato a <a href="http://www.open-mesh.org/wiki/batman-adv/" title="sito di batman-adv">batman-adv</a>.</p>
+<p>Batman-adv è un protocollo di routing per reti mesh, ottimizzato per l’utilizzo su reti  wireless. Il tipico scenario in cui questo protocollo viene utilizzato è una rete wireless adhoc multi-hop.</p>
+<p>È un protocollo su layer2, cioè instaura comunicazione con gli altri nodi della rete senza utilizzare i comuni indirizzi ip (che sono sul layer3).</p>
+<p>Quello che sarà necessario indicare a batman-adv sono i device da utilizzare per la mesh e se il nodo in questione deve funzionare da nodo gateway per internet o da nodo clients. Fatto questo, batman-adv creerà una nuova interfaccia (nel caso bat0) sulla quale si potrà lavorare sul layer3.</p>
+<p>Grazie a tutte le bat0 di ogni device viene quindi a crearsi una struttura di nodi simile ad "un grande switch". Quindi ad ogni bat0 (o al bridge al quale appartiene) sarà possibile assegnare i suoi ip. Quindi ogni device batman-adv riuscirà a vedere, attraverso i suoi vicini, tutti gli altri nodi della rete.</p>
+<p>Un primo aspetto molto interessante di questo approccio alla rete (che tra l'altro forniscono anche altri protocolli di routing come oslr, ed è quindi una caratteristica intrinseca delle reti mesh) è la creazione di una struttura a maglia, nella quale ogni nodo riesce a comunicare direttamente (single-hop) con un alto numero di nodi vicini. Si capisce che in questo modo, la caduta di un singolo nodo non pregiudica il collegamento di altri nodi, che infatti saranno in grado di trovare la strada per le loro comunicazioni attraverso gli altri vicini attivi.</p>
+<p>In maniera complementare, l'aggiunta di un altro nodo alla rete mesh sarà automaticamente riconosciuta da tutti i suoi vicini, e quindi da tutti i nodi della rete mesh, contribuendo in questo modo alla sua crescita.</p>
     			</article>
 			<div class="grid_4 column">
 				<div class="navigation">
 					<div class="path">
-						<b>path</b>: <a href="index.html">home</a> / contatti
+						<b>path</b>: <a href="../index.html">home</a> / <a href="index.html">rete</a> / routing
 					</div>
 					<nav>
 						
@@ -76,7 +64,7 @@
 <li class="level-1"><a href="/rete/index.html">rete</a>
 	<ul>
 	<li class="level-2"><a href="/rete/nodi.html">nodi</a></li>
-	<li class="level-2"><a href="/rete/routing.html">routing</a></li>
+	<li class="level-2"><a class="current" href="/rete/routing.html">routing</a></li>
 	<li class="level-2"><a href="/rete/ipv6.html">ipv6</a></li>
 	<li class="level-2"><a href="/rete/servizi.html">servizi</a></li>
 	</ul>
@@ -86,7 +74,7 @@
 	<li class="level-2"><a href="/howto/nodo_fonera.html">nodo fonera</a></li>
 	</ul>
 </li>
-<li class="level-1"><a class="current" href="/contatti.html">contatti</a></li>
+<li class="level-1"><a href="/contatti.html">contatti</a></li>
 <li class="level-1"><a href="/links.html">links</a></li>
 </ul>
 
@@ -135,7 +123,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20121213 02:54:21 PM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20121214 11:48:35 AM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
