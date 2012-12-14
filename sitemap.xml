@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iulii.net/partecipare.html</loc>
+    <lastmod>2012-12-14</lastmod>
+  </url>
+  <url>
     <loc>http://iulii.net/links.html</loc>
     <lastmod>2012-12-11</lastmod>
   </url>
@@ -10,7 +14,7 @@
   </url>
   <url>
     <loc>http://iulii.net/howto/nodo_fonera.html</loc>
-    <lastmod>2012-12-13</lastmod>
+    <lastmod>2012-12-14</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/rete/nodi.html</loc>
@@ -18,7 +22,7 @@
   </url>
   <url>
     <loc>http://iulii.net/rete/index.html</loc>
-    <lastmod>2012-12-13</lastmod>
+    <lastmod>2012-12-14</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/rete/ipv6.html</loc>
@@ -30,11 +34,7 @@
   </url>
   <url>
     <loc>http://iulii.net/index.html</loc>
-    <lastmod>2012-12-13</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/intro.html</loc>
-    <lastmod>2012-12-10</lastmod>
+    <lastmod>2012-12-14</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/contatti.html</loc>

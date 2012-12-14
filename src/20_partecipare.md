@@ -1,4 +1,4 @@
-### Introduzione a IuliiNet
+### introduzione a IuliiNet
 
 Una community è fatta di persone. Questo è l'aspetto più importante. 
 
@@ -21,13 +21,16 @@ La scelta di git per mantenere i sorgenti del progetto è suggerita dalla sua di
 
 #### nuovo nodo
  
-L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. 
+L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. Prima di procedere è consigliata:
+
+* **l'aggiunta della posizione del proprio nodo su [map.ninux.org](http://map.ninux.org/ "map server ninux")**, se non altro per sperare che qualcuno vi contatti;
+* l'iscrizione e presentazione sulle mailinglist **wireless** ([iscriviti](mailto:wireless-subscribe@ml.ninux.org), [archivio](http://ml.ninux.org/pipermail/wireless/)) e/o **IuliiNet** ([iscriviti](mailto:iuliinet-subscrive@ml.ninux.org),[archivio](http://ml.ninux.org/pipermail/iuliinet/));
 
 ##### descrizione
  
 Le frequenze liberamente utilizzabili sono tipicamente quella da 2.4GHz e 5GHz. Generalmente un nodo è composto da:
 
-* uno o più moduli radio (router compatibili con il firmware linux openwrt come [fonera](http://wiki.openwrt.org/toh/fon/fonera "fonera su openwrt"), molti prodotti [ubiquiti](http://www.ubnt.com/airmax "sito internet prodotti ubiquit"), mikrotik, ecc), 
+* uno o più moduli radio (router compatibili con il firmware linux [openwrt](http://openwrt.org) come [fonera](http://wiki.openwrt.org/toh/fon/fonera "fonera su openwrt"), molti prodotti [ubiquiti](http://www.ubnt.com/airmax "sito internet prodotti ubiquit"), mikrotik, ecc), 
 * antenne direzionali o omnidirezionali;
 * strutture di supporto (pali, tiranti, cavistica, ecc).
  
@@ -39,4 +42,4 @@ I membri più scaltri possono perfino cimentarsi nell'autocostruzione di qualche
 
 ##### installazione
  
-Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondite nella sezione [rete/elementi](/rete/elementi.html "indicazioni sull'installazione di nuovo nodo di iulii.net"). Le persone che ritengono avere bisogno di aiuto sono invitare a chiederlo!
+Il processo richiede delle conoscienze anche tecniche e di manualità che non tutti possiedono, nulla di insuperabile. Alcune direttive che possono aiutare l'installazione di un nuovo nodo possono essere approfondite nella sezione [howto](../howto "howto"). Chi ritiene di avere bisogno di aiuto è invitato a chiederlo!

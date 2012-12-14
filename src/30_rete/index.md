@@ -1,6 +1,8 @@
 ### la rete
 
-Questa sezione si prefigge l'obiettivo di descrivere, anche entrando in dettagli piuttosto tecnici, la struttura della rete iulii.net e delle [reti mesh](http://it.wikipedia.org/wiki/Wireless_mesh_network "wireless mesh network su wikipedia") basate su [batman-adv](http://www.open-mesh.org/wiki/batman-adv/ "batman-adv homepage") ed ipv6 in generale.
+Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto IuliiNet e delle [reti mesh](http://it.wikipedia.org/wiki/Wireless_mesh_network "wireless mesh network su wikipedia") basate su [batman-adv](http://www.open-mesh.org/wiki/batman-adv/ "batman-adv homepage"). 
+
+Esempi esaustivi di configurazione dei devices sono disponibili nella sezione [howto](../howto.html "esempi di configurazione").
 
 Il firmware o software di riferimento è la distribuzione linux [openwrt](https://openwrt.org/ "wireless freedom").
 
@@ -26,4 +28,4 @@ All'indirizzo [https://github.com/iuliinet/devices](https://github.com/iuliinet/
 
 #### servizi 
  
-E' disponibile un elenco di parte dei [servizi accessibili](servizi.html "servizi") dalla rete del progetto.
+È disponibile un elenco di parte dei [servizi accessibili](servizi.html "servizi") dalla rete del progetto.

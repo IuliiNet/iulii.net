@@ -1,7 +1,7 @@
 import time
 import datetime
 
-SITE_NAME = "iulii.net"
+SITE_NAME = "IuliiNet"
 DESC = "rete mesh libera e decentralizzata in friuli"
 AUTHOR = "lucapost"
 SRC = "/home/lucapost/repo/iulii.net/src"
