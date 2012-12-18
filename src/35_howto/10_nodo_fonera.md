@@ -2,7 +2,7 @@
 
 In questa pagina si approfondisce la configurazione di un router fonera 2.0g (modello 2201) come nodo generico della rete IuliiNet.
 
-#### interfaccie
+#### specifications
 
 * wifi
     * ap0 access point;
