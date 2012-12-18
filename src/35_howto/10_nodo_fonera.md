@@ -10,6 +10,8 @@ In questa pagina si approfondisce la configurazione di un router fonera 2.0g (mo
 * ethernet
     * eth0.1 accesso client;
     * eth0.2 mesh;
+* batman-adv gw_mode client;
+* nessun servizio attivo (no dhcp, no gateway, ecc.);
 
 #### links utili:
 
