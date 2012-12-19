@@ -9,14 +9,6 @@
     <lastmod>2012-12-11</lastmod>
   </url>
   <url>
-    <loc>http://iulii.net/howto/index.html</loc>
-    <lastmod>2012-12-13</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/howto/nodo_fonera.html</loc>
-    <lastmod>2012-12-18</lastmod>
-  </url>
-  <url>
     <loc>http://iulii.net/rete/nodi.html</loc>
     <lastmod>2012-12-13</lastmod>
   </url>
@@ -43,5 +35,17 @@
   <url>
     <loc>http://iulii.net/contatti.html</loc>
     <lastmod>2012-12-13</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/devices/fonera-2.0g.html</loc>
+    <lastmod>2012-12-19</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/devices/index.html</loc>
+    <lastmod>2012-12-19</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/devices/tl-wr1043nd.html</loc>
+    <lastmod>2012-12-19</lastmod>
   </url>
 </urlset>

@@ -7,8 +7,8 @@
         	<meta charset="utf-8" />
 <!--		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> -->
         	<meta name="author" content="lucapost" />
-	        <meta name="description" content="elenco dei servizi disponibili nelle rete" />
-        	<title>IuliiNet | rete</title>
+	        <meta name="description" content="" />
+        	<title>IuliiNet | tl-wr1043nd</title>
   		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
@@ -43,26 +43,34 @@
 			<div class="clear"></div>
 		</header>
 		<section class="container_12 clearfix">
-			<article class="grid_8"><h3>servizi</h3>
-<p>È disponibile una lista di alcuni possibili servizi disponibili nella rete.</p>
+			<article class="grid_8"><h3>nodo su tplink wr1043nd</h3>
+<p>Configurazione di un router tplink wr1043nd come nodo gateway della rete IuliiNet.</p>
+<h4>specifications</h4>
 <ul>
-<li><a href="http://iulii.net" title="sito internet del progetto iulii.net">iulii.net</a> questo sito!</li>
-<li>dns nameserver:</li>
-<li>dhcp (ipv6 e/o ipv6) server;</li>
-<li>gateway internet;</li>
-<li>server http, ftp, cifs, ecc.;</li>
-<li>server voip;</li>
-<li>p2p;</li>
-<li>...</li>
+<li>wifi<ul>
+<li>ap0 (br-lan) access point;</li>
+<li>adhoc0 adhoc per le mesh;</li>
 </ul>
-<h4>sicurezza</h4>
-<p>Ogni utente della rete è responsabile della sicurezza della sua connessione e dei servizi che rende disponibili. </p>
-<p>Ovviamente ognuno dei servizi sopra elencati può essere configurato per funzionare su una sottorete vpn. In questo modo è possibile gestire in maniera sicura sia la riservatezza delle comunicazioni che l'autenticazione per l'accesso ai servizi stessi.</p>
+</li>
+<li>ethernet<ul>
+<li>eth0.1 (br-lan) accesso client;</li>
+<li>eth0.2 mesh;</li>
+</ul>
+</li>
+<li>batman-adv gw_mode server;</li>
+<li>servizi attivi: dhcpv4, radvd, gateway, www.</li>
+</ul>
+<h4>links utili:</h4>
+<ul>
+<li><a href="http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd">wiki.openwrt.org/toh/tp-link/tl-wr1043nd</a> wiki openwrt fonera 2.0g;</li>
+<li><a href="http://wiki.openwrt.org/doc/howto/build" title="building openwrt">wiki.openwrt.org/doc/howto/build</a> informazioni compilazione sorgenti openwrt.</li>
+<li><a href="https://github.com/iuliinet/devices/tree/master/tl-wr1043nd">github.com/iuliinet/devices/tree/master/tl-wr1043nd</a> file di configurazione per tplink wr1043nd;</li>
+</ul>
     			</article>
 			<div class="grid_4 column">
 				<div class="navigation">
 					<div class="path">
-						<b>path</b>: <a href="../index.html">home</a> / <a href="index.html">rete</a> / servizi
+						<b>path</b>: <a href="../index.html">home</a> / <a href="index.html">devices</a> / tl-wr1043nd
 					</div>
 					<nav>
 						
@@ -73,13 +81,13 @@
 	<li class="level-2"><a href="/rete/nodi.html">nodi</a></li>
 	<li class="level-2"><a href="/rete/routing.html">routing</a></li>
 	<li class="level-2"><a href="/rete/ipv6.html">ipv6</a></li>
-	<li class="level-2"><a class="current" href="/rete/servizi.html">servizi</a></li>
+	<li class="level-2"><a href="/rete/servizi.html">servizi</a></li>
 	</ul>
 </li>
 <li class="level-1"><a href="/devices/index.html">devices</a>
 	<ul>
 	<li class="level-2"><a href="/devices/fonera-2.0g.html">fonera-2.0g</a></li>
-	<li class="level-2"><a href="/devices/tl-wr1043nd.html">tl-wr1043nd</a></li>
+	<li class="level-2"><a class="current" href="/devices/tl-wr1043nd.html">tl-wr1043nd</a></li>
 	</ul>
 </li>
 <li class="level-1"><a href="/contatti.html">contatti</a></li>
@@ -131,7 +139,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20121213 09:01:31 PM</p>
+					<p>&copy; 2012 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20121219 02:49:27 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
