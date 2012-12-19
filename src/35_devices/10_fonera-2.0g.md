@@ -16,5 +16,4 @@ In questa pagina si approfondisce la configurazione di un router fonera 2.0g (mo
 #### links utili:
 
 * [wiki.openwrt.org/toh/fon/fonera](http://wiki.openwrt.org/toh/fon/fonera) wiki openwrt fonera 2.0g;
-* [wiki.openwrt.org/doc/howto/build](http://wiki.openwrt.org/doc/howto/build "building openwrt") informazioni compilazione sorgenti openwrt.
 * [github.com/iuliinet/devices/tree/master/fonera-2.0g](https://github.com/iuliinet/devices/tree/master/fonera-2.0g) file di configurazione;
