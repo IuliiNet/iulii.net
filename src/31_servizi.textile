@@ -1,0 +1,18 @@
+h4. servizi
+
+Ogni utente della rete è responsabile della sicurezza della sua connessione e dei servizi che rende disponibili.
+
+Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzionare su una sottorete vpn. In questo modo è possibile gestire in maniera sicura sia la riservatezza delle comunicazioni che l'autenticazione per l'accesso ai servizi stessi.
+
+È disponibile una lista di alcuni possibili servizi disponibili:
+
+* www:
+** "www.iulii.net":http://www.iulii.net questo sito internet
+** "share.iulii.net":http://share.iulii.net/ contenuti digitali in condivisione
+* dns nameserver
+** fd00:1111:2222::1, 10.100.0.1
+** fd00:1111:2222::a0f3:c1ac:6c4c, 10.100.1.1
+** fd00:1111:2222::a0f3:c1ac:6c5f, 10.100.1.2
+** fd00:1111:2222::90f6:52f2:8c2a, 10.100.2.1
+* xmpp video/chat
+** jabber.iulii.net:5222 (ipv6, ipv4) per nuovi account "info@iulii.net":mailto:info@iulii.net

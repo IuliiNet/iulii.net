@@ -1,0 +1,42 @@
+h3. links
+
+Una raccolta di links che possono aiutare ad approfondire la comprensione, lo sviluppo e la crescita di iulii.net.
+
+h4. community network italiane
+
+Parte del materiale presente in questo sito non è originale, ma è scopiazzato dai siti internet di altre wireless community network come:
+
+* "Ninux":http://ninux.org: community network di Roma;
+* "EigenNet":http://www.eigenlab.org/: community network di Pisa;
+* "verona wireless community":http://veronawirelesscommunity.github.com/: community network di Verona;
+* "Ninux Calabria":http://calabria.ninux.org/: community network calabrese;
+
+h4. siti amici
+
+* "CASCAFICO":http://cascafico.altervista.org/ portale di cascafico;
+* "HaSGO":http://hasgo.org/ riferimento online dell'hackerspace goriziano;
+* "luca.postregna.name":http://luca.postregna.name il blog personale di Luca Postregna.
+
+h4. opensource
+
+* "openwrt":http://openwrt.org distribuzione linux per router;
+* "batmand-adv":http://www.open-mesh.org/ protocollo di routing su layer2;
+* "gentoo":http://gentoo.org sito ufficiale della distribuzione linux gentoo;
+
+h4. forum
+
+* "wifi-ita":http://www.wifi-ita.com/forum/ la prima community italiana sul wifi.
+
+h4. antenne
+
+Link sulla progettazione e la costruzione di antenne per il wifi.
+
+2.4GHz
+
+* "omni da 8.5dbi con cavo h155":http://miura69.blogspot.de/2009/12/omni-wifi-da-85dbi-costruiamola-con.html;
+* "cantenna":http://www.napoliwireless.net/doku/doku.php?id=antenna:cantenna;
+
+5GHz
+
+* ...
+

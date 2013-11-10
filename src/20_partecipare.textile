@@ -1,0 +1,38 @@
+h3. partecipare a IuliiNet
+
+*Una community è fatta di persone*.
+
+Tutti i cittadini devono avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi.
+
+Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni "social network":../contatti.html, si può provvedere a:
+
+* lo sviluppo della "*documentazione*":#docs, non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
+* l'installazione di un nuovo "*nodo*":#nodo, questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.
+
+<p id="docs"></p>
+
+h4. sviluppo della documentazione
+
+Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
+
+La scelta di git per mantenere i sorgenti del progetto è suggerita dalla sua diffusioni in questi ambiti piuttosto dalla facilità di mantenere backup decentralizzati. I repositories git del progetto sono disponibili su "github":http://github.com/iuliinet.
+
+<p id="nodo"></p>
+
+h4. nuovo nodo
+
+L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. Prima di procedere è consigliata:
+
+* *l'aggiunta della posizione del proprio nodo su "map.ninux.org":http://map.ninux.org/*, se non altro per sperare che qualcuno vi contatti;
+* l'iscrizione e presentazione sulle mailinglist *wireless* ("iscriviti":mailto:wireless-subscribe@ml.ninux.org, "archivio":http://ml.ninux.org/pipermail/wireless/) e/o *IuliiNet* ("iscriviti":mailto:iuliinet-subscribe@ml.ninux.org, "archivio":http://ml.ninux.org/pipermail/iuliinet );
+
+Le frequenze wifi liberamente utilizzabili sono tipicamente quelle di 2.4GHz e 5GHz. Generalmente un nodo è composto da:
+
+* un dispositivo capace di gestire il routing batman-adv, da posizionare internamente all'edificio (di solito un access point tplink con openwrt, oppure un qualsiasi pc con una distribuzione linux  installata))
+* uno o più access point radio da installare esternamente (tetti, balconi, ecc) per i collegamenti a lunga distanza (apparati della serie AirMax di Ubiquiti, ecc);
+* antenne direzionali o omnidirezionali;
+* strutture di supporto (pali, tiranti, cavistica, ecc).
+
+Le *spese* da affrontare per l'installazione completa di un nodo possono partire da poche decine di €, fino a circa 100-150 € per un nodo foglia. A seconda della posizione strategica del nodo, e quindi del numero di apparati che monta, il suo costo può salire alcune centianaia di €.
+
+I membri più scaltri possono perfino cimentarsi nell'autocostruzione di qualche antenna, ottenendo con pochi euro ed un po' di piazienza degli ottimi risultati.
