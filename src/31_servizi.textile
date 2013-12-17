@@ -16,3 +16,5 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 ** fd00:1111:2222::90f6:52f2:8c2a, 10.100.2.1
 * xmpp video/chat
 ** jabber.iulii.net:5222 (ipv6, ipv4) per nuovi account "info@iulii.net":mailto:info@iulii.net
+* btsync 
+** BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari e sito
