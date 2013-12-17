@@ -17,4 +17,4 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 * xmpp video/chat
 ** jabber.iulii.net:5222 (ipv6, ipv4) per nuovi account "info@iulii.net":mailto:info@iulii.net
 * btsync 
-** BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari e sito
+** "BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC":btsync://BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari e sito
