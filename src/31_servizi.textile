@@ -12,4 +12,4 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 * dns nameserver
 ** fd00:1111:2222::1, 10.100.0.1
 * btsync 
-** "BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC":btsync://BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari e sito
+** "BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC":btsync://BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari openwrt
