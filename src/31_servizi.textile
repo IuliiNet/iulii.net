@@ -11,10 +11,5 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 ** "share.iulii.net":http://share.iulii.net/ contenuti digitali in condivisione
 * dns nameserver
 ** fd00:1111:2222::1, 10.100.0.1
-** fd00:1111:2222::a0f3:c1ac:6c4c, 10.100.1.1
-** fd00:1111:2222::a0f3:c1ac:6c5f, 10.100.1.2
-** fd00:1111:2222::90f6:52f2:8c2a, 10.100.2.1
-* xmpp video/chat
-** jabber.iulii.net:5222 (ipv6, ipv4) per nuovi account "info@iulii.net":mailto:info@iulii.net
 * btsync 
 ** "BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC":btsync://BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari e sito
