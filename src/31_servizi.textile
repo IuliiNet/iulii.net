@@ -11,5 +11,5 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 ** "share.iulii.net":http://share.iulii.net/ contenuti digitali in condivisione
 * dns nameserver
 ** fd00:1111:2222::1, 10.100.0.1
-* btsync 
-** "BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC":btsync://BW3NCZSRSKPF4PISMN2XI3BBR2WUK6ZXC binari openwrt
+* variuos
+** 10.100.2.110 http, ftp, smb
