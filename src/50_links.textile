@@ -33,8 +33,8 @@ Link sulla progettazione e la costruzione di antenne per il wifi.
 
 2.4GHz
 
-* "omni da 8.5dbi con cavo h155":http://miura69.blogspot.de/2009/12/omni-wifi-da-85dbi-costruiamola-con.html;
-* "cantenna":http://www.napoliwireless.net/doku/doku.php?id=antenna:cantenna;
+* "omni da 8.5dbi con cavo h155":http://miura69.blogspot.de/2009/12/omni-wifi-da-85dbi-costruiamola-con.html 
+* "cantenna":http://www.napoliwireless.net/doku/doku.php?id=antenna:cantenna
 
 5GHz
 
