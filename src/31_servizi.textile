@@ -12,4 +12,4 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 * dns nameserver
 ** fd00:1111:2222::1, 10.100.0.1
 * variuos
-** 10.100.2.110 http, ftp, smb
+** "10.100.2.7":http://10.100.2.7 http, ftp, smb
