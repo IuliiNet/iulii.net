@@ -12,7 +12,7 @@ h3. contatti
 ** "facebook.com/Iuliinet":https://www.facebook.com/Iuliinet
 ** "plus.google.com/+IuliiNet":https://plus.google.com/+IuliiNet/
 
-h3. donazioni
+h3(#donazioni). donazioni
 
 Il progetto "IuliiNet":http://iulii.net si basa sul contributo volontario gratuito che ciascun membro della community può fornire.
 
