@@ -9,17 +9,14 @@ Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffu
 * lo sviluppo della "*documentazione*":#docs, non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
 * l'installazione di un nuovo "*nodo*":#nodo, questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.
 
-<p id="docs"></p>
 
-h4. sviluppo della documentazione
+h4(#docs). sviluppo della documentazione
 
 Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
 
 La scelta di git per mantenere i sorgenti del progetto è suggerita dalla sua diffusioni in questi ambiti piuttosto dalla facilità di mantenere backup decentralizzati. I repositories git del progetto sono disponibili su "github":http://github.com/iuliinet.
 
-<p id="nodo"></p>
-
-h4. nuovo nodo
+h4(#nodo). nuovo nodo
 
 L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. Prima di procedere è consigliata:
 

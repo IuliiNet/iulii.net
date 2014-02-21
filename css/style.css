@@ -105,6 +105,11 @@ code {
 	font-family: "Courier";
 }
 
+p code {
+	font-size: 16px;
+	font-family: "Courier";
+}
+
 pre {
 	background-color: lightgrey;
 }
@@ -146,8 +151,12 @@ article:target {
 }
 
 nav {
-	height: 158px;
+	height: 228px;
 	padding: 20px 0 0 0;
+}
+
+nav ul {
+	margin: 0;
 }
 
 footer {

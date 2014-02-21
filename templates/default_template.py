@@ -116,7 +116,8 @@ def header(node):
 			<div class="clear"></div>
 		</header>
 		<section class="container_12 clearfix">
-			<div class="grid_8">'''
+			<div class="grid_8">
+'''
 def footer(node):
     """Build the footer and return it to a string."""
 

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iulii.net/links.html</loc>
+    <lastmod>2014-02-21</lastmod>
+  </url>
+  <url>
     <loc>http://iulii.net/contatti.html</loc>
     <lastmod>2014-02-20</lastmod>
   </url>
@@ -9,24 +13,32 @@
     <lastmod>2013-11-07</lastmod>
   </url>
   <url>
-    <loc>http://iulii.net/firmware.html</loc>
-    <lastmod>2013-11-07</lastmod>
-  </url>
-  <url>
     <loc>http://iulii.net/servizi.html</loc>
     <lastmod>2014-02-20</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/links.html</loc>
-    <lastmod>2014-01-03</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/index.html</loc>
     <lastmod>2013-10-31</lastmod>
   </url>
   <url>
-    <loc>http://iulii.net/partecipare.html</loc>
+    <loc>http://iulii.net/guide/link.html</loc>
+    <lastmod>2014-02-21</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/guide/antenne.html</loc>
+    <lastmod>2014-02-21</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/guide/firmware.html</loc>
     <lastmod>2013-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/guide/index.html</loc>
+    <lastmod>2014-02-21</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/partecipare.html</loc>
+    <lastmod>2014-02-21</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/faq.html</loc>
