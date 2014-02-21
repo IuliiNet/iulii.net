@@ -45,7 +45,9 @@
 			<div class="grid_8">
 	<p>﻿In questa guida approfondiremo alcuni aspetti per calcolare <em>a tavolino</em> la fattibilità di un collegamento wireless, oltre ad alcune considerazioni più generiche sugli ostacoli, le antenne e gli standard 802.11.</p>
 
-	<h3>ripasso teoria</h3>
+	<h3>verifica e calcolo di un link</h3>
+
+	<h4>ripasso teoria</h4>
 
 	<p>Nelle misure radioelettriche vengono usati spesso sistemi di misura differenti i principali sono:</p>
 
@@ -62,7 +64,7 @@
 
 	<p>Altra considerazione importante è la <em>&#8220;attenuazione di tratta&#8221;</em> definita come resistenza o attrito nell&#8217;attraversare un mezzo fisico (es. aria). La formula per chi volesse approfondire è <code>22+20*log(d/λ)</code>, dove d è la distanza in metri ed λ è la lunghezza d&#8217;onda in metri. Ad esempio su una tratta di 10km, a 2.4Ghz di frequenza la cui lunghezza d&#8217;onda è di 3cm, si ottiene un&#8217;attenuazione di circa 132.5dB. Approfondimenti su <a href="http://www.bmtel.it/calcoli_campi_elettromagnetici.htm">www.bmtel.it/calcoli_campi_elettromagnetici.htm</a>.</p>
 
-	<h3>esempio di situazione reale</h3>
+	<h4>esempio di situazione reale</h4>
 
 	<p>Nel calcolare la fattibilità matematica di un collegamento dal sito A al B, come da esempio precedente, procediamo nel seguente modo: </p>
 
@@ -89,13 +91,13 @@
 
 	<p>Quindi il nostro ricevitore con un livello di ricezione -82dBm nella migliore situazione si allinea a 48Mbps. </p>
 
-	<h3>ostacoli ed interferenze</h3>
+	<h4>ostacoli ed interferenze</h4>
 
 	<p>Importante è che nel nostro collegamento non ci siano ostacoli nella <a href="http://it.wikipedia.org/wiki/Zona_di_Fresnel">Zona di Fresnel</a>, infatti una ostruzione parziale in detta zona ridurrà ulteriormente il segnale ricevuto (peggioramento dell&#8217;attenuazione di tratta).</p>
 
 	<p>Un altro fattore da considerare sono gli altri segnali wireless; per esempio un segnale con larghezza di banda 20Mhz sul canale 6 utilizzerà i canali da 4 ad 8 rispettivamente -10Mhz e +10Mhz rispetto al canale centrale, uno o più &#8220;disturbi&#8221; su questi canali fanno aumentare il numero delle ritrasmissioni diminuendo quindi il rendimento o <a href="http://it.wikipedia.org/wiki/Throughput">throughput</a>.</p>
 
-	<h3>consigli sulle antenne</h3>
+	<h4>consigli sulle antenne</h4>
 
 	<p>Le antenne ricoprono un ruolo molto importante e vanno selezionate in base al collegamento da realizzare.</p>
 
@@ -103,7 +105,7 @@
 
 	<p>Per un nodo di accesso wireless utilizzeremo antenne tipo dipolo, ground plane, collineari o slotted caratterizzate da una ampia copertura ed un guadagno basso, mentre per realizzare collegamenti punto-punto utilizzeremo antenne yagi, patch array, paraboliche con pochi gradi di irradiazione ed alto guadagno; entrambe vanno allineate sul piano orizzontale H o verticale V un allineamento diverso può verificarsi in seguito a riflessioni del segnale. È disponibile un approfondimento sulla costruzione amatoriale delle antenne alla pagina <a href="http://iulii.net/guide/antenne.html">iulii.net/guide/antenne.html</a>.</p>
 
-	<h3>considerazioni sui canali di trasmisssione e standard 802.11</h3>
+	<h4>considerazioni sui canali di trasmisssione e standard 802.11</h4>
 
 	<p>Di solito gli apparati commerciali utilizzano il canale radio in entrambe le direzioni ricezione e trasmissione quindi nel caso peggiore utilizzando il canale 50% in upload e 50% in download si dimezzerà la banda teorica del collegamento (half-duplex); altri apparati professionali possono utilizzare canali diversi per le due direzioni (full-duplex) anche su bande diverse 2-5Ghz e antenne diverse.</p>
 
@@ -111,7 +113,7 @@
 
 	<p>Il nuovo standard 802.11ac lavora con un numero maggiore di coppie di trasmettitori e ricevitori da 5 ad 8 ed una velocità massima di 6.77 Gbps la banda radio utilizzata è di 160Mhz (8&#215;20Mhz).</p>
 
-	<h3>links utili</h3>
+	<h4>links utili</h4>
 
 	<p>Online sono disponibili alcuni siti per verificare la connettività tra due o più punti:</p>
 
@@ -160,7 +162,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140221 09:57:55 AM</p>
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140221 10:01:12 AM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
