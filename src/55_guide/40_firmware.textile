@@ -1,0 +1,82 @@
+h3. firmware openwrt
+
+Il nodi della rete *IuliiNet* basano la configurazione degli apparati hardware sulla distriduzione opensource "openwrt":http://openwrt.org per gli access point a terra, e sul firmware propietario AirOS per gli apparati radio ubiquiti.
+
+h4. tplink wr1043nd
+
+Il tplink wr1043nd rappresenta un buon candidato per la gestione del routing a terra di nodi della rete che mantengono collegamenti wireless anche con due o più nodi vicini.
+
+Per l'installazione di openwrt su questo device è possibile fare riferimento alla documentazione presente sul wiki di openwrt:
+
+* "wiki.openwrt.org/toh/tp-link/tl-wr1043nd":http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd
+
+Tipicamente la configurazione di questo genere di apparati prevede un bridge che contiene:
+
+* tutte le porte dello switch untagged;
+* l'interfaccia wireless in modalità access point:
+* la bat0 per il routing mesh
+
+Su questo bridge è configurata la subnet dei clients, comune con quella di gestione delle radio ubiquiti.
+
+Inoltre, Su ogni porta fisica dello switch al quale è collegata una radio ubiquiti è configurata anche una vlan tagged. Ognuna di queste vlan è  quindi inserita nella bat0.
+
+Un esempio di configurazione di questo device è il seguente:
+
+bc. root@kozlic:~# cat /etc/config/network 
+config globals 'globals'
+    option ula_prefix 'fd00:1111:2222::/48'
+config interface 'loopback'
+    option ifname 'lo'
+    option proto 'static'
+    option ipaddr '127.0.0.1'
+    option netmask '255.0.0.0'
+config interface 'wan'
+    option ifname 'eth0.2'
+    option proto 'dhcp'
+config interface 'lan'
+    option ifname 'eth0.1 bat0'
+    option type 'bridge'
+    option proto 'static'
+    option ipaddr '10.100.0.1'
+    option netmask '255.255.0.0'
+    option ip6assign '64' 
+config interface 'mesh3'
+    option ifname 'eth0.3'              
+    option proto 'batadv'
+    option mesh 'bat0'
+config interface 'mesh4'
+    option ifname 'eth0.4'
+    option proto 'batadv'
+    option mesh 'bat0'
+config switch
+    option name 'rtl8366rb'
+    option reset '1'
+    option enable_vlan '1'
+    option enable_vlan4k '1'
+config switch_vlan
+    option device 'rtl8366rb'
+    option vlan '1'
+    option ports '1 2 3 4 5t'   
+config switch_vlan
+    option device 'rtl8366rb'
+    option vlan '2'
+    option ports '0 5t' 
+config switch_vlan
+    option device 'rtl8366rb'
+    option vlan '3'
+    option ports '3t 5t'       
+config switch_vlan               
+    option device 'rtl8366rb'
+    option vlan '4'          
+    option ports '4t 5t'
+
+h4. radio Ubiquiti
+
+Per l'installazione di AirOs sugli apparati Ubiquiti fare riferimento al wiki ufficiale:
+
+* "wiki.ubnt.com/Firmware_Recovery":http://wiki.ubnt.com/Firmware_Recovery
+
+Negli apparati Ubiquiti sono configurate due interfaccie: 
+
+* un bridge0 che contiene l'interfaccia wifi e la rispettiva ed univoca vlan tagged, con subnet 172.16.100.0/24;
+* lan0 nella subnet per il managment 10.100.0.0/16;

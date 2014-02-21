@@ -1,0 +1,73 @@
+﻿In questa guida approfondiremo alcuni aspetti per calcolare _a tavolino_ la fattibilità di un collegamento wireless, oltre ad alcune considerazioni più generiche sugli ostacoli, le antenne e gli standard 802.11.
+
+h3. ripasso teoria
+
+Nelle misure radioelettriche vengono usati spesso sistemi di misura differenti i principali sono:
+
+* *uV* microvolt 
+* *dB* rapporto tra ingresso ed uscita
+* *dBi* guadagno rispetto al dipolo 
+* *dBm* guadagno rispetto al milliWatt
+
+Nelle misure di potenze radioelettriche un raddoppio della potenza equivale a +3dB mentre una divisione a metà del segnale equivale a -3dB, un segnale dieci volte più grande è +10dB, cento volte +20dB e mille +30dB; il dBm è la potenza relativa ad 1 milliWatt su un impedenza di 50 ohm.
+
+Una tabella di conversione tra dBm e uV la potete consultare su "ha5ob.ham.hu/dbm_e.htm":http://ha5ob.ham.hu/dbm_e.htm.
+
+Altra considerazione importante è la _"attenuazione di tratta"_ definita come resistenza o attrito nell'attraversare un mezzo fisico (es. aria). La formula per chi volesse approfondire è @22+20*log(d/λ)@, dove d è la distanza in metri ed λ è la lunghezza d'onda in metri. Ad esempio su una tratta di 10km, a 2.4Ghz di frequenza la cui lunghezza d'onda è di 3cm, si ottiene un'attenuazione di circa 132.5dB. Approfondimenti su "www.bmtel.it/calcoli_campi_elettromagnetici.htm":http://www.bmtel.it/calcoli_campi_elettromagnetici.htm.
+
+h3. esempio di situazione reale
+
+Nel calcolare la fattibilità matematica di un collegamento dal sito A al B, come da esempio precedente, procediamo nel seguente modo: 
+
+* sommiamo la potenza di trasmissione della radio A (15dBm) al guadagno dell'antenna A (18dB)
+* sottraiamo le perdite del cavo A e dei connettori (2dB)
+* sottraiamo l'attenuazione di tratta (132,5dB) 
+* sommiamo il guadagno dell'antenna B (22dB) 
+* sottraiamo perdite di cavi e connettori B (2,5dB)
+* sottraiamo la sensibilità del ricevitore B (-92dBm)
+
+In questo esempio si ottiene 15+18-2-132,5+22-2,5+92=10dB di margine (livello di ricezione -82dBm). Se il risultato del margine di ricezione è negativo significa che il link non è realizzabile; confrontando la tabella di sensibilità del ricevitore alle varie velocità di modulazione potremmo conoscere la velocità massima teorica del link. Per le attenuazioni dei cavi è possibile consultare "www.pianetaradio.it/laboratorio/cavicoassiali.htm":http://www.pianetaradio.it/laboratorio/cavicoassiali.htm.
+
+Esempio: 
+
+bc. 150Mbps@-70dBm 
+65Mbps@-74dBm 
+54Mbps@-80dBm 
+48Mbps@-85dBm 
+24Mbps@-90dBm 
+11Mbps@-92dBm 
+
+Quindi il nostro ricevitore con un livello di ricezione -82dBm nella migliore situazione si allinea a 48Mbps. 
+
+h3. ostacoli ed interferenze
+
+Importante è che nel nostro collegamento non ci siano ostacoli nella "Zona di Fresnel":http://it.wikipedia.org/wiki/Zona_di_Fresnel, infatti una ostruzione parziale in detta zona ridurrà ulteriormente il segnale ricevuto (peggioramento dell'attenuazione di tratta).
+
+Un altro fattore da considerare sono gli altri segnali wireless; per esempio un segnale con larghezza di banda 20Mhz sul canale 6 utilizzerà i canali da 4 ad 8 rispettivamente -10Mhz e +10Mhz rispetto al canale centrale, uno o più "disturbi" su questi canali fanno aumentare il numero delle ritrasmissioni diminuendo quindi il rendimento o "throughput":http://it.wikipedia.org/wiki/Throughput.
+
+h3. consigli sulle antenne
+
+Le antenne ricoprono un ruolo molto importante e vanno selezionate in base al collegamento da realizzare.
+
+I parametri di cui tenere conto sono i diagrammi di radiazione orizzontale H e verticale V ed il loro guadagno dB.
+
+Per un nodo di accesso wireless utilizzeremo antenne tipo dipolo, ground plane, collineari o slotted caratterizzate da una ampia copertura ed un guadagno basso, mentre per realizzare collegamenti punto-punto utilizzeremo antenne yagi, patch array, paraboliche con pochi gradi di irradiazione ed alto guadagno; entrambe vanno allineate sul piano orizzontale H o verticale V un allineamento diverso può verificarsi in seguito a riflessioni del segnale. È disponibile un approfondimento sulla costruzione amatoriale delle antenne alla pagina "iulii.net/guide/antenne.html":http://iulii.net/guide/antenne.html.
+
+h3. considerazioni sui canali di trasmisssione e standard 802.11
+
+Di solito gli apparati commerciali utilizzano il canale radio in entrambe le direzioni ricezione e trasmissione quindi nel caso peggiore utilizzando il canale 50% in upload e 50% in download si dimezzerà la banda teorica del collegamento (half-duplex); altri apparati professionali possono utilizzare canali diversi per le due direzioni (full-duplex) anche su bande diverse 2-5Ghz e antenne diverse.
+
+Un altro sistema di trasmissione a larga banda è lo standard 802.11n di cui il 3T3R MIMO può raggiungere velocità di modulazione di 450Mbps utilizzando 3 trasmettitori e 3 ricevitori contemporaneamente (3x150Mbps).
+
+Il nuovo standard 802.11ac lavora con un numero maggiore di coppie di trasmettitori e ricevitori da 5 ad 8 ed una velocità massima di 6.77 Gbps la banda radio utilizzata è di 160Mhz (8x20Mhz).
+
+h3. links utili
+
+Online sono disponibili alcuni siti per verificare la connettività tra due o più punti:
+
+* "www.teleair.it/utility/verifica-visibilita-by-sice":http://www.teleair.it/utility/verifica-visibilita-by-sice
+* "www.ve2dbe.com/rmonline.html":http://www.ve2dbe.com/rmonline.html
+
+Quest'ultimo mette a disposizione anche un software per le verifiche off-line "www.ve2dbe.com/download/download.html":http://www.ve2dbe.com/download/download.html.
+
+by "@filippomadaro":https://twitter.com/filippomadaro

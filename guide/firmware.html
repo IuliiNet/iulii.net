@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+	<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="it"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="it"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js lt-ie9" lang="it"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js" lang="it"> <!--<![endif]-->
+	<head>
+        	<meta charset="utf-8" />
+        	<meta name="author" content="lucapost" />
+	        <meta name="description" content="" />
+        	<title>IuliiNet | firmware</title>
+  		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+  		<script src="/js/modernizr.js"></script>
+		<link rel="icon" type="image/png" href="/img/iuliinetlogo.png">
+	</head>
+	<body id="top">
+		<div class="social">	
+			<div class="tt-share">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
+			</div>
+			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
+			</div><br/>
+			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
+			</div>
+		</div>
+		<header class="container_12 clearfix">
+			<div class="grid_8">
+				<hgroup>
+					<h1><a href="/">IuliiNet</a></h1>
+					<h2><a href="/">rete wireless mesh libera e decentralizzata in friuli</a></h2>
+				</hgroup>
+			</div>
+			<div class="grid_4">
+				<a href="/">
+					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="/img/iuliinetlogo.png">
+				</a>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<section class="container_12 clearfix">
+			<div class="grid_8">
+	<h3>firmware openwrt</h3>
+
+	<p>Il nodi della rete <strong>IuliiNet</strong> basano la configurazione degli apparati hardware sulla distriduzione opensource <a href="http://openwrt.org">openwrt</a> per gli access point a terra, e sul firmware propietario AirOS per gli apparati radio ubiquiti.</p>
+
+	<h4>tplink wr1043nd</h4>
+
+	<p>Il tplink wr1043nd rappresenta un buon candidato per la gestione del routing a terra di nodi della rete che mantengono collegamenti wireless anche con due o più nodi vicini.</p>
+
+	<p>Per l&#8217;installazione di openwrt su questo device è possibile fare riferimento alla documentazione presente sul wiki di openwrt:</p>
+
+	<ul>
+		<li><a href="http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd">wiki.openwrt.org/toh/tp-link/tl-wr1043nd</a></li>
+	</ul>
+
+	<p>Tipicamente la configurazione di questo genere di apparati prevede un bridge che contiene:</p>
+
+	<ul>
+		<li>tutte le porte dello switch untagged;</li>
+		<li>l&#8217;interfaccia wireless in modalità access point:</li>
+		<li>la bat0 per il routing mesh</li>
+	</ul>
+
+	<p>Su questo bridge è configurata la subnet dei clients, comune con quella di gestione delle radio ubiquiti.</p>
+
+	<p>Inoltre, Su ogni porta fisica dello switch al quale è collegata una radio ubiquiti è configurata anche una vlan tagged. Ognuna di queste vlan è  quindi inserita nella bat0.</p>
+
+	<p>Un esempio di configurazione di questo device è il seguente:</p>
+
+<pre><code>root@kozlic:~# cat /etc/config/network 
+config globals &#39;globals&#39;
+    option ula_prefix &#39;fd00:1111:2222::/48&#39;
+config interface &#39;loopback&#39;
+    option ifname &#39;lo&#39;
+    option proto &#39;static&#39;
+    option ipaddr &#39;127.0.0.1&#39;
+    option netmask &#39;255.0.0.0&#39;
+config interface &#39;wan&#39;
+    option ifname &#39;eth0.2&#39;
+    option proto &#39;dhcp&#39;
+config interface &#39;lan&#39;
+    option ifname &#39;eth0.1 bat0&#39;
+    option type &#39;bridge&#39;
+    option proto &#39;static&#39;
+    option ipaddr &#39;10.100.0.1&#39;
+    option netmask &#39;255.255.0.0&#39;
+    option ip6assign &#39;64&#39; 
+config interface &#39;mesh3&#39;
+    option ifname &#39;eth0.3&#39;              
+    option proto &#39;batadv&#39;
+    option mesh &#39;bat0&#39;
+config interface &#39;mesh4&#39;
+    option ifname &#39;eth0.4&#39;
+    option proto &#39;batadv&#39;
+    option mesh &#39;bat0&#39;
+config switch
+    option name &#39;rtl8366rb&#39;
+    option reset &#39;1&#39;
+    option enable_vlan &#39;1&#39;
+    option enable_vlan4k &#39;1&#39;
+config switch_vlan
+    option device &#39;rtl8366rb&#39;
+    option vlan &#39;1&#39;
+    option ports &#39;1 2 3 4 5t&#39;   
+config switch_vlan
+    option device &#39;rtl8366rb&#39;
+    option vlan &#39;2&#39;
+    option ports &#39;0 5t&#39; 
+config switch_vlan
+    option device &#39;rtl8366rb&#39;
+    option vlan &#39;3&#39;
+    option ports &#39;3t 5t&#39;       
+config switch_vlan               
+    option device &#39;rtl8366rb&#39;
+    option vlan &#39;4&#39;          
+    option ports &#39;4t 5t&#39;
+</code></pre>
+
+	<h4>radio Ubiquiti</h4>
+
+	<p>Per l&#8217;installazione di AirOs sugli apparati Ubiquiti fare riferimento al wiki ufficiale:</p>
+
+	<ul>
+		<li><a href="http://wiki.ubnt.com/Firmware_Recovery">wiki.ubnt.com/Firmware_Recovery</a></li>
+	</ul>
+
+	<p>Negli apparati Ubiquiti sono configurate due interfaccie: </p>
+
+	<ul>
+		<li>un bridge0 che contiene l&#8217;interfaccia wifi e la rispettiva ed univoca vlan tagged, con subnet 172.16.100.0/24;</li>
+		<li>lan0 nella subnet per il managment 10.100.0.0/16;</li>
+	</ul>
+    		</div>
+			<div class="grid_4 column">
+				<div class="navigation">
+					<div class="path">
+						<b>path</b>: <a href="../index.html">home</a> / <a href="index.html">guide</a> / firmware
+					</div>
+					<nav>
+						
+<ul>
+<li class="level-1"><a href="/partecipare.html">partecipare</a></li>
+<li class="level-1"><a href="/rete.html">rete</a></li>
+<li class="level-1"><a href="/servizi.html">servizi</a></li>
+<li class="level-1"><a href="/guide/index.html">guide</a>
+	<ul>
+	<li class="level-2"><a href="/guide/antenne.html">antenne</a></li>
+	<li class="level-2"><a href="/guide/link.html">link</a></li>
+	<li class="level-2"><a class="current" href="/guide/firmware.html">firmware</a></li>
+	</ul>
+</li>
+<li class="level-1"><a href="/links.html">links</a></li>
+<li class="level-1"><a href="/faq.html">faq</a></li>
+<li class="level-1"><a href="/contatti.html">contatti</a></li>
+</ul>
+
+					</nav>
+				</div>
+				<div class="tt-widget">
+                    <a class="twitter-timeline" href="https://twitter.com/IuliiNet" data-border-color="#55a1d5" data-widget-id="349571026952269826">Tweets by @IuliiNet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer class="container_12 clearfix">
+			<div class="grid_12">
+				<a href="#top" title="back to top" class="backtotop">back to top</a>
+				<div class="foot">
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20131107 03:36:32 PM</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</footer>	
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	  	<script src="/js/jquery.js"></script> 
+  		<script src="/js/plugins.js"></script>
+  		<script src="/js/main.js"></script>
+  		<script src="/js/hashgrid.js"></script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  		<script>
+    			var _gaq=[['_setAccount','UA-6164762-12'],['_trackPageview']];
+    			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    			s.parentNode.insertBefore(g,s)}(document,'script'));
+  		</script>
+</body>
+</html>

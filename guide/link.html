@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+	<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="it"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="it"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js lt-ie9" lang="it"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js" lang="it"> <!--<![endif]-->
+	<head>
+        	<meta charset="utf-8" />
+        	<meta name="author" content="lucapost" />
+	        <meta name="description" content="" />
+        	<title>IuliiNet | link</title>
+  		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+  		<script src="/js/modernizr.js"></script>
+		<link rel="icon" type="image/png" href="/img/iuliinetlogo.png">
+	</head>
+	<body id="top">
+		<div class="social">	
+			<div class="tt-share">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
+			</div>
+			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
+			</div><br/>
+			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
+			</div>
+		</div>
+		<header class="container_12 clearfix">
+			<div class="grid_8">
+				<hgroup>
+					<h1><a href="/">IuliiNet</a></h1>
+					<h2><a href="/">rete wireless mesh libera e decentralizzata in friuli</a></h2>
+				</hgroup>
+			</div>
+			<div class="grid_4">
+				<a href="/">
+					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="/img/iuliinetlogo.png">
+				</a>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<section class="container_12 clearfix">
+			<div class="grid_8">
+	<p>﻿In questa guida approfondiremo alcuni aspetti per calcolare <em>a tavolino</em> la fattibilità di un collegamento wireless, oltre ad alcune considerazioni più generiche sugli ostacoli, le antenne e gli standard 802.11.</p>
+
+	<h3>ripasso teoria</h3>
+
+	<p>Nelle misure radioelettriche vengono usati spesso sistemi di misura differenti i principali sono:</p>
+
+	<ul>
+		<li><strong>uV</strong> microvolt </li>
+		<li><strong>dB</strong> rapporto tra ingresso ed uscita</li>
+		<li><strong>dBi</strong> guadagno rispetto al dipolo </li>
+		<li><strong>dBm</strong> guadagno rispetto al milliWatt</li>
+	</ul>
+
+	<p>Nelle misure di potenze radioelettriche un raddoppio della potenza equivale a +3dB mentre una divisione a metà del segnale equivale a -3dB, un segnale dieci volte più grande è +10dB, cento volte +20dB e mille +30dB; il dBm è la potenza relativa ad 1 milliWatt su un impedenza di 50 ohm.</p>
+
+	<p>Una tabella di conversione tra dBm e uV la potete consultare su <a href="http://ha5ob.ham.hu/dbm_e.htm">ha5ob.ham.hu/dbm_e.htm</a>.</p>
+
+	<p>Altra considerazione importante è la <em>&#8220;attenuazione di tratta&#8221;</em> definita come resistenza o attrito nell&#8217;attraversare un mezzo fisico (es. aria). La formula per chi volesse approfondire è <code>22+20*log(d/λ)</code>, dove d è la distanza in metri ed λ è la lunghezza d&#8217;onda in metri. Ad esempio su una tratta di 10km, a 2.4Ghz di frequenza la cui lunghezza d&#8217;onda è di 3cm, si ottiene un&#8217;attenuazione di circa 132.5dB. Approfondimenti su <a href="http://www.bmtel.it/calcoli_campi_elettromagnetici.htm">www.bmtel.it/calcoli_campi_elettromagnetici.htm</a>.</p>
+
+	<h3>esempio di situazione reale</h3>
+
+	<p>Nel calcolare la fattibilità matematica di un collegamento dal sito A al B, come da esempio precedente, procediamo nel seguente modo: </p>
+
+	<ul>
+		<li>sommiamo la potenza di trasmissione della radio A (15dBm) al guadagno dell&#8217;antenna A (18dB)</li>
+		<li>sottraiamo le perdite del cavo A e dei connettori (2dB)</li>
+		<li>sottraiamo l&#8217;attenuazione di tratta (132,5dB) </li>
+		<li>sommiamo il guadagno dell&#8217;antenna B (22dB) </li>
+		<li>sottraiamo perdite di cavi e connettori B (2,5dB)</li>
+		<li>sottraiamo la sensibilità del ricevitore B (-92dBm)</li>
+	</ul>
+
+	<p>In questo esempio si ottiene 15+18-2-132,5+22-2,5+92=10dB di margine (livello di ricezione -82dBm). Se il risultato del margine di ricezione è negativo significa che il link non è realizzabile; confrontando la tabella di sensibilità del ricevitore alle varie velocità di modulazione potremmo conoscere la velocità massima teorica del link. Per le attenuazioni dei cavi è possibile consultare <a href="http://www.pianetaradio.it/laboratorio/cavicoassiali.htm">www.pianetaradio.it/laboratorio/cavicoassiali.htm</a>.</p>
+
+	<p>Esempio: </p>
+
+<pre><code>150Mbps@-70dBm 
+65Mbps@-74dBm 
+54Mbps@-80dBm 
+48Mbps@-85dBm 
+24Mbps@-90dBm 
+11Mbps@-92dBm 
+</code></pre>
+
+	<p>Quindi il nostro ricevitore con un livello di ricezione -82dBm nella migliore situazione si allinea a 48Mbps. </p>
+
+	<h3>ostacoli ed interferenze</h3>
+
+	<p>Importante è che nel nostro collegamento non ci siano ostacoli nella <a href="http://it.wikipedia.org/wiki/Zona_di_Fresnel">Zona di Fresnel</a>, infatti una ostruzione parziale in detta zona ridurrà ulteriormente il segnale ricevuto (peggioramento dell&#8217;attenuazione di tratta).</p>
+
+	<p>Un altro fattore da considerare sono gli altri segnali wireless; per esempio un segnale con larghezza di banda 20Mhz sul canale 6 utilizzerà i canali da 4 ad 8 rispettivamente -10Mhz e +10Mhz rispetto al canale centrale, uno o più &#8220;disturbi&#8221; su questi canali fanno aumentare il numero delle ritrasmissioni diminuendo quindi il rendimento o <a href="http://it.wikipedia.org/wiki/Throughput">throughput</a>.</p>
+
+	<h3>consigli sulle antenne</h3>
+
+	<p>Le antenne ricoprono un ruolo molto importante e vanno selezionate in base al collegamento da realizzare.</p>
+
+	<p>I parametri di cui tenere conto sono i diagrammi di radiazione orizzontale H e verticale V ed il loro guadagno dB.</p>
+
+	<p>Per un nodo di accesso wireless utilizzeremo antenne tipo dipolo, ground plane, collineari o slotted caratterizzate da una ampia copertura ed un guadagno basso, mentre per realizzare collegamenti punto-punto utilizzeremo antenne yagi, patch array, paraboliche con pochi gradi di irradiazione ed alto guadagno; entrambe vanno allineate sul piano orizzontale H o verticale V un allineamento diverso può verificarsi in seguito a riflessioni del segnale. È disponibile un approfondimento sulla costruzione amatoriale delle antenne alla pagina <a href="http://iulii.net/guide/antenne.html">iulii.net/guide/antenne.html</a>.</p>
+
+	<h3>considerazioni sui canali di trasmisssione e standard 802.11</h3>
+
+	<p>Di solito gli apparati commerciali utilizzano il canale radio in entrambe le direzioni ricezione e trasmissione quindi nel caso peggiore utilizzando il canale 50% in upload e 50% in download si dimezzerà la banda teorica del collegamento (half-duplex); altri apparati professionali possono utilizzare canali diversi per le due direzioni (full-duplex) anche su bande diverse 2-5Ghz e antenne diverse.</p>
+
+	<p>Un altro sistema di trasmissione a larga banda è lo standard 802.11n di cui il 3T3R <span class="caps">MIMO</span> può raggiungere velocità di modulazione di 450Mbps utilizzando 3 trasmettitori e 3 ricevitori contemporaneamente (3&#215;150Mbps).</p>
+
+	<p>Il nuovo standard 802.11ac lavora con un numero maggiore di coppie di trasmettitori e ricevitori da 5 ad 8 ed una velocità massima di 6.77 Gbps la banda radio utilizzata è di 160Mhz (8&#215;20Mhz).</p>
+
+	<h3>links utili</h3>
+
+	<p>Online sono disponibili alcuni siti per verificare la connettività tra due o più punti:</p>
+
+	<ul>
+		<li><a href="http://www.teleair.it/utility/verifica-visibilita-by-sice">www.teleair.it/utility/verifica-visibilita-by-sice</a></li>
+		<li><a href="http://www.ve2dbe.com/rmonline.html">www.ve2dbe.com/rmonline.html</a></li>
+	</ul>
+
+	<p>Quest&#8217;ultimo mette a disposizione anche un software per le verifiche off-line <a href="http://www.ve2dbe.com/download/download.html">www.ve2dbe.com/download/download.html</a>.</p>
+
+	<p>by <a href="https://twitter.com/filippomadaro">@filippomadaro</a></p>
+    		</div>
+			<div class="grid_4 column">
+				<div class="navigation">
+					<div class="path">
+						<b>path</b>: <a href="../index.html">home</a> / <a href="index.html">guide</a> / link
+					</div>
+					<nav>
+						
+<ul>
+<li class="level-1"><a href="/partecipare.html">partecipare</a></li>
+<li class="level-1"><a href="/rete.html">rete</a></li>
+<li class="level-1"><a href="/servizi.html">servizi</a></li>
+<li class="level-1"><a href="/guide/index.html">guide</a>
+	<ul>
+	<li class="level-2"><a href="/guide/antenne.html">antenne</a></li>
+	<li class="level-2"><a class="current" href="/guide/link.html">link</a></li>
+	<li class="level-2"><a href="/guide/firmware.html">firmware</a></li>
+	</ul>
+</li>
+<li class="level-1"><a href="/links.html">links</a></li>
+<li class="level-1"><a href="/faq.html">faq</a></li>
+<li class="level-1"><a href="/contatti.html">contatti</a></li>
+</ul>
+
+					</nav>
+				</div>
+				<div class="tt-widget">
+                    <a class="twitter-timeline" href="https://twitter.com/IuliiNet" data-border-color="#55a1d5" data-widget-id="349571026952269826">Tweets by @IuliiNet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer class="container_12 clearfix">
+			<div class="grid_12">
+				<a href="#top" title="back to top" class="backtotop">back to top</a>
+				<div class="foot">
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140221 09:57:55 AM</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</footer>	
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	  	<script src="/js/jquery.js"></script> 
+  		<script src="/js/plugins.js"></script>
+  		<script src="/js/main.js"></script>
+  		<script src="/js/hashgrid.js"></script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  		<script>
+    			var _gaq=[['_setAccount','UA-6164762-12'],['_trackPageview']];
+    			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    			s.parentNode.insertBefore(g,s)}(document,'script'));
+  		</script>
+</body>
+</html>
