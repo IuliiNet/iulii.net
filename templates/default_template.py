@@ -13,7 +13,7 @@ HOME = "home"
 PATH_SEPARATOR = '/'
 SRC_EXT = {"markdown": "md", "textile": "textile", "plain": "txt"}
 DST_EXT = "html"
-HIDDEN = set(["404.textile"])
+HIDDEN = set(["404.textile", "splash.textile"])
 menu_code = ''
 PAGES = {SRC + "/index.md": ("home page", "wireless mesh network libera e decentralizzata in friuli venezia giulia"),
 	 SRC + "/30_rete/index.md": ("rete", "esempi di configurazione dei nodi della rete"),
