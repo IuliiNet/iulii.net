@@ -1,6 +1,9 @@
-h3. last news
+h5. mailinglist activity
 
-20121213 - attivata "mailing list":http://ml.ninux.org/mailman/listinfo/iuliinet iscrivetevi!
+notextile. <script language="JavaScript" src="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=2&desc=1&date=y&targ=n" type="text/javascript"></script>
+<noscript>
+<a href="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=5&desc=1&date=y&targ=n&html=y">View RSS feed</a>
+</noscript>
 
 h3. perchè una rete libera?
 
