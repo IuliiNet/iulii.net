@@ -88,7 +88,6 @@ def header(node):
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/960.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/hashgrid.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
-  		<script src="'''+ PREFIX +'''js/modernizr.js"></script>
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
 	</head>
 	<body id="top">

@@ -1,14 +1,34 @@
-h5. mailinglist activity
+h4. aggiornamento mailinglist
 
-notextile. <script language="JavaScript" src="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=2&desc=1&date=y&targ=n" type="text/javascript"></script>
-<noscript>
-<a href="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=5&desc=1&date=y&targ=n&html=y">View RSS feed</a>
-</noscript>
+notextile. <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("feeds", "1");
+    google.setOnLoadCallback(showFeed);
+    function showFeed() {
+      var feed = new google.feeds.Feed("http://www.mail-archive.com/iuliinet@ml.ninux.org/maillist.xml");
+	  feed.setNumEntries(3);
+      feed.load(function(result) {
+        if (!result.error) {
+		  var container = document.getElementById("headlines");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var li = document.createElement("li");
+            li.innerHTML = '<a href="' + entry.link + '">' + entry.title + '</a> -- ' + entry.contentSnippet ;
+            container.appendChild(li);
+          }
+        } else {
+		    var container = document.getElementById("headlines");
+		    container.innerHTML = '<li><a href="http://sitepoint.com">Get your geek news fix at SitePoint</a></li>';
+		}
+      });
+    }
+    </script>
+<ul id="headlines"></ul> 
 
 h3. hai fretta?
 
 * iscrivi alla mailinglist e presentati "ml.ninux.org/mailman/listinfo/iuliinet":http://ml.ninux.org/mailman/listinfo/iuliinet
-* segnala la tua posizione del tuo nodo potenziale sul mapserver "map.ninux.org/":http://map.ninux.org/
+* segnala la posizione del tuo nodo potenziale sul mapserver "map.ninux.org/":http://map.ninux.org/
 
 h3. perchè una rete libera?
 

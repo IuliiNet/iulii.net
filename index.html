@@ -14,7 +14,6 @@
 		<link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/hashgrid.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
-  		<script src="/js/modernizr.js"></script>
 		<link rel="icon" type="image/png" href="/img/iuliinetlogo.png">
 	</head>
 	<body id="top">
@@ -43,18 +42,38 @@
 		</header>
 		<section class="container_12 clearfix">
 			<div class="grid_8">
-	<h5>mailinglist activity</h5>
+	<h4>aggiornamento mailinglist</h4>
 
-<script language="JavaScript" src="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=2&desc=1&date=y&targ=n" type="text/javascript"></script>
-<noscript>
-<a href="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=5&desc=1&date=y&targ=n&html=y">View RSS feed</a>
-</noscript>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("feeds", "1");
+    google.setOnLoadCallback(showFeed);
+    function showFeed() {
+      var feed = new google.feeds.Feed("http://www.mail-archive.com/iuliinet@ml.ninux.org/maillist.xml");
+	  feed.setNumEntries(3);
+      feed.load(function(result) {
+        if (!result.error) {
+		  var container = document.getElementById("headlines");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var li = document.createElement("li");
+            li.innerHTML = '<a href="' + entry.link + '">' + entry.title + '</a> -- ' + entry.contentSnippet ;
+            container.appendChild(li);
+          }
+        } else {
+		    var container = document.getElementById("headlines");
+		    container.innerHTML = '<li><a href="http://sitepoint.com">Get your geek news fix at SitePoint</a></li>';
+		}
+      });
+    }
+    </script>
+<ul id="headlines"></ul> 
 
 	<h3>hai fretta?</h3>
 
 	<ul>
 		<li>iscrivi alla mailinglist e presentati <a href="http://ml.ninux.org/mailman/listinfo/iuliinet">ml.ninux.org/mailman/listinfo/iuliinet</a></li>
-		<li>segnala la tua posizione del tuo nodo potenziale sul mapserver <a href="http://map.ninux.org/">map.ninux.org/</a></li>
+		<li>segnala la posizione del tuo nodo potenziale sul mapserver <a href="http://map.ninux.org/">map.ninux.org/</a></li>
 	</ul>
 
 	<h3>perchè una rete libera?</h3>
@@ -128,7 +147,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140225 09:49:59 AM</p>
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140225 12:09:36 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
