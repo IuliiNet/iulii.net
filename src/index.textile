@@ -5,6 +5,11 @@ notextile. <script language="JavaScript" src="http://itde.vccs.edu/rss2js/feed2j
 <a href="http://itde.vccs.edu/rss2js/feed2js.php?src=https%3A%2F%2Fwww.mail-archive.com%2Fiuliinet%40ml.ninux.org%2Fmaillist.xml&chan=n&num=5&desc=1&date=y&targ=n&html=y">View RSS feed</a>
 </noscript>
 
+h3. hai fretta?
+
+* iscrivi alla mailinglist e presentati "ml.ninux.org/mailman/listinfo/iuliinet":http://ml.ninux.org/mailman/listinfo/iuliinet
+* segnala la tua posizione del tuo nodo potenziale sul mapserver "map.ninux.org/":http://map.ninux.org/
+
 h3. perchè una rete libera?
 
 Il progetto "IuliiNet":http://iulii.net è per lo sviluppo di una "*rete comunitaria*":http://it.wikipedia.org/wiki/Wireless_community_network, *aperta*, *decentralizzata*, di *proprietà del cittadino* e *senza limiti di espansibilità geografica e censura*.
