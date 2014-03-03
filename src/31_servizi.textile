@@ -6,10 +6,14 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 
 È disponibile una lista di alcuni possibili servizi disponibili:
 
-* www:
-** "www.iulii.net":http://www.iulii.net questo sito internet
-** "share.iulii.net":http://share.iulii.net/ contenuti digitali in condivisione
-* dns nameserver
+* dns
 ** fd00:1111:2222::1, 10.100.0.1
-* variuos
-** "10.100.2.7":http://10.100.2.7 http, ftp, smb
+* http
+** "share.iulii.net":http://share.iulii.net
+** "10.100.2.7":http://10.100.2.7
+* xmpp/jabber
+** "jabber.iulii.net":xmpp://jabber.iulii.net
+* ftp
+** "10.100.2.7":ftp://10.100.2.7
+* smb
+** "10.100.2.7":smb://10.100.2.7
