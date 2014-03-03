@@ -12,7 +12,7 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 ** "share.iulii.net":http://share.iulii.net
 ** "10.100.2.7":http://10.100.2.7
 * xmpp/jabber
-** "jabber.iulii.net":xmpp://jabber.iulii.net
+** jabber.iulii.net:5222
 * ftp
 ** "10.100.2.7":ftp://10.100.2.7
 * smb
