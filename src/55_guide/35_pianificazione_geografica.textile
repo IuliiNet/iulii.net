@@ -1,0 +1,102 @@
+h3. Pianificazione di una WLAN geografica
+
+Un collegamento WiFi a medio e lungo raggio (indicativamente 100-50000 metri) richiede delle considerazioni diverse da quello casalingo. Le frequenze in gioco, le distanze e le piccole potenze richiedono la visibilità ottica dei punti da collegare.
+
+Obbiettivo di questa guida è produre una pagina internet come "questa":http://dp64ud.netai.net/leaflet/Oblizza.html, in cui venga sovrapposto ad una mappa topografica uno strato rappresentante orografia e copertura ottica da un determinato punto d'osservazione (stazione).
+
+Ho scelto determinati strumenti probabilmente sovradimensionati perchè li conoscevo già, ma se qualcuno ha dei consigil su altri, una segnalazione è sempre bene accetta.
+
+Dopo una prima valutazione di massima nello spazio libero basata su una "semplice somma aritmetica":http://iso100.altervista.org/var/wifilink/Teoria_e_pianificazione_WLAN.php#preventivo, dobbiamo necessariamente inserire il nostro modello nell'ambiente dove l'ostacolo (letteralmente) principale è il terreno.
+
+Ingredienti e strumenti:
+
+* dati digitali del terreno (digital elevation model DEM, shuttle Radar Topo Mission SRTM, ecc)
+* RadioMobileforWindows
+* QGIS >= 2.0 con plugin QTiles istallato
+
+h4. Cerchiamo quindi un modello digitale del terreno
+
+Lo forniremo alla nostra utility RadioMobileforWindows (RMW). In rete si reperiscono facilmente file son una risoluzione di 90 metri e googolando un po' se ne trovano anche a 30 metri con qualche difetto, ma utilizzabili. Su Viewfinderpanoramas trovate la "zona N46E013":http://www.viewfinderpanoramas.org/dem1/n46e013.zip.
+
+h4. Usiamo RWM "al minimo" solo per la copertura ottica
+
+Nella finestra _File > map proprieties_
+
+* selezioniamo il percorso dove abbiamo depositato i dati digitali del terreno nel campo Elevation data source
+* impostiamo le coordinate circa a metà strada tra le stazioni da collegare nel campo Centre
+* impostiamo coerentemente le dimensioni dell'immagine in pixel e l'ampiezza in km della zona da osservare
+* checkbox Force gray scale
+* infine Extract (possono esserci dei warning se debordiamo dal dem da ignorare)
+
+!(big)/img/wlan_geo/mapprop1.png(finestra di rwm)!
+	
+Se è andato tutto bene otteniamo un immagine a livelli di grigio dell'orografia della zona impostata. Opzionale: se non conosciamo le coordinate della nostra stazione base, nella finestra _Options > Internet_ possiamo sovrapporre i dati OpenStreetMap:
+
+!(big)/img/wlan_geo/rmw1.png(finestra di rwm)!
+
+Nella finestra della Picture generata:
+
+* clicchiamo sul punto dove vogliamo mettere la stazione (apparare un crocicchio rosso) e con CNTR+U apriamo la finestra _Units proprieties_
+* tra le diverse opzioni possiamo inseririre la stazione alle coordinate dove abbiamo cliccato, oppure inserirle manualmente.
+
+Nella finestra _Tools > Visual coverage_
+
+* selezioniamo nel campo _Observer_ la nostra stazione appena creata; gil altri campi si spiegano da soli (qui c'è la scelta del colore con cui vogliamo riempire le zone visibili dalla stazione);
+* clicchiamo _Draw_
+
+!(big)/img/wlan_geo/rmwcov.png(finestra di rwm)!
+
+!(big)/img/wlan_geo/rmwcov1.png(finestra di rwm)!
+
+Nella finestra _File > Save picture as..._
+
+* salviamo l'immagine in formato lossless (direi tiff o png)
+* con l'immagine verrà salvato anche un file .geo che ci servità per localizzare l'immagine nel mondo
+
+h4. Creiamo una mappa online con Qgis
+
+Apriamo l'immagine creata  con il georeferenziatore _Raster > Georeferencer_ ed alla richiesta selezioniamo il coordinate reference system WGS84
+
+!(big)/img/wlan_geo/georef1.png(finestra di qgis)!
+
+qui rientra in gioco il file .geo che avevamo prodotto con RMW assieme all'immagine... ecco un esempio:
+
+bc. #FILENAME temp.tiff
+URL C:\Documents and Settings\cascafico\Desktop\DAFARE\temp.tiff
+TIEPOINT 0 0      11.49848  46.34639
+TIEPOINT 799 599  12.88052  45.62648
+
+i numeri evidenziati rappresentano le coordinate il latitudine e longitudine dei bordi della nostra immagine e li inseriremo tramite il _Georeferencer_:
+
+!(big)/img/wlan_geo/gcp.png(finestra di qgis)!
+
+Terminata questa fase noiosa in cui compileremo quattro righe della Ground Control Point (GCP) table (legando i quattro angoli dell'immagine alle coordinate del mondo reale), produciamo una _Geotiff_ cioè un immagine con embedded i dati che la localizzano nel sistema di coordinate geografiche WGS84. Per fare ciò clicchiamo il triangolo verde _Start georeferencing_ e compiliamo il form seguente (trascurate EPSG:26592 che mi è sfuggito nello screenshot):
+
+!(big)/img/wlan_geo/geotiff.png(finestra di qgis)!
+
+D'ora in poi l'immagine prodotta potrà viaggiare da sola in qualsiasi software GIS.
+
+Con l'immagine caricata nella canvas (_Load in QGIS when done_) possiamo finalmente produrre con il plugin Qtiles la struttura di cartelle che pubblicheremo in internet.
+
+!(big)/img/wlan_geo/qtiles.png(finestra di qgis)!
+
+avendo cura di compilare il form con le considerazioni che seguono:
+
+!(big)/img/wlan_geo/qtiles1.png(finestra di qgis)!
+
+Sezione _Output_: nel caso il file manager del servizio di spazio web scelto, abbia un decompressore, è comodo produrre un unico archivio compresso.
+
+Sezione _Extent_: verranno prodotti da poche decine a migliaia di file (tiles, tasselli) a seconda dell'estensione geografica della nostra immagine per cui se per le nostre finalità possiamo limitarla, facciamolo qui.
+
+Sezione _Zoom_: analogamente verranno prodotti da poche decine a migliaia di file a seconda del livello massimo di zoom che vogliamo nella nostra mappa online; per le nostre finalità possiamo limitarlo a 15.
+
+Una volta creata la struttura di cartelle, testiamola in locale aprendo il file .html prodotto. se va tutto bene, prima della pubblicazione cancelliamo il percorso locale a (circa) linea 63:
+
+@var mytile =L.tileLayer('file:///C:/<percorso locale>/<Tileset name>/{z}/{x}/{y}.png'@
+
+diventa
+
+@var mytile =L.tileLayer('<Tileset name>/{z}/{x}/{y}.png'@
+
+by "cascafico":https://twitter.com/cascafico
+

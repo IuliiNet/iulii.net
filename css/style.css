@@ -83,6 +83,12 @@ h2 a:visited {
 	color: #55a1d5;
 }
 
+img.big {
+	margin: 0;
+	padding: 0;
+	width: 100%; 
+}
+
 img.iuliinetlogo {
 	width: 298px;
 	height: 298px;
@@ -145,8 +151,7 @@ article:target {
 }
 
 .path {
-	height: 39px;
-	padding: 20px 0 0 10px;
+	padding: 20px 10px 18px 10px;
 	border-bottom: 1px solid #55a1d5;
 }
 
