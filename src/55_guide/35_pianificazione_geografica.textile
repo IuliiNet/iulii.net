@@ -16,7 +16,7 @@ Ingredienti e strumenti:
 
 h4. Cerchiamo quindi un modello digitale del terreno
 
-Lo forniremo alla nostra utility RadioMobileforWindows (RMW). In rete si reperiscono facilmente file son una risoluzione di 90 metri e googolando un po' se ne trovano anche a 30 metri con qualche difetto, ma utilizzabili. Su Viewfinderpanoramas trovate la "zona N46E013":http://www.viewfinderpanoramas.org/dem1/n46e013.zip.
+Lo forniremo alla nostra utility RadioMobileforWindows (RMW). In rete si reperiscono facilmente file con una risoluzione di 90 metri e googolando un po' se ne trovano anche a 30 metri con qualche difetto, ma utilizzabili. Su Viewfinderpanoramas trovate la "zona N46E013":http://www.viewfinderpanoramas.org/dem1/n46e013.zip.
 
 h4. Usiamo RWM "al minimo" solo per la copertura ottica
 
@@ -100,3 +100,4 @@ diventa
 
 by "cascafico":https://twitter.com/cascafico
 
+ps: "fonte originale":http://cascafico.altervista.org/index.php?option=com_content&view=article&id=78:pianificare-una-wlan-geografica&catid=13:wlan&Itemid=17
