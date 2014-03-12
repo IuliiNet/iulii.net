@@ -1,6 +1,6 @@
 h3. links
 
-Una raccolta di links che possono aiutare ad approfondire la comprensione, lo sviluppo e la crescita di iulii.net.
+Una raccolta di links che possono aiutare ad approfondire la comprensione, lo sviluppo e la crescita di IuliiNet.
 
 h4. community network italiane
 
@@ -11,10 +11,17 @@ Parte del materiale presente in questo sito non è originale, ma è scopiazzato 
 * "verona wireless community":http://veronawirelesscommunity.github.com/: community network di Verona;
 * "Ninux Calabria":http://calabria.ninux.org/: community network calabrese;
 
+h4(#materialeinformativo). materiale informativo
+
+* "fondamenti per costruire una rete wireless libera":https://docs.google.com/document/d/1OaV1m08lmJX5wb8kxv31skopSHnXwqzp-6ggxlMImsA/edit#
+* "reti comunitarie: dall'utopia alla realtà":https://docs.google.com/document/d/1g7TwpFX4UG5mlZYTOA9q1Aom7z4ti-jbF59baNuNZ-E/edit#
+* "eigenlab.org/2014/02/howtonet/":http://eigenlab.org/2014/02/howtonet/ ["pdf":http://eigenlab.org/wp-content/uploads/2014/02/HowToNet.pdf]
+
 h4. siti amici
 
 * "CASCAFICO":http://cascafico.altervista.org/ portale di cascafico;
 * "HaSGO":http://hasgo.org/ riferimento online dell'hackerspace goriziano;
+* "wifi.fvg.it":http://www.wifi.fvg.it;
 * "luca.postregna.name":http://luca.postregna.name il blog personale di Luca Postregna.
 
 h4. opensource

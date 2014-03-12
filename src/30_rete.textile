@@ -2,11 +2,7 @@ h3. la rete del progetto IuliiNet
 
 Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto *IuliiNet* e delle "reti mesh":http://it.wikipedia.org/wiki/Wireless_mesh_network.
 
-Documentazione esaustiva sulle reti comunitarie è disponibile grazie al lavoro svolto dal gruppo Ninux di Roma ed Eigennet di Pisa:
-
-* "fondamenti per costruire una rete wireless libera":https://docs.google.com/document/d/1OaV1m08lmJX5wb8kxv31skopSHnXwqzp-6ggxlMImsA/edit#
-* "reti comunitarie: dall'utopia alla realtà":https://docs.google.com/document/d/1g7TwpFX4UG5mlZYTOA9q1Aom7z4ti-jbF59baNuNZ-E/edit#
-* "HowToNet":https://eigenlab.org/2014/02/howtonet/
+Documentazione esaustiva sulle reti comunitarie è disponibile alla pagina "links#materialeinformativo":/links.html#materialeinformativo.
 
 La rete del progetto *IuliiNet* non è comunque una vera e propria rete mesh, in quanto molti degli apparati utilizzati (come le radio ubiquiti) non supportano il protocollo batman-adv e la modalità adhoc. Si è scelto di utilizzare i firmware originali ubiquiti al fine di salvaguardare la qualità dei singoli collegamenti radio e quindi delle performance.
 
