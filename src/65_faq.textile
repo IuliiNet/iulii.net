@@ -1,30 +1,32 @@
 h3. FAQ - frequently asked question
 
-h4. Come posso partecipare?
+* "Come posso partecipare?":#1
+* "Ci si può collegare ad internet?":#2
+* "Ma è legale?":#3
+* "I servizi della rete sono gratuiti?":#4
+* "Quanto costa un nodo?":#5
+* "Quanto si spende in energia elettrica?":#6
 
-Dai una letta a contenuti dei nostri siti internet, segna la tua posizione su "http://map.ninux.org":http://map.ninux.org e contattaci via email indicando le tue intenzioni. Anche se non c'è nessuno vicino a te con il quale fare un collegamento, segna comunque sulla mappa la tua posizione, li tuo vicino che verrà dopo di te avrà un motivo in più per partecipare.
+h4(#1). Come posso partecipare?
 
-h4. Ci si può collegare ad internet?
+Dai una letta a contenuti dei nostri siti internet, segna la tua posizione su "map.ninux.org":http://map.ninux.org e "contattaci":/contatti.html via email indicando le tue intenzioni. Anche se non c'è nessuno vicino a te con il quale fare un collegamento, segna comunque sulla mappa la tua posizione, li tuo vicino che verrà dopo di te avrà un motivo in più per partecipare.
 
-La rete é libera ed aperta a tutti i gestori o &quot;ISP&quot; che possono offrire connettività ad internet, come a tutti i cittadini che desiderano condividere con te la loro connessione.
+h4(#2). Ci si può collegare ad internet?
 
-h4. Ma è legale?
+La rete é libera ed aperta a tutti i gestori o ISP; che possono offrire connettività ad internet, come a tutti i cittadini che desiderano condividere con te la loro connessione. Se vuoi condividere la connessione con un tuo amico o vicino, sono solo fatti vostri ed entra in gioco il contratto del vostro ISP.
+
+h4(#3). Ma è legale?
 
 I collegamenti privati sulle frequenze collettive sono stati liberalizzati nel 2012 (D.Lgs. n.70) con le ultime modifiche al codice per le comunicazioni elettroniche.
 
-h4. I servizi della rete sono gratuiti?
+h4(#4). Avete servizi disponibili?
 
-Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche &quot;voip&quot; possono richiedere contratti e canoni di utilizzo.
+Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo.
 
-h4. Quanto costa un nodo?
+h4(#5). Quanto costa un nodo?
 
 L'investimento dipende da molti fattori. Parte da poche decine di euro per un router compatibile, fino ad alcune centinaia di euro per apparati più performanti utilizzati nei collegamenti di qualche decina di km.
 
-h4. Quanto si spende in energia elettrica?
+h4(#6). Quanto si spende in energia elettrica?
 
 Un apparato circa 4/5 Watt di energia che sono circa 6/8 € ad anno di energia. Per l'alimentazione dei dispositivi è anche possibile utilizzare un piccolo pannello solare per l'installazione fuori dalla propria abitazione.
-
-h4. Posso riutilizzare il mio apparato per la connessione?
-
-Molti apparati &quot;wi-fi&quot; ed &quot;hiperlan&quot; possono essere riutilizzati, quelli &quot;wi-max&quot; no in quanto le licenze per queste frequenze radio non sono libere ma vengono concesse in uso solo alle aziende che ne hanno pagato l'utilizzo, puoi comunque equipaggiarti di un nodo free e quando la tua zona sarà' interconnessa al resto della rete deciderai se utilizzare ancora la vecchia connessione.
-
