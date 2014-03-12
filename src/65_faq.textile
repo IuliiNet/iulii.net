@@ -17,7 +17,7 @@ La rete é libera ed aperta a tutti i gestori o ISP che possono offrire connetti
 
 h4(#3). Ma è legale?
 
-I collegamenti privati sulle frequenze collettive sono stati liberalizzati nel 2012 (D.Lgs. n.70) con le ultime modifiche al codice per le comunicazioni elettroniche.
+I collegamenti privati sulle frequenze collettive sono stati liberalizzati nel 2012 (D.Lgs. n.70) con le ultime modifiche al codice per le comunicazioni elettroniche. Approfondimenti alla pagina "wiki.ninux.org/LeggiWireless":http://wiki.ninux.org/LeggiWireless.
 
 h4(#4). Avete servizi disponibili?
 

@@ -47,7 +47,7 @@ h3. i principi ispiratori (tratti da ninux.org)
 
 h3. collaborare
 
-Se si è interessati a partecipare allo sviluppo del progetto, è possibile contribuire allo sviluppo della "documentazione":partecipare#docs e/o con l'installazione di un nuovo "nodo":partecipare#nodo.
+Se si è interessati a partecipare allo sviluppo del progetto, è possibile contribuire allo sviluppo della "documentazione":/partecipare#docs e/o con l'installazione di un nuovo "nodo":/partecipare#nodo.
 
 h3. la rete
 
@@ -57,8 +57,4 @@ La distanza tra due nodi _vicini_ può arrivare anche a diverse decine di km, il
 
 Il propietario di ciascun nodo è responsabile dei *"servizi":/servizi* che mette a disposizione. Abbattere il digital divide è solo uno degli obiettivi che questa rete si prefige.
 
-Per approfondimenti visitare la pagina "rete":./rete.
-
-h3. legalmente?
-
-Da giungo 2012 è tutto legale anche in Italia: "wiki.ninux.org/LeggiWireless":http://wiki.ninux.org/LeggiWireless.
+Per approfondimenti visitare la pagina "rete":/rete.
