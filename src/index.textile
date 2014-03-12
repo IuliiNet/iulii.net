@@ -1,4 +1,4 @@
-h4. aggiornamento mailinglist
+h3. aggiornamento mailinglist
 
 notextile. <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -36,7 +36,7 @@ Il progetto "IuliiNet":http://iulii.net è per lo sviluppo di una "*rete comunit
 
 Il progetto prende ispirazione dalle wireless community network italiana "*ninux*":http://wiki.ninux.org ed aderisce alle indicazioni fornite dal "*PPA v1.0*":http://www.picopeer.net (pico peering agreement).
 
-h4. i principi ispiratori (tratti da ninux.org)
+h3. i principi ispiratori (tratti da ninux.org)
 
 * obiettivo è quello di creare una rete allo scopo di sperimentare nuove soluzioni e tecnologie, diffondere conoscenza, produrre consapevolezza, divertirsi;
 * si fa parte di un processo di interconnessione globale, cosi' come espresso nel "Wireless Commons Manifesto":http://wiki.ninux.org/WirelessCommonsManifesto ;
