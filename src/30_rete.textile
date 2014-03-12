@@ -1,10 +1,10 @@
 h3. la rete del progetto IuliiNet
 
-Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto *IuliiNet* e delle "reti mesh":http://it.wikipedia.org/wiki/Wireless_mesh_network.
+Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto IuliiNet e delle "reti mesh":http://it.wikipedia.org/wiki/Wireless_mesh_network.
 
 Documentazione esaustiva sulle reti comunitarie è disponibile alla pagina "links#materialeinformativo":/links.html#materialeinformativo.
 
-La rete del progetto *IuliiNet* non è comunque una vera e propria rete mesh, in quanto molti degli apparati utilizzati (come le radio ubiquiti) non supportano il protocollo batman-adv e la modalità adhoc. Si è scelto di utilizzare i firmware originali ubiquiti al fine di salvaguardare la qualità dei singoli collegamenti radio e quindi delle performance.
+La rete del progetto IuliiNet non è comunque una vera e propria rete mesh, in quanto molti degli apparati utilizzati (come le radio ubiquiti) non supportano il protocollo batman-adv e la modalità adhoc. Si è scelto di utilizzare i firmware originali ubiquiti al fine di salvaguardare la qualità dei singoli collegamenti radio e quindi delle performance.
 
 h4. nodi
 
