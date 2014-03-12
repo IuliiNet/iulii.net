@@ -53,6 +53,7 @@ h4 {
 
 a {
 	color: black;
+	font-weight: bold;
 }
 
 a:hover {
@@ -134,10 +135,6 @@ article:target {
     animation: fadeIn 2s;
 }
 
-p a {
-	font-weight: bold;
-}
-
 .social {
 	position:fixed;
 	left: 10px;
@@ -164,6 +161,10 @@ nav {
 
 nav ul {
 	margin: 0;
+}
+
+nav a {
+	font-weight: normal;	
 }
 
 footer {

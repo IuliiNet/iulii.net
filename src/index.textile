@@ -47,7 +47,7 @@ h3. i principi ispiratori (tratti da ninux.org)
 
 h3. collaborare
 
-Se si è *interessati a partecipare* allo sviluppo del progetto, è possibile contribuire allo sviluppo della "documentazione":partecipare#docs e/o con l'installazione di un nuovo "nodo":partecipare#nodo.
+Se si è interessati a partecipare allo sviluppo del progetto, è possibile contribuire allo sviluppo della "documentazione":partecipare#docs e/o con l'installazione di un nuovo "nodo":partecipare#nodo.
 
 h3. la rete
 
