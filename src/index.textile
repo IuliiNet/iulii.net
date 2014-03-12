@@ -32,7 +32,7 @@ h3. hai fretta?
 
 h3. perchè una rete libera?
 
-Il progetto "IuliiNet":http://iulii.net è per lo sviluppo di una "*rete comunitaria*":http://it.wikipedia.org/wiki/Wireless_community_network, *aperta*, *decentralizzata*, di *proprietà del cittadino* e *senza limiti di espansibilità geografica e censura*.
+Il progetto "IuliiNet":http://iulii.net è per lo sviluppo di una "*rete comunitaria*":http://it.wikipedia.org/wiki/Wireless_community_network, *aperta*, *decentralizzata*, di *proprietà del cittadino* e *senza limiti di espandibilità geografica e censura*.
 
 Il progetto prende ispirazione dalle wireless community network italiana "*ninux*":http://wiki.ninux.org ed aderisce alle indicazioni fornite dal "*PPA v1.0*":http://www.picopeer.net (pico peering agreement).
 
