@@ -1,4 +1,4 @@
-h3. FAQ - frequently asked question
+h3. FAQ
 
 * "Come posso partecipare?":#1
 * "Ci si può collegare ad internet?":#2
