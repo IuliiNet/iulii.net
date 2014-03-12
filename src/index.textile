@@ -27,8 +27,8 @@ notextile. <script type="text/javascript" src="http://www.google.com/jsapi"></sc
 
 h3. hai fretta?
 
-* iscriviti alla mailinglist e presentati "ml.ninux.org/mailman/listinfo/iuliinet":http://ml.ninux.org/mailman/listinfo/iuliinet
-* segnala la posizione del tuo nodo potenziale sul mapserver "map.ninux.org/":http://map.ninux.org/
+* metti la posizione del tuo nodo potenziale sul mapserver "map.ninux.org/":http://map.ninux.org/
+* presentati e segnala la disponibilità del tuo nuovo nodo potenziale nella mailinglist "ml.ninux.org/mailman/listinfo/iuliinet":http://ml.ninux.org/mailman/listinfo/iuliinet (se sei timido puoi farlo anche contattando "info@iulii.net":mailto:info@iulii.net)
 
 h3. perchè una rete libera?
 
