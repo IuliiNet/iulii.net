@@ -9,7 +9,7 @@ h3. FAQ
 
 h4(#1). Come posso partecipare?
 
-Dai una letta a contenuti dei nostri siti internet, segna la tua posizione su "map.ninux.org":http://map.ninux.org e "contattaci":/contatti.html via email indicando le tue intenzioni. Anche se non c'è nessuno vicino a te con il quale fare un collegamento, segna comunque sulla mappa la tua posizione, li tuo vicino che verrà dopo di te avrà un motivo in più per partecipare.
+Dai una letta a contenuti dei nostri siti internet, segna la tua posizione su "map.ninux.org":http://map.ninux.org e "contattaci":/contatti via email indicando le tue intenzioni. Anche se non c'è nessuno vicino a te con il quale fare un collegamento, segna comunque sulla mappa la tua posizione, li tuo vicino che verrà dopo di te avrà un motivo in più per partecipare.
 
 h4(#2). Ci si può collegare ad internet?
 
@@ -21,7 +21,7 @@ I collegamenti privati sulle frequenze collettive sono stati liberalizzati nel 2
 
 h4(#4). Avete servizi disponibili?
 
-Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo. Una lista non aggiornata è disponibile alla pagina "servizi":/servizi.html.
+Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo. Una lista non aggiornata è disponibile alla pagina "servizi":/servizi.
 
 h4(#5). Quanto costa un nodo?
 
