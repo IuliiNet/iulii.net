@@ -21,7 +21,7 @@ h4. siti amici
 
 * "CASCAFICO":http://cascafico.altervista.org/ portale di cascafico;
 * "HaSGO":http://hasgo.org/ riferimento online dell'hackerspace goriziano;
-* "wifi.fvg.it":http://www.wifi.fvg.it;
+* "wifi.fvg.it":http://www.wifi.fvg.it blog di wifi fvg;
 * "luca.postregna.name":http://luca.postregna.name il blog personale di Luca Postregna.
 
 h4. opensource
