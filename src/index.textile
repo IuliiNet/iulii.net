@@ -6,7 +6,7 @@ notextile. <script type="text/javascript" src="http://www.google.com/jsapi"></sc
     google.setOnLoadCallback(showFeed);
     function showFeed() {
       var feed = new google.feeds.Feed("http://www.mail-archive.com/iuliinet@ml.ninux.org/maillist.xml");
-	  feed.setNumEntries(3);
+	  feed.setNumEntries(6);
       feed.load(function(result) {
         if (!result.error) {
 		  var container = document.getElementById("headlines");
