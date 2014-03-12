@@ -13,7 +13,7 @@ Dai una letta a contenuti dei nostri siti internet, segna la tua posizione su "m
 
 h4(#2). Ci si può collegare ad internet?
 
-La rete é libera ed aperta a tutti i gestori o ISP; che possono offrire connettività ad internet, come a tutti i cittadini che desiderano condividere con te la loro connessione. Se vuoi condividere la connessione con un tuo amico o vicino, sono solo fatti vostri ed entra in gioco il contratto del vostro ISP.
+La rete é libera ed aperta a tutti i gestori o ISP che possono offrire connettività ad internet, come a tutti i cittadini che desiderano condividere con te la loro connessione. Se vuoi condividere la connessione con un tuo amico o vicino, sono solo fatti vostri ed entra in gioco il contratto del vostro ISP.
 
 h4(#3). Ma è legale?
 
@@ -21,7 +21,7 @@ I collegamenti privati sulle frequenze collettive sono stati liberalizzati nel 2
 
 h4(#4). Avete servizi disponibili?
 
-Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo.
+Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo. Una lista non aggiornata è disponibile alla pagina "servizi":/servizi.html.
 
 h4(#5). Quanto costa un nodo?
 
