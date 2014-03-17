@@ -57,26 +57,30 @@ Da notare la configurazione dello switch eth0, sulla quale sono state create due
 
 Nell'eventualità si volesse aggiungere una seconda interfaccia nella bat0, con relativa seconda radio ubiquiti collegata alla porta fisica 3 dello switch, indicativamente è sufficiente modificare la parte finale del file /etc/config/network come segue:
 
-bc. config interface 'mesh0'
+bc. config interface 'mesh9'
+	option proto 'batadv'
+	option mesh 'bat0'
+	option ifname 'eth0.9'
+config interface 'mesh10'
         option proto 'batadv'
         option mesh 'bat0'
-        option ifname 'eth0.9 eth0.10'
+        option ifname 'eth0.10'
 config switch
-        option name 'switch0'
-        option reset '1'
-        option enable_vlan '1'
+	option name 'switch0'
+	option reset '1'
+	option enable_vlan '1'
 config switch_vlan
-        option device 'switch0'
-        option vlan '2'
-        option ports '0t 1 2 3t 4t'
+	option device 'switch0'
+	option vlan '2'
+	option ports '0t 1 2 3t 4t'
 config switch_vlan              
         option device 'switch0'   
         option vlan '9'       
         option ports '0t 4t'
-config switch_vlan              
-        option device 'switch0'   
-        option vlan '10'       
-        option ports '0t 3t'
+config switch_vlan                 
+        option device 'switch0'    
+        option vlan '10'        
+        option ports '0t 3t' 
 
 Ogni vlan (es eth0.9 ed eth0.10) corrisponde alla univoca radio ubiquiti.
 

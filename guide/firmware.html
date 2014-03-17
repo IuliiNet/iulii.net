@@ -106,26 +106,30 @@ config switch_vlan
 
 	<p>Nell&#8217;eventualità si volesse aggiungere una seconda interfaccia nella bat0, con relativa seconda radio ubiquiti collegata alla porta fisica 3 dello switch, indicativamente è sufficiente modificare la parte finale del file /etc/config/network come segue:</p>
 
-<pre><code>config interface &#39;mesh0&#39;
+<pre><code>config interface &#39;mesh9&#39;
+	option proto &#39;batadv&#39;
+	option mesh &#39;bat0&#39;
+	option ifname &#39;eth0.9&#39;
+config interface &#39;mesh10&#39;
         option proto &#39;batadv&#39;
         option mesh &#39;bat0&#39;
-        option ifname &#39;eth0.9 eth0.10&#39;
+        option ifname &#39;eth0.10&#39;
 config switch
-        option name &#39;switch0&#39;
-        option reset &#39;1&#39;
-        option enable_vlan &#39;1&#39;
+	option name &#39;switch0&#39;
+	option reset &#39;1&#39;
+	option enable_vlan &#39;1&#39;
 config switch_vlan
-        option device &#39;switch0&#39;
-        option vlan &#39;2&#39;
-        option ports &#39;0t 1 2 3t 4t&#39;
+	option device &#39;switch0&#39;
+	option vlan &#39;2&#39;
+	option ports &#39;0t 1 2 3t 4t&#39;
 config switch_vlan              
         option device &#39;switch0&#39;   
         option vlan &#39;9&#39;       
         option ports &#39;0t 4t&#39;
-config switch_vlan              
-        option device &#39;switch0&#39;   
-        option vlan &#39;10&#39;       
-        option ports &#39;0t 3t&#39;
+config switch_vlan                 
+        option device &#39;switch0&#39;    
+        option vlan &#39;10&#39;        
+        option ports &#39;0t 3t&#39; 
 </code></pre>
 
 	<p>Ogni vlan (es eth0.9 ed eth0.10) corrisponde alla univoca radio ubiquiti.</p>
@@ -183,7 +187,7 @@ config switch_vlan
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140317 02:25:56 PM</p>
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140317 03:09:52 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
