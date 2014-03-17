@@ -145,9 +145,9 @@ config switch_vlan
 	<p>Negli apparati Ubiquiti sono configurate due interfaccie: </p>
 
 	<ul>
-		<li>un bridge0 che contiene l&#8217;interfaccia wifi e la rispettiva ed univoca vlan tagged (es. eth0.9)</li>
-		<li>lan0 per il backup con ip 192.168.1.20/24</li>
-		<li>la vlan (es. eth0.9) configurata nella subnet dei clients</li>
+		<li>lan0 per il backup con ip 192.168.1.20/24, uguale per ogni radio ubiquiti;</li>
+		<li>un bridge0 che contiene l&#8217;interfaccia wifi e la rispettiva ed univoca vlan tagged (es. eth0.9), la vlan cambia per ogni radio;</li>
+		<li>la vlan (es. eth0.2) configurata nella subnet dei clients, che deve essere uguale per tutte le radio dello stesso nodo.</li>
 	</ul>
     		</div>
 			<div class="grid_4 column">
@@ -187,7 +187,7 @@ config switch_vlan
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140317 03:09:52 PM</p>
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140317 06:12:05 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>

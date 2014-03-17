@@ -92,6 +92,6 @@ Per l'installazione di AirOs sugli apparati Ubiquiti fare riferimento al wiki uf
 
 Negli apparati Ubiquiti sono configurate due interfaccie: 
 
-* un bridge0 che contiene l'interfaccia wifi e la rispettiva ed univoca vlan tagged (es. eth0.9)
-* lan0 per il backup con ip 192.168.1.20/24
-* la vlan (es. eth0.9) configurata nella subnet dei clients
+* lan0 per il backup con ip 192.168.1.20/24, uguale per ogni radio ubiquiti;
+* un bridge0 che contiene l'interfaccia wifi e la rispettiva ed univoca vlan tagged (es. eth0.9), la vlan cambia per ogni radio;
+* la vlan (es. eth0.2) configurata nella subnet dei clients, che deve essere uguale per tutte le radio dello stesso nodo.
