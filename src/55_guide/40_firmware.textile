@@ -1,74 +1,84 @@
 h3. firmware openwrt
 
-Il nodi della rete *IuliiNet* basano la configurazione degli apparati hardware sulla distriduzione opensource "openwrt":http://openwrt.org per gli access point a terra, e sul firmware propietario AirOS per gli apparati radio ubiquiti.
+Il nodi della rete IuliiNet basano la configurazione degli apparati hardware sulla distriduzione opensource "openwrt":http://openwrt.org per gli access point a terra, e sul firmware propietario AirOS per gli apparati radio ubiquiti. Alcuni router a terra sono dei pc più performanti come mini-itx gentoo based oppure ubiquiti edgerouter.
 
-h4. tplink wr1043nd
+h4. tplink
 
-Il tplink wr1043nd rappresenta un buon candidato per la gestione del routing a terra di nodi della rete che mantengono collegamenti wireless anche con due o più nodi vicini.
+I router/access point tplink rappresentano dei buoni candidati per la gestione del routing a terra di nodi della rete che mantengono collegamenti wireless anche con due o più nodi vicini.
 
-Per l'installazione di openwrt su questo device è possibile fare riferimento alla documentazione presente sul wiki di openwrt:
+Per l'installazione di openwrt su questi device è possibile fare riferimento alla documentazione presente sul wiki di openwrt:
 
-* "wiki.openwrt.org/toh/tp-link/tl-wr1043nd":http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd
+* "wiki.openwrt.org/toh/tp-link/tl-wr740n":http://wiki.openwrt.org/toh/tp-link/tl-wr740n
 
 Tipicamente la configurazione di questo genere di apparati prevede un bridge che contiene:
 
-* tutte le porte dello switch untagged;
-* l'interfaccia wireless in modalità access point:
-* la bat0 per il routing mesh
+* le porte dello switch libere per la connessione dei client via ethernet (es. eth0.2)
+* l'interfaccia radio wireless (es. wlan0 in ap)
+* l'interfaccia bat0 per il routing mesh
 
 Su questo bridge è configurata la subnet dei clients, comune con quella di gestione delle radio ubiquiti.
 
-Inoltre, Su ogni porta fisica dello switch al quale è collegata una radio ubiquiti è configurata anche una vlan tagged. Ognuna di queste vlan è  quindi inserita nella bat0.
+Inoltre, Su ogni porta fisica dello switch alla quale è collegata una radio ubiquiti è configurata anche una vlan tagged (es. eth0.9). Ognuna di queste vlan è  quindi inserita nella bat0.
 
-Un esempio di configurazione di questo device è il seguente:
+Di seguito un esempio di configurazione di un tplink wr740n collegato ad una singola radio ubiquiti:
 
-bc. root@kozlic:~# cat /etc/config/network 
+bc. interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
 config globals 'globals'
-    option ula_prefix 'fd00:1111:2222::/48'
-config interface 'loopback'
-    option ifname 'lo'
-    option proto 'static'
-    option ipaddr '127.0.0.1'
-    option netmask '255.0.0.0'
-config interface 'wan'
-    option ifname 'eth0.2'
-    option proto 'dhcp'
+	option ula_prefix 'fdbe:dfa8:402b::/48'
 config interface 'lan'
-    option ifname 'eth0.1 bat0'
-    option type 'bridge'
-    option proto 'static'
-    option ipaddr '10.100.0.1'
-    option netmask '255.255.0.0'
-    option ip6assign '64' 
-config interface 'mesh3'
-    option ifname 'eth0.3'              
-    option proto 'batadv'
-    option mesh 'bat0'
-config interface 'mesh4'
-    option ifname 'eth0.4'
-    option proto 'batadv'
-    option mesh 'bat0'
+	option ifname 'eth0.2 eth1 bat0'
+        option type 'bridge'
+        option proto 'static'
+        option ipaddr '192.168.112.1' 
+        option netmask '255.255.255.0'
+	option ip6addr 'fd00:1111:2222::f4ec:38ba:9e19/64'
+config interface 'mesh0'
+	option proto 'batadv'
+	option mesh 'bat0'
+	option ifname 'eth0.9'
 config switch
-    option name 'rtl8366rb'
-    option reset '1'
-    option enable_vlan '1'
-    option enable_vlan4k '1'
+	option name 'switch0'
+	option reset '1'
+	option enable_vlan '1'
 config switch_vlan
-    option device 'rtl8366rb'
-    option vlan '1'
-    option ports '1 2 3 4 5t'   
+	option device 'switch0'
+	option vlan '2'
+	option ports '0t 1 2 3 4t'
+config switch_vlan              
+        option device 'switch0'   
+        option vlan '9'       
+        option ports '0t 4t'
+
+Da notare la configurazione dello switch eth0, sulla quale sono state create due vlan tagged eth0.2 ed eth0.9. Nella eth0.2 è presente taggata la porta 4t per raggiungere la radio ubiquiti nella subnet dei clients. La eth0.9 è invece inserita nella bat0 per il routing mesh, anche lei contiene la porta 4t.
+
+Nell'eventualità si volesse aggiungere una seconda interfaccia nella bat0, con relativa seconda radio ubiquiti collegata alla porta fisica 3 dello switch, indicativamente è sufficiente modificare la parte finale del file /etc/config/network come segue:
+
+bc. config interface 'mesh0'
+        option proto 'batadv'
+        option mesh 'bat0'
+        option ifname 'eth0.9 eth0.10'
+config switch
+        option name 'switch0'
+        option reset '1'
+        option enable_vlan '1'
 config switch_vlan
-    option device 'rtl8366rb'
-    option vlan '2'
-    option ports '0 5t' 
-config switch_vlan
-    option device 'rtl8366rb'
-    option vlan '3'
-    option ports '3t 5t'       
-config switch_vlan               
-    option device 'rtl8366rb'
-    option vlan '4'          
-    option ports '4t 5t'
+        option device 'switch0'
+        option vlan '2'
+        option ports '0t 1 2 3t 4t'
+config switch_vlan              
+        option device 'switch0'   
+        option vlan '9'       
+        option ports '0t 4t'
+config switch_vlan              
+        option device 'switch0'   
+        option vlan '10'       
+        option ports '0t 3t'
+
+Ogni vlan (es eth0.9 ed eth0.10) corrisponde alla univoca radio ubiquiti.
 
 h4. radio Ubiquiti
 
@@ -78,5 +88,6 @@ Per l'installazione di AirOs sugli apparati Ubiquiti fare riferimento al wiki uf
 
 Negli apparati Ubiquiti sono configurate due interfaccie: 
 
-* un bridge0 che contiene l'interfaccia wifi e la rispettiva ed univoca vlan tagged, con subnet 172.16.100.0/24;
-* lan0 nella subnet per il managment 10.100.0.0/16;
+* un bridge0 che contiene l'interfaccia wifi e la rispettiva ed univoca vlan tagged (es. eth0.9)
+* lan0 per il backup con ip 192.168.1.20/24
+* la vlan (es. eth0.9) configurata nella subnet dei clients
