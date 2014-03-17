@@ -45,11 +45,7 @@ h3. i principi ispiratori (tratti da ninux.org)
 * si reclama il nostro diritto ad interconnettersi e sperimentare in modo totalmente libero da strumentalizzazioni politiche e commerciali.
 * si prende internet come modello, si ritiene che la struttura decentralizzata sia la piu' adatta a realizzare quanto espresso nei punti precedenti.
 
-h3. collaborare
-
-Se si è interessati a partecipare allo sviluppo del progetto, è possibile contribuire allo sviluppo della "documentazione":/partecipare#docs e/o con l'installazione di un nuovo "nodo":/partecipare#nodo.
-
-h3. la rete
+h3. come è fatta la rete?
 
 I nodi della rete contribuiscono in *modo paritario* (banda simmetrica) al suo sviluppo. Ciascun nodo è in comunicazione diretta con i suoi vicini, e quindi con tutti gli altri nodi della rete, comunemente via wireless, cavo o tunnel vpn.
 
@@ -58,3 +54,14 @@ La distanza tra due nodi _vicini_ può arrivare anche a diverse decine di km, il
 Il propietario di ciascun nodo è responsabile dei *"servizi":/servizi* che mette a disposizione. Abbattere il digital divide è solo uno degli obiettivi che questa rete si prefige.
 
 Per approfondimenti visitare la pagina "rete":/rete.
+
+h3. come partecipare
+
+*Una community è fatta di persone*.
+
+Tutti i cittadini devono avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi.
+
+Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni "social network":/contatti si può provvedere a:
+
+* lo sviluppo della "*documentazione*":/partecipare#docs, non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
+* l'installazione di un nuovo "*nodo*":/partecipare#nodo, questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.

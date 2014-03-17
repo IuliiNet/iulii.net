@@ -1,14 +1,4 @@
-h3. partecipare a IuliiNet
-
-*Una community è fatta di persone*.
-
-Tutti i cittadini devono avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi.
-
-Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni "social network":../contatti.html, si può provvedere a:
-
-* lo sviluppo della "*documentazione*":#docs, non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
-* l'installazione di un nuovo "*nodo*":#nodo, questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.
-
+h3. come partecipare 
 
 h4(#docs). sviluppo della documentazione
 
