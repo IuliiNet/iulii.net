@@ -17,6 +17,10 @@ h4(#materialeinformativo). materiale informativo
 * "reti comunitarie: dall'utopia alla realtà":https://docs.google.com/document/d/1g7TwpFX4UG5mlZYTOA9q1Aom7z4ti-jbF59baNuNZ-E/edit#
 * "eigenlab.org/2014/02/howtonet/":http://eigenlab.org/2014/02/howtonet/ ["pdf":http://eigenlab.org/wp-content/uploads/2014/02/HowToNet.pdf]
 
+h4(#calcololink). calcolo link
+
+* "wi4tools.wi4net.it/wi4tools/":https://wi4tools.wi4net.it/wi4tools/ software online per la verifica di fattibilità di un collegamento wireless.
+
 h4. siti amici
 
 * "CASCAFICO":http://cascafico.altervista.org/ portale di cascafico;

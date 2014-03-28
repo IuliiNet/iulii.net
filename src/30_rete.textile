@@ -8,7 +8,7 @@ La rete del progetto IuliiNet non è comunque una vera e propria rete mesh, in q
 
 h4. nodi
 
-I nodi, cioè ciascuna postatione segnalata su "map.ninux.org":http://map.ninnux.org consisite tipicamente in un access point a terra al quale sono collegati via ethernet  gli apparati Ubiquiti che creano i ponti radio.
+I nodi, cioè ciascuna postazione segnalata su "map.ninux.org":http://map.ninnux.org consisite tipicamente in un access point a terra al quale sono collegati via ethernet  gli apparati Ubiquiti che creano i ponti radio.
 
 In alcuni casi gli access point a terra sono collegati via wireless in modalità adhoc ad altri apparati posti delle vicinanze.
 

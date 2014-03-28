@@ -44,30 +44,13 @@
 			<div class="grid_8">
 	<h3>mailinglist</h3>
 
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-    google.load("feeds", "1");
-    google.setOnLoadCallback(showFeed);
-    function showFeed() {
-      var feed = new google.feeds.Feed("http://www.mail-archive.com/iuliinet@ml.ninux.org/maillist.xml");
-	  feed.setNumEntries(5);
-      feed.load(function(result) {
-        if (!result.error) {
-		  var container = document.getElementById("headlines");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var li = document.createElement("li");
-            li.innerHTML = '<a href="' + entry.link + '">' + entry.title + '</a> -- ' + entry.contentSnippet;
-            container.appendChild(li);
-          }
-        } else {
-		    var container = document.getElementById("headlines");
-		    container.innerHTML = '<li><a href="http://sitepoint.com">Get your geek news fix at SitePoint</a></li>';
-		}
-      });
-    }
-    </script>
-<ul id="headlines"></ul> 
+<style type="text/css">
+<!--
+.display_archive {font-family: arial,verdana; font-size: 12px;}
+.campaign {line-height: 125%; margin: 5px;}
+//-->
+</style>
+<script language="javascript" src="http://us3.campaign-archive1.com/generate-js/?u=b55122ceb5790345ad9cf9463&fid=7101&show=10" type="text/javascript"></script>
 
 	<h3>hai fretta?</h3>
 
@@ -153,7 +136,7 @@
 			<div class="grid_12">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
-					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140317 03:45:52 PM</p>
+					<p>&copy; 2014 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20140326 01:42:26 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
