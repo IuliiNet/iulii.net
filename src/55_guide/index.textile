@@ -1,3 +1,8 @@
 h3. Guide
 
-Raccolta di guide ed howto
+Raccolta di guide ed howto redatte dal gruppo iuliinet.
+
+Un elenco di guide molto più serie e ben fatte è disponibile alle pagine:
+
+* "iulii.net/links#materialeinformativo":http://iulii.net/links#materialeinformativo
+* "wiki.ninux.org/Guide":http://wiki.ninux.org/Guide
