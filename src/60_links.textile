@@ -16,7 +16,7 @@ h4(#materialeinformativo). materiale informativo
 * "fondamenti per costruire una rete wireless libera":https://docs.google.com/document/d/1OaV1m08lmJX5wb8kxv31skopSHnXwqzp-6ggxlMImsA/edit#
 * "reti comunitarie: dall'utopia alla realtà":https://docs.google.com/document/d/1g7TwpFX4UG5mlZYTOA9q1Aom7z4ti-jbF59baNuNZ-E/edit#
 * "eigenlab.org/2014/02/howtonet/":http://eigenlab.org/2014/02/howtonet/ ["pdf":http://eigenlab.org/wp-content/uploads/2014/02/HowToNet.pdf]
-* "guida completa ninux al routing terra":https://docs.google.com/document/d/1tEp4rFNDis4RAwwo4wwg6xDMdqeJKAi8FVYh_FsPEdk/edit#heading=h.e9ahlghv43rd
+* "guida completa ninux al routing terra(guida al routing a terra)":https://docs.google.com/document/d/1tEp4rFNDis4RAwwo4wwg6xDMdqeJKAi8FVYh_FsPEdk/edit#heading=h.e9ahlghv43rd
 
 h4(#calcololink). calcolo link
 
