@@ -1,1 +1,22 @@
 h3. gestione indirizzi
+
+La rete *IuliiNet*, come indicato alla pagina di referimento "wiki.ninux.org/GestioneIndirizzi#Tabella_Subnets_IuliiNet_.28FVG.29":http://wiki.ninux.org/GestioneIndirizzi#Tabella_Subnets_IuliiNet_.28FVG.29 si autogestisce le seguenti sottoreti:
+
+| *subnet* | *descrizione* |
+| subnet clients | 10.100.0.0/16 |
+| subnet radio | fd00:1111:2222::/64 |
+| network delle radio sui tetti | 172.16.23.0/24 |
+
+| *nodo* | *device* | *ipv4 radio* | *ipv4* | *ipv6* |
+| "kozlic":http://map.ninux.org/select/iuliinetkozlic/ | server | 172.16.23.1 | 10.100.0.1 | fd00:1111:2222::1 |
+| - | nslm2 | 172.16.23.2 | 10.100.0.2 | - |
+| - | nsm5 | 172.16.23.3 | 10.100.0.3 | - |
+| "franz":http://map.ninux.org/select/iuliinetfranz/ | wr841nd | - | 10.100.1.1 | fd00:1111:2222::a0f3:c1ac:6c4c |
+| - | nslm5 | 172.16.23.4 | 10.100.1.2 | - |
+| "potcravero":http://map.ninux.org/select/iuliinetpotcravero/ | wdr4300 | - | 10.100.2.1 | fd00:1111:2222::90f6:52f2:8c2a |
+| - | nsm5 | - | - | - |
+| - | nslm5 | - | - | - |
+| "cisgui":http://map.ninux.org/select/iuliinetcisgui/ | wr841nd | - | 10.100.3.1 | fd00:1111:2222::a0f3:c1ac:6c5f |
+| - | nslm5 | 172.16.23.7 | 10.100.3.2 | - |
+| "draha":http://map.ninux.org/select/iuliinetdraha/ | mr3420 | - | 10.100.4.1 | fd00:1111:2222::b048:7ad1:fbe9 |
+| - | nslm2 | 172.16.23.8 | 10.100.4.2 | - |
