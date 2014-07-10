@@ -1,0 +1,184 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+
+
+html, body {
+    	font-size: 16px;
+    	line-height: 20px;
+    	width: 100%;
+    	height: 100%;
+	background-color: #55a1d5;
+}
+
+header {
+	padding: 10px 0 20px 0;
+	margin: 10px 0 0 0;
+	background-color: white;
+}
+
+hgroup {
+	height: 298px;
+	border: 1px solid #55a1d5;
+	text-align: center;
+        position: relative;
+    	background: url('/img/NinuxPinsMesh2.1.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #55a1d5;
+	z-index:1;
+}
+
+h1 {
+	font-size: 100px;
+	line-height: 160px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 40px;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 40px;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #55a1d5; 
+}
+
+a.current {
+	color: #55a1d5;
+}
+
+td {
+	padding: 0 10px 0 10px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: black;
+}
+
+h1 a:visited {
+	color: black;
+}
+
+h2 a {
+	text-decoration: none;
+	color: #55a1d5;
+}
+
+h2 a:visited {
+	color: #55a1d5;
+}
+
+img.big {
+	margin: 0;
+	padding: 0;
+	width: 100%; 
+}
+
+img.iuliinetlogo {
+	width: 298px;
+	height: 298px;
+	border: 1px solid #55a1d5;
+}
+
+img.banner {
+	margin-bottom: 20px;
+	width: 298px;
+	height: 58px;
+	border: 1px solid #55a1d5;
+}
+
+img:hover.banner {
+	background-color: #55a1d5;
+}
+
+code {
+	font-size: 12px;
+	font-family: "Courier";
+}
+
+p code {
+	font-size: 16px;
+	font-family: "Courier";
+}
+
+pre {
+	background-color: lightgrey;
+}
+
+section {
+	background-color: white;
+}
+
+
+article:not(:target) {
+    display: none;
+}
+
+article:target {
+    display: block;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+.social {
+	position:fixed;
+	left: 10px;
+}
+
+.tt-widget {
+	margin: 20px 0 20px 0;
+}
+
+.navigation {
+	border: 1px solid #55a1d5;
+        position: relative;
+    	background: url('/img/NinuxPinsMesh2.1.png');
+}
+
+.path {
+	padding: 20px 10px 18px 10px;
+	border-bottom: 1px solid #55a1d5;
+}
+
+nav {
+	padding: 20px 0 18px 0;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav a {
+	font-weight: normal;	
+}
+
+footer {
+	background-color: white;
+}
+
+.foot {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #55a1d5;
+	height: 39px;
+	text-align: center;
+}
