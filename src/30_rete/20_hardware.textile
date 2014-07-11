@@ -1,4 +1,14 @@
-h3. promemoria openwrt
+h3. promemoria .config openwrt
 
 - dnsmasq, firewall, ppp, odhcpd, odhcp6c
 + kmod-batman-adv, ip, tinc, alfred, batctl
+
+h4. binari openwrt
+
+"openwrt.iulii.net/":http://openwrt.iulii.net/
+
+Qui è possibile trovare dei binari per il flash di alcuni router compatibili con openwrt, tipicamente dei tplink.
+
+La versione è aggiornata all'ultimo commit dell'openwrt trunk, almeno all'ultimo che ho compilato.
+
+I pacchetti installati sono quelli strettamente necessari per i fini della comunità *IuliiNet*: ci sono certamente i pacchetti ip, tinc, alfred, batctl e kmod-batman-adv; in alcuni possono essere presenti anche dnsmasq, odhcpd e odhcp6c.
