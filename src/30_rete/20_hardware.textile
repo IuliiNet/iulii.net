@@ -1,4 +1,4 @@
-h3. Promemoria openwrt
+h3. promemoria openwrt
 
 - dnsmasq, firewall, ppp, odhcpd, odhcp6c
-+ kmod-batman-adv, ip, tinc, alfred, ppp
++ kmod-batman-adv, ip, tinc, alfred, batctl
