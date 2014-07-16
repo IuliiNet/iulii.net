@@ -1,0 +1,114 @@
+h3. tinc-vpn è mode switch
+
+"Tinc-vpn":http://www.tinc-vpn.org/ è un demone che permette di creare tunnel crittati e reti sicure. Tra le sue features più caratteristiche c'è la possibilità di configurarlo in modalità switch, cioè sostituire la classica configurazione clients/server con una che permette a tutti i partecipanti di avere lo stesso peso "switch".
+
+È un demone multipiattaforma versatile che può essere installato anche su piccoli router domestici "openwrt":http://openwrt.org based.
+
+Numerosi clients della comunità *IuliiNet* offrono servizi privati e sicuri utilizzando tinc-vpn.
+
+Approfondiamo ora una classica configurazione del demone in modalità switch.
+
+h4. installazione di tinc-vpn
+
+A seconda della piattaforma utilizzata è possibile instllare tinc-vpn con il gestore di pacchetti predefinito:
+
+* su gentoo: 
+
+bc. emerge tinc
+
+* su openwrt: 
+
+bc. opkg update; opkg install tinc 
+#oppure compilando direttamente tinc nell'immagine da flashare nel router
+
+* su windows e/o osx: cercate su google.
+
+h4. configurazione di tinc-vpn
+
+In un tipico ambiente unix-like è possibile procedere come segue.
+
+Scegliamo il nome della nostra vpn, ad esempio _myvpn_, e creiamo le seguenti cartelle:
+
+bc. mkdir /etc/tinc/myvpn/hosts -p
+
+La cartella _hosts_ conterrà le informazioni di tutti i client che partecipano alla vpn, ma ci arriveremo in seguito. Creiamo dunque in file di configurazione principale tinc.conf:
+
+bc. vi /etc/tinc/myvpn/tinc.conf
+Name = alice #nome univoco di ogni client
+AddressFamily = ipv4
+Interface = tun0
+Mode = switch 
+ConnectTo = bob #nome del  client al quale dobbiamo connetterci
+# ConnectTo = charlie #nome del terzo client
+
+Creiamo dunque le informazioni del nodo _alice_ avendo cura di indicare il suo indirizzo pubblico _Address_ e la _Subnet_ privata che assegneremo all'interfaccia del tunnel:
+
+bc. vi /etc/tinc/myvpn/hosts/alice 
+Address = 10.100.0.1 
+Subnet = 192.168.0.0/24
+
+Tinc-vpn basa l'autenticazione e la crittatura sul meccanismo a doppia chiave pubblica/privata, creiamo dunque la coppia di chiavi per il client _alice_:
+
+bc. tincd -n alice -K 1024
+
+Fatto questo ci troveremo con due chiavi:
+
+* /etc/tinc/myvpn/rsa_key.priv (privata)
+* /etc/tinc/myvpn/hosts/alice (in aggiunta alle due righe già create prima)
+
+All'avvio ed alla chiusura della vpn, tincd esegue due script cha vanno creati nella directory /etc/tinc/myvpn/:
+
+bc. vi /etc/tinc/myvpn/tinc-up
+#!/bin/sh
+ip l s dev $INTERFACE up
+
+bc. vi /etc/tinc/myvpn/tinc-down
+#!/bin/sh
+ip l s dev $INTERFACE down
+
+Ricordiamo di metterli eseguibili:
+
+bc. chmod +x /etc/tinc/myvpn/tinc-*
+
+Una possibilità più avanzata permette di passare qualche utile comando in più al file _tinc-up_, ad esempio:
+
+bc. vi /etc/tinc/myvpn/tinc-up
+ip l s dev $INTERFACE up
+sleep 5
+brctl addif br-lan $INTERFACE
+ip a a 192.168.0.4/24 dev br-lan
+ip r a default via 192.168.0.1
+
+Questo non fa altro che:
+
+* tirare su l'interfaccia della vpn;
+* aggiungerla al bridge br-lan, quello magari dove c'è una wlan0 con autenticazione wpa;
+* assegna un ip nella subnet privata al br-lan ed il default gateway.
+
+Per avviare la connessione vpn, a seconda della distribuzione:
+
+* su gentoo: 
+
+bc. ln -sf /etc/init.d/tincd.lo /etc/init.d/tincd.myvpn 
+rc-update tincd.myvpn
+/etc/init.d/tincd.myvpn restart
+
+* su openwrt: 
+
+bc. vi /etc/rc.local
+tincd -n myvpn
+
+È anche possibile avviare la vpn dalla shell in modalità debug con un semplice: 
+
+bc. tincd -n myvpn -D -d
+
+I passi descritti sopra sono dunque da esequire su ogni client desiderato (openwrt based o pc che sia), avendo cura di cambiare il _Name_ nel file tinc.conf e l'_Address_ pubblico in /etc/tinc/myvpn/hosts/clientnuovo.
+
+Fondamentale è poi indicare nel file ticd.conf i parametri _ConnectTo_ (uno per riga), indicando i nomi dei client ai quali desideriamo connetterci, oltre *IMPORTANTE* sincronizzare il contenuto della cartella /etc/tinc/myvpn/hosts/* su tutti i clientis. Questa cartella deve infatti contenere le informazioni di ciascun client della mesh (ip pubblico, subnet, chiave pubblica).
+
+by @lucapost
+
+
+
+
+
