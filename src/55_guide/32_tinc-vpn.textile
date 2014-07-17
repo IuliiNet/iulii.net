@@ -102,13 +102,8 @@ tincd -n myvpn
 
 bc. tincd -n myvpn -D -d
 
-I passi descritti sopra sono dunque da esequire su ogni client desiderato (openwrt based o pc che sia), avendo cura di cambiare il _Name_ nel file tinc.conf e l'_Address_ pubblico in /etc/tinc/myvpn/hosts/clientnuovo.
+I passi descritti sopra sono dunque da eseguire su ogni client desiderato (openwrt based o pc che sia), avendo cura di cambiare il _Name_ nel file tinc.conf e l'_Address_ pubblico in /etc/tinc/myvpn/hosts/clientnuovo.
 
-Fondamentale è poi indicare nel file ticd.conf i parametri _ConnectTo_ (uno per riga), indicando i nomi dei client ai quali desideriamo connetterci, oltre *IMPORTANTE* sincronizzare il contenuto della cartella /etc/tinc/myvpn/hosts/* su tutti i clientis. Questa cartella deve infatti contenere le informazioni di ciascun client della mesh (ip pubblico, subnet, chiave pubblica).
+Fondamentale è poi indicare nel file ticnd.conf i parametri _ConnectTo_ (uno per riga), indicando i nomi dei client ai quali desideriamo connetterci, *IMPORTANTE* oltre sincronizzare il contenuto della cartella /etc/tinc/myvpn/hosts/* su tutti i clients. Questa cartella deve infatti contenere le informazioni di ciascun client della mesh (ip pubblico, subnet, chiave pubblica).
 
-by @lucapost
-
-
-
-
-
+@lucapost
