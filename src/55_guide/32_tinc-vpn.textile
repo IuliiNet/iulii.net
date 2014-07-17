@@ -106,4 +106,6 @@ I passi descritti sopra sono dunque da eseguire su ogni client desiderato (openw
 
 Fondamentale è poi indicare nel file ticnd.conf i parametri _ConnectTo_ (uno per riga), indicando i nomi dei client ai quali desideriamo connetterci, *IMPORTANTE* oltre sincronizzare il contenuto della cartella /etc/tinc/myvpn/hosts/* su tutti i clients. Questa cartella deve infatti contenere le informazioni di ciascun client della mesh (ip pubblico, subnet, chiave pubblica).
 
+Happy tinc-vpn!
+
 @lucapost

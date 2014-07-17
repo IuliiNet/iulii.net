@@ -6,7 +6,8 @@ update:
 	git commit -am fix
 	git push
 
-upload:
+upload:	
+	make update
 	rsync -avr -e ssh ./dst/* flarevm:www/iulii.net/
 
 clean:
