@@ -1,3 +1,5 @@
+!/img/iuliimap.jpg(il nucleo originario dell'isola ninux in friuli venezia giulia)!:http://map.ninux.org/select/iuliinetkozlic/
+
 h3. hai fretta?
 
 * metti la posizione del tuo nodo potenziale sul mapserver "map.ninux.org":http://map.ninux.org/
