@@ -91,7 +91,7 @@ def header(node):
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
 	</head>
 	<body id="top">
-<!--		<div class="social">	
+		<div class="social">	
 			<div class="tt-share">
 				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
 			</div>
@@ -99,7 +99,7 @@ def header(node):
 			</div><br/>
 			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
 			</div>
-		</div> -->
+		</div> 
 		<header class="container_12 clearfix">
 			<div class="grid_8">
 				<hgroup>
