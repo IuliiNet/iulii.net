@@ -36,7 +36,7 @@ h3. come partecipare
 
 Tutti i cittadini devono avere la possibilità di conoscere l'esistenza del progetto della rete comunitaria, delle sue potenzialità e dei suoi obiettivi.
 
-Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni "social network":/contatti si può provvedere a:
+Ci sono molti modi per preseguire questo obiettivo, oltre ad una capillare diffusione in rete utilizzando i più comuni "social network":/contatti.html si può provvedere a:
 
-* lo sviluppo della "*documentazione*":/partecipare#docs, non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
-* l'installazione di un nuovo "*nodo*":/partecipare#nodo, questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.
+* lo sviluppo della "*documentazione*":/partecipare.html#docs, non solo con questo sito internet, è un passo fondamentale per facilitare la diffusione della rete;
+* l'installazione di un nuovo "*nodo*":/partecipare.html#nodo, questo è probabilmente l'obiettivo che ogni membro della community intende perseguire.
