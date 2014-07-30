@@ -9,6 +9,7 @@ update:
 upload:	
 	make update
 	rsync -avr -e ssh ./dst/* flarevm:www/iulii.net/
+	rsync -avr -e ssh ./dst/* lucapost@kino:repo/iulii.net/
 
 clean:
 	find . -type f -name "*.html" -exec rm -f {} \;
