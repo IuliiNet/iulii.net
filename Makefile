@@ -1,16 +1,14 @@
-generate: 
-	./minimalsite.py -t templates/default_template.py
-	./minimalsite.py -t templates/nojs_template.py
+github:
 	git add .
 	git commit -am fix
-
-github:
 	git push
 
 flarevm:	
+	./minimalsite.py -t templates/default_template.py
 	rsync -avr -e ssh ./dst/* flarevm:www/iulii.net/
 
 kino:
+	./minimalsite.py -t templates/nojs_template.py
 	rsync -avr -e ssh ./dst/* lucapost@kino:repo/iulii.net/
 
 clean:
