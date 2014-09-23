@@ -10,6 +10,8 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 ** fd00:1111:2222::1, 10.100.0.1
 * http
 ** "share.lii":http://share.lii
+* etherpad
+** "pad.lii":http://pad.lii
 * xmpp/jabber
 ** jabber.lii:5222
 
