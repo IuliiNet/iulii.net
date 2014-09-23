@@ -8,7 +8,6 @@ github:
 	git push
 
 flarevm:	
-	make update
 	rsync -avr -e ssh ./dst/* flarevm:www/iulii.net/
 
 kino:
