@@ -15,15 +15,12 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 * xmpp/jabber
 ** jabber.lii:5222
 
-h5(#btsync). btsync 
+h5(#syncthing). syncthing
 
-(mi sto' un po' stufando delle politiche closed suorce di questo software)
+Da settebre 2014 utilizziamo "syncthing":http://syncthing.net/ per sincronizzare una cartella di file. Di seguito alcune chiavi:
 
-"Btsync":http://www.bittorrent.com/sync è un software utile per sincronizzare cartelle remote. Ciò che lo contraddistingue particolamente è la capacità di trasferire file di grosse dimensioni permettendo di recuperare le sincronizzazioni interrotte, questo grazie all'utilizzo del protocollo bittorrent.
-
-Nonostante il sito ufficiale lo reclami come sicuro, putroppo al momento non deve essere considerato tale, in quanto parti del suo codice sorgente non è distribuito con licenza opensource.
-
-Alcuni membri delLa comunità IuliiNet utilizzano btsync per sincronizzare una cartella in modalità lettura/scrittura utilizzando le seguenti chiavi:
-
-* AI7Y7X6PL6NCJLGSDX5RHNBM7D7LYOYUH full access
-* BMAYJEMTRCSQJM3PRMYEEDXOM5MIRJLAM read only
+N3P33QS-TERECSA-SZX35H3-N7JUEYI-CCSUTGP-YM6PGB3-R7TX6GW-ZZU46QQ kino
+UF524EY-UY7FKRK-7FCSDN6-T63PBDF-RSMOLK2-YS62B6P-DLCCJDQ-NNJDVA3 jarod
+72ZPP2E-6KBIFCQ-RL7VD47-CHHBIVV-EDCD2TY-KHDUTNM-ICZSLWQ-24XQ4AF
+2BQEWNX-MZOUDB5-PRFCB2Q-C74UDL6-CVU2DVH-6GZ3WVC-JXNRU5X-32XLQQW
+FAMF7FE-7ZYZ2TO-BZLGLCZ-JJBY47A-3R456VY-7DKESJC-2IP44HX-RDY45QP
