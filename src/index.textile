@@ -30,7 +30,7 @@ I nodi della rete contribuiscono in *modo paritario* (banda simmetrica) al suo s
 
 La distanza tra due nodi _vicini_ può arrivare anche a diverse decine di km, il limite è dettato solamente dai confini tecnologici e di spesa.
 
-Il propietario di ciascun nodo è responsabile dei *"servizi":/servizi* che mette a disposizione. Abbattere il digital divide è solo uno degli obiettivi che questa rete si prefige.
+Il proprietario di ciascun nodo è responsabile dei *"servizi":/servizi* che mette a disposizione. Abbattere il digital divide è solo uno degli obiettivi che questa rete si prefige.
 
 Per approfondimenti visitare la pagina "rete":/rete.
 
