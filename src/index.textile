@@ -7,7 +7,7 @@ h3. hai fretta?
 
 h3. cos'è una rete mesh?
 
-Una *rete mesh* è un insieme di posizione geografiche interconnesse tra loro, ognuna delle quali partecipa in modo paritario allo sviluppo della rete stessa: è quindi una rete libera!
+Una *rete mesh* è un insieme di posizioni geografiche interconnesse tra loro, ognuna delle quali partecipa in modo paritario allo sviluppo della rete stessa: è quindi una rete libera!
 
 h3. perchè una rete libera?
 
