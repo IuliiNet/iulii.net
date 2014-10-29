@@ -1,3 +1,6 @@
+generate:
+	./minimalsite.py -t templates/default_template.py
+
 github:
 	git add .
 	git commit -am fix

@@ -83,7 +83,6 @@ def header(node):
 	        <meta name="description" content="''' + description + '''" />
         	<title>''' + title + '''</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
 		<!--[if lt IE 9]>
   			<script src="'''+ PREFIX +'''js/html5.js"></script>
@@ -95,39 +94,29 @@ def header(node):
 		<!--[if (lt IE 9) & (!IEMobile)]>
   			<link rel="stylesheet" href="'''+ PREFIX +'''css/ie.css" />
 		<![endif]-->
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
 	</head>
 	<body id="top">
-		<div class="social">	
-			<div class="tt-share">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://iulii.net" data-text="rete mesh libera e decentralizzata in friuli #iuliinet #ninux" data-via="iuliinet" data-count="vertical">Tweet</a>
-			</div>
-			<div class="g-plusone" data-size="tall" data-href="http://iulii.net">
-			</div><br/>
-			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
-			</div>
-		</div> 
-		<header class="grid-container">
-			<div class="grid-70">
-				<hgroup>
+		<div class="grid-container">
+			<header>
+				<hgroup class="grid-70 mobile-grid-100">
 					<h1><a href="''' + PREFIX + '''">''' + SITE_NAME + '''</a></h1>
 					<h2><a href="''' + PREFIX + '''">''' + DESC + '''</a></h2>
 				</hgroup>
-			</div>
-			<div class="grid_30">
-				<a href="''' + PREFIX + '''">
-					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
-				</a>
-			</div>
-		</header>
-		<section class="grid-container">
-			<div class="grid-70">
+				<figure>
+					<img class="grid-30 mobile-grid-100" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
+				</figure>
+			</header>
+		</div>
+		<div class="grid-container">
+			<section class="grid-70 mobile-grid-100">
 '''
 def footer(node):
     """Build the footer and return it to a string."""
 
     return '''
-    		</div>
-			<div class="grid-30">
+    			</section>
+			<div class="grid-30 mobile-grid-100">
 				<div class="navigation">
 					<div class="path">
 						<b>path</b>: %%%PATH%%%
@@ -141,9 +130,9 @@ def footer(node):
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div>
-		</section>
+		</div>
 		<footer class="grid-container">
-			<div class="grid-100">
+			<div class="grid-100 mobile-grid-100">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
 					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%Y%m%d %I:%M:%S %p", node.page.last_edit) + '''</p>
@@ -151,24 +140,6 @@ def footer(node):
 			</div>
 			<div class="clear"></div>
 		</footer>	
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-	  	<script src="'''+ PREFIX +'''js/jquery.js"></script> 
-  		<script src="'''+ PREFIX +'''js/plugins.js"></script>
-  		<script src="'''+ PREFIX +'''js/main.js"></script>
-  		<script src="'''+ PREFIX +'''js/hashgrid.js"></script>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-		  fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));
-		</script>
-		<script>
-			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-		</script>
-		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   		<script>
     			var _gaq=[['_setAccount','UA-6164762-12'],['_trackPageview']];
     			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
