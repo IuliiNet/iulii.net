@@ -82,13 +82,19 @@ def header(node):
         	<meta name="author" content="''' + AUTHOR + '''" />
 	        <meta name="description" content="''' + description + '''" />
         	<title>''' + title + '''</title>
-  		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/hashgrid.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
+		<!--[if lt IE 9]>
+  			<script src="'''+ PREFIX +'''js/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="'''+ PREFIX +'''css/demo.css" />
+		<!--[if (gt IE 8) | (IEMobile)]><!-->
+  			<link rel="stylesheet" href="'''+ PREFIX +'''css/unsemantic-grid-responsive.css" />
+		<!--<![endif]-->
+		<!--[if (lt IE 9) & (!IEMobile)]>
+  			<link rel="stylesheet" href="'''+ PREFIX +'''css/ie.css" />
+		<![endif]-->
 	</head>
 	<body id="top">
 		<div class="social">	
