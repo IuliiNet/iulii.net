@@ -118,6 +118,7 @@ def footer(node):
     """Build the footer and return it to a string."""
 
     return '''
+			<p><a href="#top" title="back to top" class="backtotop">back to top</a></p>
     			</section>
 			<div class="grid-30 mobile-grid-100">
 				<div class="navigation">
@@ -137,7 +138,6 @@ def footer(node):
 		</div>
 		<footer class="grid-container">
 			<div class="grid-100 mobile-grid-100">
-				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
 					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%Y%m%d %I:%M:%S %p", node.page.last_edit) + '''</p>
 				</div>

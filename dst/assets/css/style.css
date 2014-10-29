@@ -14,18 +14,12 @@ html, body {
 
 .white {
 	background-color: white;
+    	background: url('/img/NinuxPinsMesh2.1.png') repeat;
 }
 
 .blue {
 	background-color: #55a1d5;
-	padding-top: 20px;
-}
-/*.grid-container {
-	background-color: white;
-}*/
-
-hgroup {
-    	background: url('/img/NinuxPinsMesh2.1.png') repeat;
+	padding-top: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,13 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 100px;
+	font-size: 120px;
 	line-height: 160px;
 }
 
 h2 {
-	font-size: 40px;
-	line-height: 40px;
+	font-size: 60px;
+	line-height: 60px;
 }
 
 h3 {
@@ -72,15 +66,9 @@ td {
 
 h1 a {
 	text-decoration: none;
-	color: black;
 }
 
 h1 a:visited {
-	color: black;
-}
-
-h2 a {
-	text-decoration: none;
 	color: black;
 }
 
@@ -110,7 +98,7 @@ pre {
 
 section {
 	background-color: white;
-	padding-top: 20px;
+	padding: 20px 0 0 0;
 	margin: 0 0 20px 0;
 }
 
@@ -121,7 +109,7 @@ section {
 }
 
 .tt-widget {
-	margin: 20px 0 20px 0;
+	margin: 10px 0 20px 0;
 }
 
 .navigation {
@@ -151,8 +139,6 @@ footer {
 }
 
 .foot {
-	margin-top: 20px;
-	border-top: 1px solid #55a1d5;
-	height: 39px;
+	height: 40px;
 	text-align: center;
 }
