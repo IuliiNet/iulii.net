@@ -85,16 +85,16 @@ def header(node):
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
 		<!--[if lt IE 9]>
-  			<script src="'''+ PREFIX +'''js/html5.js"></script>
+  			<script src="'''+ PREFIX +'''assets/js/html5.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="'''+ PREFIX +'''css/demo.css" />
+		<link rel="stylesheet" href="'''+ PREFIX +'''assets/css/demo.css" />
 		<!--[if (gt IE 8) | (IEMobile)]><!-->
-  			<link rel="stylesheet" href="'''+ PREFIX +'''css/unsemantic-grid-responsive.css" />
+  			<link rel="stylesheet" href="'''+ PREFIX +'''assets/css/unsemantic-grid-responsive.css" />
 		<!--<![endif]-->
 		<!--[if (lt IE 9) & (!IEMobile)]>
-  			<link rel="stylesheet" href="'''+ PREFIX +'''css/ie.css" />
+  			<link rel="stylesheet" href="'''+ PREFIX +'''assets/css/ie.css" />
 		<![endif]-->
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''assets/css/style.css" />
 	</head>
 	<body id="top">
 		<div class="white">
@@ -102,7 +102,7 @@ def header(node):
 			<header>
 				<hgroup class="grid-70 mobile-grid-100">
 					<h1><a href="''' + PREFIX + '''">''' + SITE_NAME + '''</a></h1>
-					<h2><a href="''' + PREFIX + '''">''' + DESC + '''</a></h2>
+					<h2>''' + DESC + '''</h2>
 				</hgroup>
 				<figure>
 					<img class="grid-30 hide-on-mobile" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
