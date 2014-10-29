@@ -97,6 +97,7 @@ def header(node):
 		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
 	</head>
 	<body id="top">
+		<div class="white">
 		<div class="grid-container">
 			<header>
 				<hgroup class="grid-70 mobile-grid-100">
@@ -104,10 +105,12 @@ def header(node):
 					<h2><a href="''' + PREFIX + '''">''' + DESC + '''</a></h2>
 				</hgroup>
 				<figure>
-					<img class="grid-30 mobile-grid-100" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
+					<img class="grid-30 hide-on-mobile" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
 				</figure>
 			</header>
 		</div>
+		</div>
+		<div class="blue">
 		<div class="grid-container">
 			<section class="grid-70 mobile-grid-100">
 '''
@@ -126,10 +129,11 @@ def footer(node):
 					</nav>
 				</div>
 				<div class="tt-widget">
-                    <a class="twitter-timeline" href="https://twitter.com/IuliiNet" data-border-color="#55a1d5" data-widget-id="349571026952269826">Tweets by @IuliiNet</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    			<a class="twitter-timeline" href="https://twitter.com/IuliiNet" data-border-color="#55a1d5" data-widget-id="349571026952269826">Tweets by @IuliiNet</a>
+                    			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div>
+		</div>
 		</div>
 		<footer class="grid-container">
 			<div class="grid-100 mobile-grid-100">
