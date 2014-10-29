@@ -106,29 +106,28 @@ def header(node):
 			<div class="fb-like" data-href="https://www.facebook.com/Iuliinet" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" data-font="arial">
 			</div>
 		</div> 
-		<header class="container_12 clearfix">
-			<div class="grid_8">
+		<header class="grid-container">
+			<div class="grid-70">
 				<hgroup>
 					<h1><a href="''' + PREFIX + '''">''' + SITE_NAME + '''</a></h1>
 					<h2><a href="''' + PREFIX + '''">''' + DESC + '''</a></h2>
 				</hgroup>
 			</div>
-			<div class="grid_4">
+			<div class="grid_30">
 				<a href="''' + PREFIX + '''">
 					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
 				</a>
 			</div>
-			<div class="clear"></div>
 		</header>
-		<section class="container_12 clearfix">
-			<div class="grid_8">
+		<section class="grid-container">
+			<div class="grid-70">
 '''
 def footer(node):
     """Build the footer and return it to a string."""
 
     return '''
     		</div>
-			<div class="grid_4 column">
+			<div class="grid-30">
 				<div class="navigation">
 					<div class="path">
 						<b>path</b>: %%%PATH%%%
@@ -142,10 +141,9 @@ def footer(node):
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div>
-			<div class="clear"></div>
 		</section>
-		<footer class="container_12 clearfix">
-			<div class="grid_12">
+		<footer class="grid-container">
+			<div class="grid-100">
 				<a href="#top" title="back to top" class="backtotop">back to top</a>
 				<div class="foot">
 					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%Y%m%d %I:%M:%S %p", node.page.last_edit) + '''</p>
