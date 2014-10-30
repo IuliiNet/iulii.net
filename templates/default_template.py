@@ -105,7 +105,7 @@ def header(node):
 					<h2>''' + DESC + '''</h2>
 				</hgroup>
 				<figure>
-					<img class="grid-30 hide-on-mobile" title="iuliinet logo" alt="iuliinet logo" src="'''+ PREFIX +'''img/iuliinetlogo.png">
+					<img class="grid-30 hide-on-mobile" title="iuliinet logo" alt="no! non sono un piccione!" src="'''+ PREFIX +'''img/iuliinetlogo.png">
 				</figure>
 			</header>
 		</div>
