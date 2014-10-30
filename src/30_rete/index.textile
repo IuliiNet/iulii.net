@@ -1,4 +1,4 @@
-h3. la rete del progetto IuliiNet
+h3. La rete del progetto IuliiNet
 
 Questa sezione si prefigge l'obiettivo di descrivere la struttura della rete del progetto IuliiNet e delle "reti mesh":http://it.wikipedia.org/wiki/Wireless_mesh_network.
 
@@ -6,7 +6,7 @@ Documentazione esaustiva sulle reti comunitarie è disponibile alla pagina "link
 
 La rete del progetto IuliiNet non è comunque una vera e propria rete mesh, in quanto molti degli apparati utilizzati (come le radio ubiquiti) non supportano il protocollo batman-adv e la modalità adhoc. Si è scelto di utilizzare i firmware originali ubiquiti al fine di salvaguardare la qualità dei singoli collegamenti radio e quindi delle performance.
 
-h4. nodi
+h4. Nodi
 
 I nodi, cioè ciascuna postazione segnalata su "map.ninux.org":http://map.ninnux.org consisite tipicamente in un access point a terra al quale sono collegati via ethernet  gli apparati Ubiquiti che creano i ponti radio.
 
@@ -19,7 +19,7 @@ Una suddivisione dei tipi di nodi che è possibile installare e configurare è l
 * *foglia* nodo normalmente connesso direttamente ad un solo altro nodo di tipo foglia, o più comunemente ad un nodo di backbone.
 * *backbone* questo genere di nodi è fondamentale per l'infrastruttura della rete in quanto mette in comunicazione diretta, oltre che diversi nodi foglia, almeno un altro nodo backbone; questo tipo di nodi è fondamentale per il collegamento di segmenti della rete.
 
-h4. clients
+h4. Clients
 
 Sono i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), per questi gli accessi possibili per entrare nella rete del progetto iulii.net sono:
 
@@ -27,11 +27,11 @@ Sono i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), pe
 * *ethernet*, collegamento via cavo;
 * *vpn*, connessione via "tunnel vpn":http://wiki.ninux.org/IsoleVPN.
 
-h4. software
+h4. Software
 
 Il firmware linux di riferimento per gli apparati che gestiscono il routing è la distribuzione linux "openwrt":https://openwrt.org/. Le radio che tengono in piedi i collegamenti possono avere anche firmware propietari (AirOS, RouterOS, ecc), l'unica condizione è che possano gestire le vlan tag.
 
-h5. routing ed indirizzi ip
+h5. Routing ed indirizzi ip
 
 Il *routing della rete* è affidato a "batman-adv":http://www.open-mesh.org/wiki/batman-adv/.
 

@@ -1,4 +1,4 @@
-h3. gestione indirizzi
+h3. Gestione indirizzi
 
 La rete *IuliiNet*, come indicato alla pagina di referimento "wiki.ninux.org/GestioneIndirizzi#Tabella_Subnets_IuliiNet_.28FVG.29":http://wiki.ninux.org/GestioneIndirizzi#Tabella_Subnets_IuliiNet_.28FVG.29 si autogestisce le seguenti sottoreti:
 

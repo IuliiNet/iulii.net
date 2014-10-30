@@ -1,12 +1,12 @@
-h3. come partecipare 
+h3. Come partecipare 
 
-h4(#docs). sviluppo della documentazione
+h4(#docs). Sviluppo della documentazione
 
 Lo sviluppo di una buona documentazione, non solo questo sito internet, è un passo fondamentale per facilitare la diffusione della rete.
 
 La scelta di git per mantenere i sorgenti del progetto è suggerita dalla sua diffusioni in questi ambiti piuttosto dalla facilità di mantenere backup decentralizzati. I repositories git del progetto sono disponibili su "github":http://github.com/iuliinet.
 
-h4(#nodo). nuovo nodo
+h4(#nodo). Nuovo nodo
 
 L'installazione di un nuovo nodo è probabilmente l'obiettivo che ogni membro della community intende perseguire. Prima di procedere è consigliata:
 

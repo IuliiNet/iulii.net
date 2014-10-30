@@ -1,4 +1,4 @@
-h4. servizi
+h4. Servizi
 
 Ogni utente della rete è responsabile della sicurezza della sua connessione e dei servizi che rende disponibili.
 
@@ -15,7 +15,7 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 * xmpp/jabber
 ** jabber.lii:5222
 
-h5(#syncthing). syncthing
+h5(#syncthing). Syncthing
 
 Da settebre 2014 utilizziamo "syncthing":http://syncthing.net/ per sincronizzare una cartella di file. Di seguito alcune chiavi:
 
