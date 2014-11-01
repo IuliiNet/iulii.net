@@ -84,6 +84,7 @@ def header(node):
         	<title>''' + title + '''</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''assets/css/nomrmalize.css" />
 		<!--[if lt IE 9]>
   			<script src="'''+ PREFIX +'''assets/js/html5.js"></script>
 		<![endif]-->
