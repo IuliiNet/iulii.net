@@ -34,7 +34,7 @@ Vi sono oggi molte reti comunitarie (community networks), ma queste sono separat
 
 Il PPA è un modo per formalizzare l'interazione paritaria tra i proprietari di due nodi. Questi affermano il loro diritto di proprietà dichiarando la loro volontà di permettere (donare) il libero scambio di dati attraverso le loro reti.
 
-Il PPA è mantenuto all'inidirizzo http://picopeer.net da un gruppo di volontari provenienti da tutto il mondo. Il suo scopo è quello di essere utilizzato come modello per altri documenti e licenze con validità locale.
+Il PPA è mantenuto all'inidirizzo "http://picopeer.net":http://www.picopeer.net/ da un gruppo di volontari provenienti da tutto il mondo. Il suo scopo è quello di essere utilizzato come modello per altri documenti e licenze con validità locale.
 
 h4. Accordo
 
