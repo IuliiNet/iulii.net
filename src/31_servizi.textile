@@ -9,23 +9,8 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 * dns
 ** fd00:1111:2222::1, 10.100.0.1
 * http
-** "share.lii":http://share.lii
+** "share.iulii.lii":http://share.iulii.lii
 * etherpad
-** "pad.lii":http://pad.lii
+** "pad.iulii.lii":http://pad.iulii.lii
 * xmpp/jabber
 ** jabber.lii:5222
-
-h5(#syncthing). Syncthing
-
-Da settebre 2014 utilizziamo "syncthing":http://syncthing.net/ per sincronizzare una cartella di file. Di seguito alcune chiavi:
-
-ID: IuliiNet
-
-notextile. <code>
-
-N3P33QS-TERECSA-SZX35H3-N7JUEYI-CCSUTGP-YM6PGB3-R7TX6GW-ZZU46QQ kino
-UF524EY-UY7FKRK-7FCSDN6-T63PBDF-RSMOLK2-YS62B6P-DLCCJDQ-NNJDVA3 jarod
-2M2D4D6-Q7QSYGE-VGLD4YO-KR62AOJ-F6MUSUA-AQRF27C-XVQP63G-4ADMFAA raspberry
-2BQEWNX-MZOUDB5-PRFCB2Q-C74UDL6-CVU2DVH-6GZ3WVC-JXNRU5X-32XLQQW cubo
-
-notextile. </code>

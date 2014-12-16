@@ -104,6 +104,8 @@ def header(node):
 				<hgroup class="grid-70 mobile-grid-100">
 					<h1><a href="''' + PREFIX + '''">''' + SITE_NAME + '''</a></h1>
 					<h2>''' + DESC + '''</h2>
+					<script src="https://apis.google.com/js/platform.js" async defer></script>
+					<div class="g-plusone" data-href="http://iulii.net"></div>
 				</hgroup>
 				<figure>
 					<img class="grid-30 hide-on-mobile" title="no! non sono un piccone! volo in alto!" alt="il logo della rete iuliinet" src="'''+ PREFIX +'''img/iuliinetlogo.png">

@@ -1,4 +1,4 @@
-h3. tinc-vpn è mode switch
+h3. tinc-vpn e mode switch
 
 "Tinc-vpn":http://www.tinc-vpn.org/ è un demone che permette di creare tunnel crittati e reti sicure. Tra le sue features più caratteristiche c'è la possibilità di configurarlo in modalità switch, cioè sostituire la classica configurazione clients/server con una che permette a tutti i partecipanti di avere lo stesso peso "switch".
 

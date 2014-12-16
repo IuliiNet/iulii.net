@@ -1,4 +1,4 @@
-#### slides
+#### Presentazioni
 
 Raccolta delle slides utilizzate nelle presentazioni dei progetti IuliiNet e Ninux in Friuli Venezia Giulia. 
 
