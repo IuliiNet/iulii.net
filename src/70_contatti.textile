@@ -1,12 +1,12 @@
 h3. contatti
 
 * email:
-** "info@iulii.net":mailto:info@iulii.net per qualsiasi informazione
+** "iulii@ninux.org":mailto:iulii@ninux.org per qualsiasi informazione
 ** "ml.ninux.org/mailman/listinfo/wireless":http://ml.ninux.org/mailman/listinfo/wireless lista nazionale ninux.org
 ** "*ml.ninux.org/mailman/listinfo/iuliinet*":http://ml.ninux.org/mailman/listinfo/iuliinet lista locale del gruppo FVG
 * chat:
 ** "irc.freenode.com#iuliinet":irc://irc.freenonde.net#iuliinet canale irc
-** jabber.iulii.net:5222, server jabber/xmpp interno 
+** jabber.iulii.ninux.org:5222, server jabber/xmpp interno 
 * social:
 ** "twitter.com/iuliinet":https://twitter.com/#!/iuliinet
 ** "facebook.com/Iuliinet":https://www.facebook.com/Iuliinet
@@ -14,9 +14,9 @@ h3. contatti
 
 h3(#donazioni). donazioni
 
-Il progetto "IuliiNet":http://iulii.net si basa sul contributo volontario gratuito che ciascun membro della community può fornire.
+Il progetto "IuliiNet":http://iulii.ninux.org si basa sul contributo volontario gratuito che ciascun membro della community può fornire.
 
-Nonostante questo, la sua crescita non può prescindere da alcune spese di mantenimento essenziali, come ad esempio la gestione del dominio "IuliiNet":http://iulii.net e di altri servizi (dns, voip, ecc.).
+Nonostante questo, la sua crescita non può prescindere da alcune spese di mantenimento essenziali, come ad esempio la gestione del dominio "IuliiNet":http://iulii.ninux.org e di altri servizi (dns, voip, ecc.).
 
 Inoltre, potrebbe verificarsi il caso che per la sua posizione geografica uno nodo della rete sia particolarmente avvantaggiato nel creare dei collegamenti con un alto numero di altri nodi. Ne conseguirebbe che le spese di creazione e gestione di questo nodo possano essere troppo onerose per il propietatio del nodo, che quindi dovrebbe essere aiutato al fine della crescita generale del progetto.
 
@@ -24,5 +24,5 @@ Sono previste quindi donazioni in termini di hardware e denaro.
 
 È anche possibile utilizzare il servizio di micro pagamenti:
 
-* "flattr":http://flattr.com/thing/715037/iulii-net
+* "flattr":http://flattr.com/thing/715037/iulii.net
 * bitcoin: 1J3VVS5VcqGTkgcjc8XjnE6WEdwQHstcVU

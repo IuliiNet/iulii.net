@@ -8,31 +8,40 @@
         	<meta name="author" content="lucapost" />
 	        <meta name="description" content="" />
         	<title>IuliiNet | gestione indirizzi</title>
-  		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/hashgrid.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 		<link rel="icon" type="image/png" href="/img/iuliinetlogo.png">
+		<link rel="stylesheet" type="text/css" media="all" href="/assets/css/nomrmalize.css" />
+		<!--[if lt IE 9]>
+  			<script src="/assets/js/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="/assets/css/demo.css" />
+		<!--[if (gt IE 8) | (IEMobile)]><!-->
+  			<link rel="stylesheet" href="/assets/css/unsemantic-grid-responsive.css" />
+		<!--<![endif]-->
+		<!--[if (lt IE 9) & (!IEMobile)]>
+  			<link rel="stylesheet" href="/assets/css/ie.css" />
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" media="all" href="/assets/css/style.css" />
 	</head>
 	<body id="top">
-		<header class="container_12 clearfix">
-			<div class="grid_8">
-				<hgroup>
+		<div class="white">
+		<div class="grid-container">
+			<header>
+				<hgroup class="grid-70 mobile-grid-100">
 					<h1><a href="/">IuliiNet</a></h1>
-					<h2><a href="/">rete wireless mesh libera e decentralizzata in friuli</a></h2>
+					<h2>rete wireless mesh libera e decentralizzata in friuli</h2>
+					<script src="https://apis.google.com/js/platform.js" async defer></script>
+					<div class="g-plusone" data-href="http://iulii.net"></div>
 				</hgroup>
-			</div>
-			<div class="grid_4">
-				<a href="/">
-					<img class="iuliinetlogo" title="iuliinet logo" alt="iuliinet logo" src="/img/iuliinetlogo.png">
-				</a>
-			</div>
-			<div class="clear"></div>
-		</header>
-		<section class="container_12 clearfix">
-			<div class="grid_8">
+				<figure>
+					<img class="grid-30 hide-on-mobile" title="no! non sono un piccone! volo in alto!" alt="il logo della rete iuliinet" src="/img/iuliinetlogo.png">
+				</figure>
+			</header>
+		</div>
+		</div>
+		<div class="blue">
+		<div class="grid-container">
+			<section class="grid-70 mobile-grid-100">
 	<h3>Gestione indirizzi</h3>
 
 	<p>La rete <strong>IuliiNet</strong>, come indicato alla pagina di referimento <a href="http://wiki.ninux.org/GestioneIndirizzi#Tabella_Subnets_IuliiNet_.28FVG.29">wiki.ninux.org/GestioneIndirizzi#Tabella_Subnets_IuliiNet_.28FVG.29</a> si autogestisce le seguenti sottoreti:</p>
@@ -59,8 +68,9 @@
 	<p>Indicativamente, ad ogni nodo della rete <strong>IuliiNet</strong> viene assegnato un numero progressivo (0, 1, 2, 3, ecc.) che lo identifica in maniera univoca. Per facilità mnemonica ad ogni nodo viene assegnata una subnet ipv4/24 ed una ipv6/64 basato su questo numero.</p>
 
 	<p>Una tabella riassuntiva è disponibile all&#8217;indirizzo <a href="https://github.com/IuliiNet/hosts">https://github.com/IuliiNet/hosts</a>. Tale tabella può essere utilizzata per la risoluzione dei nomi da un server dns come dnsmasq.</p>
-    		</div>
-			<div class="grid_4 column">
+			<p><a href="#top" title="back to top" class="backtotop">back to top</a></p>
+    			</section>
+			<div class="grid-30 mobile-grid-100">
 				<div class="navigation">
 					<div class="path">
 						<b>path</b>: <a href="../index.html">home</a> / <a href="index.html">rete</a> / gestione indirizzi
@@ -93,22 +103,26 @@
 
 					</nav>
 				</div>
+				<div class="tt-widget">
+                    			<a class="twitter-timeline" href="https://twitter.com/IuliiNet" data-border-color="#55a1d5" data-widget-id="349571026952269826">Tweets by @IuliiNet</a>
+                    			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
 			</div>
-			<div class="clear"></div>
-		</section>
-		<footer class="container_12 clearfix">
-			<div class="grid_12">
-				<a href="#top" title="back to top" class="backtotop">back to top</a>
+		</div>
+		</div>
+		<footer class="grid-container">
+			<div class="grid-100 mobile-grid-100">
 				<div class="foot">
 					<p>&copy; 2015 <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: 20141030 01:45:56 PM</p>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</footer>	
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-	  	<script src="/js/jquery.js"></script> 
-  		<script src="/js/plugins.js"></script>
-  		<script src="/js/main.js"></script>
-  		<script src="/js/hashgrid.js"></script>
+  		<script>
+    			var _gaq=[['_setAccount','UA-6164762-12'],['_trackPageview']];
+    			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    			s.parentNode.insertBefore(g,s)}(document,'script'));
+  		</script>
 </body>
 </html>

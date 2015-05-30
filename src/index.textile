@@ -3,7 +3,7 @@
 h3. Hai fretta?
 
 * metti la posizione del tuo nodo potenziale sul mapserver "map.ninux.org":http://map.ninux.org/
-* presentati e segnala la disponibilità del tuo nuovo nodo potenziale nella mailinglist "ml.ninux.org/mailman/listinfo/iuliinet":http://ml.ninux.org/mailman/listinfo/iuliinet (se sei timido puoi farlo anche contattando "info@iulii.net":mailto:info@iulii.net)
+* presentati e segnala la disponibilità del tuo nuovo nodo potenziale nella mailinglist "ml.ninux.org/mailman/listinfo/iuliinet":http://ml.ninux.org/mailman/listinfo/iuliinet (se sei timido puoi farlo anche contattando "iulii@ninux.org":mailto:iulii@ninux.org)
 
 h3. Cos'è una rete mesh?
 
@@ -11,7 +11,7 @@ Una *rete mesh* è un insieme di posizioni geografiche interconnesse tra loro, o
 
 h3. Perchè una rete libera?
 
-Il progetto "IuliiNet":http://iulii.net è per lo sviluppo di una "*rete comunitaria*":http://it.wikipedia.org/wiki/Wireless_community_network, *aperta*, *decentralizzata*, di *proprietà del cittadino* e *senza limiti di espandibilità geografica e censura*.
+Il progetto "IuliiNet":http://iulii.ninux.org è per lo sviluppo di una "*rete comunitaria*":http://it.wikipedia.org/wiki/Wireless_community_network, *aperta*, *decentralizzata*, di *proprietà del cittadino* e *senza limiti di espandibilità geografica e censura*.
 
 Il progetto prende ispirazione dalle wireless community network italiana "*ninux*":http://wiki.ninux.org.
 
