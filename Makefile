@@ -10,9 +10,9 @@ flarevm:
 	./minimalsite.py -t templates/default_template.py
 	rsync -avr -e ssh ./dst/* flarevm:www/iulii.net/
 
-kino:
-	./minimalsite.py -t templates/nojs_template.py
-	rsync -avr -e ssh ./dst/* lucapost@kino:repo/iulii.net/
+sun:
+	./minimalsite.py -t templates/default_template.py
+	rsync -avr -e ssh ./dst/* sun:/mnt/disk4t/www/iulii.lii/
 
 clean:
 	find . -type f -name "*.html" -exec rm -f {} \;

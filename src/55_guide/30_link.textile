@@ -53,7 +53,7 @@ Le antenne ricoprono un ruolo molto importante e vanno selezionate in base al co
 
 I parametri di cui tenere conto sono i diagrammi di radiazione orizzontale H e verticale V ed il loro guadagno dB.
 
-Per un nodo di accesso wireless utilizzeremo antenne tipo dipolo, ground plane, collineari o slotted caratterizzate da una ampia copertura ed un guadagno basso, mentre per realizzare collegamenti punto-punto utilizzeremo antenne yagi, patch array, paraboliche con pochi gradi di irradiazione ed alto guadagno; entrambe vanno allineate sul piano orizzontale H o verticale V un allineamento diverso può verificarsi in seguito a riflessioni del segnale. È disponibile un approfondimento sulla costruzione amatoriale delle antenne alla pagina "iulii.net/guide/antenne.html":http://iulii.net/guide/antenne.html.
+Per un nodo di accesso wireless utilizzeremo antenne tipo dipolo, ground plane, collineari o slotted caratterizzate da una ampia copertura ed un guadagno basso, mentre per realizzare collegamenti punto-punto utilizzeremo antenne yagi, patch array, paraboliche con pochi gradi di irradiazione ed alto guadagno; entrambe vanno allineate sul piano orizzontale H o verticale V un allineamento diverso può verificarsi in seguito a riflessioni del segnale. È disponibile un approfondimento sulla costruzione amatoriale delle antenne alla pagina "/guide/antenne.html":/guide/antenne.html.
 
 h4. considerazioni sui canali di trasmisssione e standard 802.11
 

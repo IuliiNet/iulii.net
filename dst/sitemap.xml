@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iulii.net/servizi.html</loc>
+    <lastmod>2015-11-21</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/contatti.html</loc>
+    <lastmod>2015-05-30</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/presentazioni.html</loc>
+    <lastmod>2014-12-16</lastmod>
+  </url>
+  <url>
     <loc>http://iulii.net/faq.html</loc>
-    <lastmod>2014-04-21</lastmod>
+    <lastmod>2015-11-21</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/rete/index.html</loc>
-    <lastmod>2015-05-30</lastmod>
+    <lastmod>2015-11-21</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/rete/gestione_indirizzi.html</loc>
@@ -14,18 +26,22 @@
   </url>
   <url>
     <loc>http://iulii.net/rete/hardware.html</loc>
-    <lastmod>2014-12-16</lastmod>
+    <lastmod>2015-11-21</lastmod>
   </url>
   <url>
-    <loc>http://iulii.net/servizi.html</loc>
-    <lastmod>2015-05-30</lastmod>
+    <loc>http://iulii.net/links.html</loc>
+    <lastmod>2014-04-21</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/index.html</loc>
-    <lastmod>2015-05-30</lastmod>
+    <lastmod>2015-06-07</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/guide/link.html</loc>
+    <lastmod>2015-11-21</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.net/guide/firmware.html</loc>
     <lastmod>2014-04-21</lastmod>
   </url>
   <url>
@@ -33,35 +49,19 @@
     <lastmod>2015-04-03</lastmod>
   </url>
   <url>
-    <loc>http://iulii.net/guide/index.html</loc>
-    <lastmod>2014-10-30</lastmod>
-  </url>
-  <url>
     <loc>http://iulii.net/guide/pianificazione_geografica.html</loc>
     <lastmod>2014-07-16</lastmod>
   </url>
   <url>
-    <loc>http://iulii.net/guide/firmware.html</loc>
-    <lastmod>2014-04-21</lastmod>
+    <loc>http://iulii.net/guide/index.html</loc>
+    <lastmod>2015-11-21</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/guide/antenne.html</loc>
-    <lastmod>2014-04-21</lastmod>
+    <lastmod>2015-11-21</lastmod>
   </url>
   <url>
     <loc>http://iulii.net/partecipare.html</loc>
-    <lastmod>2015-05-30</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/links.html</loc>
-    <lastmod>2014-04-21</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/presentazioni.html</loc>
-    <lastmod>2014-12-16</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.net/contatti.html</loc>
     <lastmod>2015-05-30</lastmod>
   </url>
 </urlset>

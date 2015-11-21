@@ -21,7 +21,7 @@ I collegamenti privati sulle frequenze collettive sono stati liberalizzati nel 2
 
 h4(#4). Avete servizi disponibili?
 
-Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo. Una lista non aggiornata è disponibile alla pagina "servizi":/servizi.
+Molti servizi possono essere gratuiti come per esempio le centrali telefoniche interne, le radio e TV di quartiere, mentre altri servizi come le linee telefoniche voip possono richiedere contratti e canoni di utilizzo. Una lista non aggiornata è disponibile alla pagina "servizi":/servizi.html.
 
 h4(#5). Quanto costa un nodo?
 

@@ -7,10 +7,9 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 È disponibile una lista di alcuni possibili servizi disponibili:
 
 * dns
-** fd00:1111:2222::1, 10.100.0.1
+** fd00:1111:2222::1, 10.100.7.1
 * http
+** "iulii.lii":http://iulii.lii
 ** "share.iulii.lii":http://share.iulii.lii
-* etherpad
-** "pad.iulii.lii":http://pad.iulii.lii
-* xmpp/jabber
-** jabber.lii:5222
+* syncthing
+** id: iuliinet, do you need any keys?

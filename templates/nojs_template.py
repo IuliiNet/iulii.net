@@ -83,11 +83,11 @@ def header(node):
 	        <meta name="description" content="''' + description + '''" />
         	<title>''' + title + '''</title>
   		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/960.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/hashgrid.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''/assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''/assetscss/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''/assetscss/960.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''/assetscss/hashgrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="'''+ PREFIX +'''/assetscss/style.css" />
 		<link rel="icon" type="image/png" href="'''+ PREFIX +'''img/iuliinetlogo.png">
 	</head>
 	<body id="top">

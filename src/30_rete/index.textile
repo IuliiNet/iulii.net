@@ -21,9 +21,9 @@ Una suddivisione dei tipi di nodi che è possibile installare e configurare è l
 
 h4. Clients
 
-Sono i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), per questi gli accessi possibili per entrare nella rete del progetto iulii.net sono:
+Sono i dispositivi personali (pc, notebook, smartphone, tablet, router, ...), per questi gli accessi possibili per entrare nella rete del progetto IuliiNnet sono:
 
-* *wireless*, essid: *www.iulii.net* in modalità ap;
+* *wireless*, essid: *iulii.ninux.org* in modalità ap;
 * *ethernet*, collegamento via cavo;
 * *vpn*, connessione via "tunnel vpn":http://wiki.ninux.org/IsoleVPN.
 
