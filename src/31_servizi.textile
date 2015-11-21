@@ -10,6 +10,6 @@ Ovviamente ognuno dei servizi sotto elencati può essere configurato per funzion
 ** fd00:1111:2222::1, 10.100.7.1
 * http
 ** "iulii.lii":http://iulii.lii
-** "share.iulii.lii":http://share.iulii.lii
+** "share.koslic.lii":http://share.koslic.lii
 * syncthing
 ** id: iuliinet, do you need any keys?
