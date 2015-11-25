@@ -6,9 +6,9 @@ github:
 	git commit -am fix
 	git push
 
-flarevm:	
+vultr:	
 	./minimalsite.py -t templates/default_template.py
-	rsync -avr -e ssh ./dst/* flarevm:www/iulii.net/
+	rsync -avr -e ssh ./dst/* vultr:www/iulii.ninux.org/
 
 sun:
 	./minimalsite.py -t templates/default_template.py
