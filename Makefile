@@ -7,11 +7,9 @@ github:
 	git push
 
 vultr:	
-	./minimalsite.py -t templates/default_template.py
 	rsync -avr -e ssh ./dst/* vultr:www/iulii.ninux.org/
 
 sun:
-	./minimalsite.py -t templates/default_template.py
 	rsync -avr -e ssh ./dst/* sun:/mnt/disk4t/www/iulii.lii/
 
 clean:
