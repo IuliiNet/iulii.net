@@ -142,7 +142,7 @@ def footer(node):
 		<footer class="grid-container">
 			<div class="grid-100 mobile-grid-100">
 				<div class="foot">
-					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.net" title="iulii.net website">iulii.net</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%Y%m%d %I:%M:%S %p", node.page.last_edit) + '''</p>
+					<p>&copy; ''' + str(current_time.year) + ''' <a href="http://iulii.ninux.org" title="iulii.ninux.org website">iulii.ninux.org</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">license CC by-nc</a> | edit: ''' + time.strftime("%Y%m%d %I:%M:%S %p", node.page.last_edit) + '''</p>
 				</div>
 			</div>
 			<div class="clear"></div>
