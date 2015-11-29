@@ -128,9 +128,15 @@ def footer(node):
 					<div class="path">
 						<b>path</b>: %%%PATH%%%
 					</div>
-					<nav>
+					<nav class="hide-on-mobile">
 						''' + menu(node) + '''
+						desktop
 					</nav>
+					<nav class="hide-on-desktop">
+						''' + menu(node) + '''
+						mobile
+					</nav>
+
 				</div>
 				<div class="tt-widget">
                     			<a class="twitter-timeline" href="https://twitter.com/IuliiNet" data-border-color="#55a1d5" data-widget-id="349571026952269826">Tweets by @IuliiNet</a>
