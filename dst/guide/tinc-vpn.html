@@ -44,7 +44,7 @@
 			<section class="grid-70 mobile-grid-100">
 	<h3>tinc-vpn e mode switch</h3>
 
-	<p><a href="http://www.tinc-vpn.org/">Tinc-vpn</a> è un demone che permette di creare tunnel crittati e reti sicure. Tra le sue features più caratteristiche c'è la possibilità di configurarlo in modalità switch, cioè sostituire la classica configurazione clients/server con una che permette a tutti i partecipanti di avere lo stesso peso &#8220;switch&#8221;.</p>
+	<p><a href="http://www.tinc-vpn.org/">Tinc-vpn</a> è un demone che permette di creare tunnel crittati e reti sicure. Tra le sue features più caratteristiche c&#8217;è la possibilità di configurarlo in modalità switch, cioè sostituire la classica configurazione clients/server con una che permette a tutti i partecipanti di avere lo stesso peso &#8220;switch&#8221;.</p>
 
 	<p>È un demone multipiattaforma versatile che può essere installato anche su piccoli router domestici <a href="http://openwrt.org">openwrt</a> based.</p>
 
@@ -57,14 +57,14 @@
 	<p>A seconda della piattaforma utilizzata è possibile instllare tinc-vpn con il gestore di pacchetti predefinito:</p>
 
 	<ul>
-		<li>su gentoo: </li>
+		<li>su gentoo:</li>
 	</ul>
 
 <pre><code>emerge tinc
 </code></pre>
 
 	<ul>
-		<li>su openwrt: </li>
+		<li>su openwrt:</li>
 	</ul>
 
 <pre><code>opkg update; opkg install tinc 
@@ -145,14 +145,14 @@ ip r a default via 192.168.0.1
 
 	<ul>
 		<li>tirare su l&#8217;interfaccia della vpn;</li>
-		<li>aggiungerla al bridge br-lan, quello magari dove c'è una wlan0 con autenticazione wpa;</li>
+		<li>aggiungerla al bridge br-lan, quello magari dove c&#8217;è una wlan0 con autenticazione wpa;</li>
 		<li>assegna un ip nella subnet privata al br-lan ed il default gateway.</li>
 	</ul>
 
 	<p>Per avviare la connessione vpn, a seconda della distribuzione:</p>
 
 	<ul>
-		<li>su gentoo: </li>
+		<li>su gentoo:</li>
 	</ul>
 
 <pre><code>ln -sf /etc/init.d/tincd.lo /etc/init.d/tincd.myvpn 
@@ -161,7 +161,7 @@ rc-update tincd.myvpn
 </code></pre>
 
 	<ul>
-		<li>su openwrt: </li>
+		<li>su openwrt:</li>
 	</ul>
 
 <pre><code>vi /etc/rc.local
@@ -175,7 +175,7 @@ tincd -n myvpn
 
 	<p>I passi descritti sopra sono dunque da eseguire su ogni client desiderato (openwrt based o pc che sia), avendo cura di cambiare il <em>Name</em> nel file tinc.conf e l&#8217;<em>Address</em> pubblico in /etc/tinc/myvpn/hosts/clientnuovo.</p>
 
-	<p>Fondamentale è poi indicare nel file ticnd.conf i parametri <em>ConnectTo</em> (uno per riga), indicando i nomi dei client ai quali desideriamo connetterci, <strong>IMPORTANTE</strong> oltre sincronizzare il contenuto della cartella /etc/tinc/myvpn/hosts/* su tutti i clients. Questa cartella deve infatti contenere le informazioni di ciascun client della mesh (ip pubblico, subnet, chiave pubblica).</p>
+	<p>Fondamentale è poi indicare nel file ticnd.conf i parametri <em>ConnectTo</em> (uno per riga), indicando i nomi dei client ai quali desideriamo connetterci, <strong><span class="caps">IMPORTANTE</span></strong> oltre sincronizzare il contenuto della cartella /etc/tinc/myvpn/hosts/* su tutti i clients. Questa cartella deve infatti contenere le informazioni di ciascun client della mesh (ip pubblico, subnet, chiave pubblica).</p>
 
 	<p>Happy tinc-vpn!</p>
 

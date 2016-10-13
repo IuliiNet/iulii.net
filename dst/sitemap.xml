@@ -1,56 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://iulii.ninux.org/index.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/faq.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/rete/gestione_indirizzi.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/rete/index.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/rete/hardware.html</loc>
-    <lastmod>2016-08-27</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/links.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/guide/firmware.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/guide/index.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/guide/pianificazione_geografica.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/guide/antenne.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/guide/tinc-vpn.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iulii.ninux.org/guide/link.html</loc>
-    <lastmod>2016-04-24</lastmod>
-  </url>
-  <url>
     <loc>http://iulii.ninux.org/presentazioni.html</loc>
     <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/servizi.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/index.html</loc>
+    <lastmod>2016-09-09</lastmod>
   </url>
   <url>
     <loc>http://iulii.ninux.org/partecipare.html</loc>
@@ -61,7 +21,47 @@
     <lastmod>2016-04-24</lastmod>
   </url>
   <url>
-    <loc>http://iulii.ninux.org/servizi.html</loc>
+    <loc>http://iulii.ninux.org/guide/tinc-vpn.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/guide/index.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/guide/link.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/guide/antenne.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/guide/pianificazione_geografica.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/guide/firmware.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/faq.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/links.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/rete/hardware.html</loc>
+    <lastmod>2016-08-31</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/rete/gestione_indirizzi.html</loc>
+    <lastmod>2016-04-24</lastmod>
+  </url>
+  <url>
+    <loc>http://iulii.ninux.org/rete/index.html</loc>
     <lastmod>2016-04-24</lastmod>
   </url>
 </urlset>

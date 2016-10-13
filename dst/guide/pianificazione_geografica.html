@@ -57,7 +57,7 @@
 	<ul>
 		<li>dati digitali del terreno (digital elevation model <span class="caps">DEM</span>, shuttle Radar Topo Mission <span class="caps">SRTM</span>, ecc)</li>
 		<li>RadioMobileforWindows</li>
-		<li><span class="caps">QGIS</span> >= 2.0 con plugin QTiles istallato</li>
+		<li>QGIS >= 2.0 con plugin QTiles istallato</li>
 	</ul>
 
 	<h4>Cerchiamo quindi un modello digitale del terreno</h4>
@@ -76,29 +76,29 @@
 		<li>infine Extract (possono esserci dei warning se debordiamo dal dem da ignorare)</li>
 	</ul>
 
-	<p><img src="/img/wlan_geo/mapprop1.png" class="big" title="finestra di rwm" alt="finestra di rwm" /></p>
+	<p><img alt="finestra di rwm" src="/img/wlan_geo/mapprop1.png" class="big" title="finestra di rwm" /></p>
 
 	<p>Se è andato tutto bene otteniamo un immagine a livelli di grigio dell&#8217;orografia della zona impostata. Opzionale: se non conosciamo le coordinate della nostra stazione base, nella finestra <em>Options > Internet</em> possiamo sovrapporre i dati OpenStreetMap:</p>
 
-	<p><img src="/img/wlan_geo/rmw1.png" class="big" title="finestra di rwm" alt="finestra di rwm" /></p>
+	<p><img alt="finestra di rwm" src="/img/wlan_geo/rmw1.png" class="big" title="finestra di rwm" /></p>
 
 	<p>Nella finestra della Picture generata:</p>
 
 	<ul>
-		<li>clicchiamo sul punto dove vogliamo mettere la stazione (apparare un crocicchio rosso) e con CNTR+U apriamo la finestra <em>Units proprieties</em></li>
+		<li>clicchiamo sul punto dove vogliamo mettere la stazione (apparare un crocicchio rosso) e con <span class="caps">CNTR</span>+U apriamo la finestra <em>Units proprieties</em></li>
 		<li>tra le diverse opzioni possiamo inseririre la stazione alle coordinate dove abbiamo cliccato, oppure inserirle manualmente.</li>
 	</ul>
 
 	<p>Nella finestra <em>Tools > Visual coverage</em></p>
 
 	<ul>
-		<li>selezioniamo nel campo <em>Observer</em> la nostra stazione appena creata; gil altri campi si spiegano da soli (qui c'è la scelta del colore con cui vogliamo riempire le zone visibili dalla stazione);</li>
+		<li>selezioniamo nel campo <em>Observer</em> la nostra stazione appena creata; gil altri campi si spiegano da soli (qui c&#8217;è la scelta del colore con cui vogliamo riempire le zone visibili dalla stazione);</li>
 		<li>clicchiamo <em>Draw</em></li>
 	</ul>
 
-	<p><img src="/img/wlan_geo/rmwcov.png" class="big" title="finestra di rwm" alt="finestra di rwm" /></p>
+	<p><img alt="finestra di rwm" src="/img/wlan_geo/rmwcov.png" class="big" title="finestra di rwm" /></p>
 
-	<p><img src="/img/wlan_geo/rmwcov1.png" class="big" title="finestra di rwm" alt="finestra di rwm" /></p>
+	<p><img alt="finestra di rwm" src="/img/wlan_geo/rmwcov1.png" class="big" title="finestra di rwm" /></p>
 
 	<p>Nella finestra <em>File > Save picture as&#8230;</em></p>
 
@@ -109,9 +109,9 @@
 
 	<h4>Creiamo una mappa online con Qgis</h4>
 
-	<p>Apriamo l&#8217;immagine creata  con il georeferenziatore <em>Raster > Georeferencer</em> ed alla richiesta selezioniamo il coordinate reference system WGS84</p>
+	<p>Apriamo l&#8217;immagine creata  con il georeferenziatore <em>Raster > Georeferencer</em> ed alla richiesta selezioniamo il coordinate reference system <span class="caps">WGS</span>84</p>
 
-	<p><img src="/img/wlan_geo/georef1.png" class="big" title="finestra di qgis" alt="finestra di qgis" /></p>
+	<p><img alt="finestra di qgis" src="/img/wlan_geo/georef1.png" class="big" title="finestra di qgis" /></p>
 
 	<p>qui rientra in gioco il file .geo che avevamo prodotto con <span class="caps">RMW</span> assieme all&#8217;immagine&#8230; ecco un esempio:</p>
 
@@ -123,21 +123,21 @@ TIEPOINT 799 599  12.88052  45.62648
 
 	<p>i numeri evidenziati rappresentano le coordinate il latitudine e longitudine dei bordi della nostra immagine e li inseriremo tramite il <em>Georeferencer</em>:</p>
 
-	<p><img src="/img/wlan_geo/gcp.png" class="big" title="finestra di qgis" alt="finestra di qgis" /></p>
+	<p><img alt="finestra di qgis" src="/img/wlan_geo/gcp.png" class="big" title="finestra di qgis" /></p>
 
-	<p>Terminata questa fase noiosa in cui compileremo quattro righe della Ground Control Point (<span class="caps">GCP</span>) table (legando i quattro angoli dell&#8217;immagine alle coordinate del mondo reale), produciamo una <em>Geotiff</em> cioè un immagine con embedded i dati che la localizzano nel sistema di coordinate geografiche WGS84. Per fare ciò clicchiamo il triangolo verde <em>Start georeferencing</em> e compiliamo il form seguente (trascurate EPSG:26592 che mi è sfuggito nello screenshot):</p>
+	<p>Terminata questa fase noiosa in cui compileremo quattro righe della Ground Control Point (<span class="caps">GCP</span>) table (legando i quattro angoli dell&#8217;immagine alle coordinate del mondo reale), produciamo una <em>Geotiff</em> cioè un immagine con embedded i dati che la localizzano nel sistema di coordinate geografiche <span class="caps">WGS</span>84. Per fare ciò clicchiamo il triangolo verde <em>Start georeferencing</em> e compiliamo il form seguente (trascurate <span class="caps">EPSG</span>:26592 che mi è sfuggito nello screenshot):</p>
 
-	<p><img src="/img/wlan_geo/geotiff.png" class="big" title="finestra di qgis" alt="finestra di qgis" /></p>
+	<p><img alt="finestra di qgis" src="/img/wlan_geo/geotiff.png" class="big" title="finestra di qgis" /></p>
 
 	<p>D&#8217;ora in poi l&#8217;immagine prodotta potrà viaggiare da sola in qualsiasi software <span class="caps">GIS</span>.</p>
 
 	<p>Con l&#8217;immagine caricata nella canvas (<em>Load in <span class="caps">QGIS</span> when done</em>) possiamo finalmente produrre con il plugin Qtiles la struttura di cartelle che pubblicheremo in internet.</p>
 
-	<p><img src="/img/wlan_geo/qtiles.png" class="big" title="finestra di qgis" alt="finestra di qgis" /></p>
+	<p><img alt="finestra di qgis" src="/img/wlan_geo/qtiles.png" class="big" title="finestra di qgis" /></p>
 
 	<p>avendo cura di compilare il form con le considerazioni che seguono:</p>
 
-	<p><img src="/img/wlan_geo/qtiles1.png" class="big" title="finestra di qgis" alt="finestra di qgis" /></p>
+	<p><img alt="finestra di qgis" src="/img/wlan_geo/qtiles1.png" class="big" title="finestra di qgis" /></p>
 
 	<p>Sezione <em>Output</em>: nel caso il file manager del servizio di spazio web scelto, abbia un decompressore, è comodo produrre un unico archivio compresso.</p>
 
@@ -147,15 +147,15 @@ TIEPOINT 799 599  12.88052  45.62648
 
 	<p>Una volta creata la struttura di cartelle, testiamola in locale aprendo il file .html prodotto. se va tutto bene, prima della pubblicazione cancelliamo il percorso locale a (circa) linea 63:</p>
 
-	<p><code>var mytile =L.tileLayer('file:///C:/&#60;percorso locale&#62;/&#60;Tileset name&#62;/{z}/{x}/{y}.png'</code></p>
+	<p><code>var mytile =L.tileLayer('file:///C:/&lt;percorso locale&gt;/&lt;Tileset name&gt;/{z}/{x}/{y}.png'</code></p>
 
 	<p>diventa</p>
 
-	<p><code>var mytile =L.tileLayer('&#60;Tileset name&#62;/{z}/{x}/{y}.png'</code></p>
+	<p><code>var mytile =L.tileLayer('&lt;Tileset name&gt;/{z}/{x}/{y}.png'</code></p>
 
 	<p>by <a href="https://twitter.com/cascafico">cascafico</a></p>
 
-	<p>ps: <a href="http://cascafico.altervista.org/index.php?option=com_content&#38;view=article&#38;id=78:pianificare-una-wlan-geografica&#38;catid=13:wlan&#38;Itemid=17">fonte originale</a></p>
+	<p>ps: <a href="http://cascafico.altervista.org/index.php?option=com_content&amp;view=article&amp;id=78%3Apianificare-una-wlan-geografica&amp;catid=13%3Awlan&amp;Itemid=17">fonte originale</a></p>
 			<p><a href="#top" title="back to top" class="backtotop">back to top</a></p>
     			</section>
 			<div class="grid-30 mobile-grid-100">

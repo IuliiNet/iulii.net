@@ -1,4 +1,4 @@
 h3. Promemoria .config openwrt
 
 - dnsmasq, firewall, ppp, odhcpd, odhcp6c
-+ ip, tinc, alfred, batctl
++ ip, tinc (fastd), alfred, batctl (, bmon, iftop)

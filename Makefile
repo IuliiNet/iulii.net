@@ -7,16 +7,12 @@ github:
 	git push
 
 vultr:	
-	rsync -avr -e ssh ./dst/* vultr:www/iulii.ninux.org/
-
-sun:
-	rsync -avr -e ssh ./dst/* sun:/mnt/disk4t/www/iulii.lii/
+	rsync -avr -e ssh ./dst/* vultr2:www/iulii.ninux.org/
 
 all: 
 	make generate
 	make github
 	make vultr
-	make sun
 
 clean:
 	find . -type f -name "*.html" -exec rm -f {} \;
